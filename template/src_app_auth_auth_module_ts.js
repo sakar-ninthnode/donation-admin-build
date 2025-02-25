@@ -1826,9 +1826,11 @@ class Signin3Component {
           body: formData
         });
         if (response.status != 200) alert('Invalid email or password');else {
-          _this.router.navigate([src_app_core_helpers_routes__WEBPACK_IMPORTED_MODULE_1__.routes.adminDashboard]);
           const data = yield response.json();
           localStorage.setItem('authToken', data.results.access_token);
+          setTimeout(() => {
+            _this.router.navigate([src_app_core_helpers_routes__WEBPACK_IMPORTED_MODULE_1__.routes.adminDashboard]);
+          }, 1000);
           // console.log(data.results.access_token)
         }
       } catch (error) {

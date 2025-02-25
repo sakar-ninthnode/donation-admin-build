@@ -2386,19 +2386,22 @@ class SidebarService {
       separateRoute: false,
       hasSubRoute: false,
       showSubRoute: true,
+      access: ["Platform Admin", "Warehouse Admin", "Support Staff"],
       menu: [{
         menuValue: 'Dashboard',
         hasSubRoute: false,
         showSubRoute: false,
         icon: 'grid',
         base1: 'dashboard',
-        route: _core_index__WEBPACK_IMPORTED_MODULE_0__.routes.adminDashboard
+        route: _core_index__WEBPACK_IMPORTED_MODULE_0__.routes.adminDashboard,
+        access: ["Platform Admin", "Warehouse Admin", "Support Staff"]
       }, {
         menuValue: 'Users',
         icon: 'user-check',
         hasSubRoute: false,
         showSubRoute: false,
-        route: _core_index__WEBPACK_IMPORTED_MODULE_0__.routes.users
+        route: _core_index__WEBPACK_IMPORTED_MODULE_0__.routes.users,
+        access: ["Platform Admin"]
       }
       // {
       //   menuValue: 'Admin Users',
@@ -2414,33 +2417,38 @@ class SidebarService {
       separateRoute: false,
       hasSubRoute: false,
       showSubRoute: true,
+      access: ["Platform Admin"],
       menu: [{
         menuValue: 'Category',
         icon: 'codepen',
         hasSubRoute: false,
         showSubRoute: false,
         route: _core_index__WEBPACK_IMPORTED_MODULE_0__.routes.categoryList,
-        subRoutes: []
+        subRoutes: [],
+        access: ["Platform Admin"]
       }, {
         menuValue: 'Sub Category',
         icon: 'speaker',
         hasSubRoute: false,
         showSubRoute: false,
         route: _core_index__WEBPACK_IMPORTED_MODULE_0__.routes.subCategories,
-        subRoutes: []
+        subRoutes: [],
+        access: ["Platform Admin"]
       }, {
         menuValue: 'Announcements',
         icon: 'tag',
         hasSubRoute: false,
         showSubRoute: false,
         route: _core_index__WEBPACK_IMPORTED_MODULE_0__.routes.announcementList,
-        subRoutes: []
+        subRoutes: [],
+        access: ["Platform Admin"]
       }, {
         menuValue: 'Refferal',
         icon: 'user',
         route: _core_index__WEBPACK_IMPORTED_MODULE_0__.routes.refferal,
         hasSubRoute: false,
-        showSubRoute: false
+        showSubRoute: false,
+        access: ["Platform Admin"]
       }
       // {
       //         menuValue: 'Warehouses',

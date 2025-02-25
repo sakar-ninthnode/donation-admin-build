@@ -2618,7 +2618,7 @@ class UsersComponent {
           user_role: res.user_role || {
             role_id: 0,
             role_name: 'Unknown Role'
-          } // Handle missing role
+          }
         });
       });
     });
