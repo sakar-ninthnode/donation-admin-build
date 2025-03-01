@@ -1952,11 +1952,57 @@ class DataService {
       return res;
     }));
   }
-  getSalesList() {
-    return this.http.get('assets/JSON/sales-list.json').pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_1__.map)(res => {
-      return res;
-    }));
+  getDonationList(stat) {
+    const token = localStorage.getItem('authToken'); // Get token from localStorage
+    const httpOptions = {
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      })
+    };
+    if (stat) {
+      return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/donation?status=${stat}`, httpOptions);
+    } else {
+      return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/donation`, httpOptions);
+    }
   }
+  getSubcategoryConditions(subcategory_id) {
+    const token = localStorage.getItem('authToken'); // Get token from localStorage
+    const httpOptions = {
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      })
+    };
+    return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/subcategory/${subcategory_id}/condition`, httpOptions);
+  }
+  updateDonationStatus(donation_id, donationData) {
+    const token = localStorage.getItem('authToken'); // Get token from localStorage
+    const httpOptions = {
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      })
+    };
+    return this.http.patch(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/donation/${donation_id}/pickup`, donationData, httpOptions);
+  }
+  updateDonationCondition(donated_product_id, donationData) {
+    const token = localStorage.getItem('authToken'); // Get token from localStorage
+    const httpOptions = {
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      })
+    };
+    return this.http.patch(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/donations/${donated_product_id}/condition`, donationData, httpOptions);
+  }
+  // public getSalesList(): Observable<apiResultFormat> {
+  //   return this.http.get<apiResultFormat>('assets/JSON/sales-list.json').pipe(
+  //     map((res: apiResultFormat) => {
+  //       return res;
+  //     })
+  //   );
+  // }
   getShift() {
     return this.http.get('assets/JSON/shift.json').pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_1__.map)(res => {
       return res;
@@ -2160,7 +2206,7 @@ class DataService {
       }
       return response.json();
     }).then(data => ({
-      data: data.results || [],
+      data: data.results.subcategories || [],
       // Ensure it's an array
       totalData: data.results.length || 0 // Provide a default number
     }))).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_4__.catchError)(error => {
@@ -2215,10 +2261,42 @@ class DataService {
       return res;
     }));
   }
+  // public getWareHouse(): Observable<apiResultFormat> {
+  //   return this.http.get<apiResultFormat>('assets/JSON/warehouse.json').pipe(
+  //     map((res: apiResultFormat) => {
+  //       return res;
+  //     })
+  //   );
+  // }
   getWareHouse() {
-    return this.http.get('assets/JSON/warehouse.json').pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_1__.map)(res => {
-      return res;
-    }));
+    const token = localStorage.getItem('authToken'); // Get token from localStorage
+    const httpOptions = {
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      })
+    };
+    return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/warehouse`, httpOptions);
+  }
+  createWareHouse(warehouseData) {
+    const token = localStorage.getItem('authToken'); // Get token from localStorage
+    const httpOptions = {
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      })
+    };
+    return this.http.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/warehouse`, warehouseData, httpOptions);
+  }
+  updateWareHouse(editWarehouseId, warehouseData) {
+    const token = localStorage.getItem('authToken'); // Get token from localStorage
+    const httpOptions = {
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      })
+    };
+    return this.http.patch(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/warehouse/${editWarehouseId}`, warehouseData, httpOptions);
   }
   getPurchaseReturns() {
     return this.http.get('assets/JSON/purchase-returns.json').pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_1__.map)(res => {
@@ -2449,15 +2527,21 @@ class SidebarService {
         hasSubRoute: false,
         showSubRoute: false,
         access: ["Platform Admin"]
-      }
-      // {
-      //         menuValue: 'Warehouses',
-      //         icon: 'archive',
-      //         route: routes.wareHouse,
-      //         hasSubRoute: false,
-      //         showSubRoute: false,
-      //       },
-      ]
+      }, {
+        menuValue: 'Warehouses',
+        icon: 'archive',
+        route: _core_index__WEBPACK_IMPORTED_MODULE_0__.routes.wareHouse,
+        hasSubRoute: false,
+        showSubRoute: false,
+        access: ["Platform Admin"]
+      }, {
+        menuValue: 'Donations',
+        icon: 'box',
+        route: _core_index__WEBPACK_IMPORTED_MODULE_0__.routes.salesList,
+        hasSubRoute: false,
+        showSubRoute: false,
+        access: ["Platform Admin"]
+      }]
     }
     // {
     //   tittle: 'Inventory',

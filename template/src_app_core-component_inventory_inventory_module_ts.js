@@ -1259,7 +1259,7 @@ function CategoryListComponent_For_57_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", data_r2.value, " ");
   }
 }
-function CategoryListComponent_For_79_Template(rf, ctx) {
+function CategoryListComponent_For_77_Template(rf, ctx) {
   if (rf & 1) {
     const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "tr")(1, "td");
@@ -1268,44 +1268,39 @@ function CategoryListComponent_For_79_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](3, "td");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](4);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](5, "td");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](7, "td")(8, "span", 72);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](5, "td")(6, "span", 72);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](7);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](10, "td", 73)(11, "div", 74)(12, "a", 75);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("click", function CategoryListComponent_For_79_Template_a_click_12_listener() {
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](8, "td", 73)(9, "div", 74)(10, "a", 75);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("click", function CategoryListComponent_For_77_Template_a_click_10_listener() {
       const data_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r3).$implicit;
       const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
       return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r4.editcategory(data_r4));
     });
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](13, "i", 76);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](11, "i", 76);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](14, "a", 77);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("click", function CategoryListComponent_For_79_Template_a_click_14_listener() {
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](12, "a", 77);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("click", function CategoryListComponent_For_77_Template_a_click_12_listener() {
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r3);
       const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
       return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r4.confirmColor());
     });
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](15, "i", 78);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](13, "i", 78);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()()();
   }
   if (rf & 2) {
     const data_r4 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate"](data_r4.sNo);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate"](data_r4.category_id);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate"](data_r4.name);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate"](data_r4.category_id);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵpureFunction2"](5, _c3, data_r4.is_active === true, data_r4.is_active === false));
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵpureFunction2"](4, _c3, data_r4.is_active === true, data_r4.is_active === false));
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate"](data_r4.is_active === false ? "Inactive" : "Active");
   }
 }
-function CategoryListComponent_div_99_Template(rf, ctx) {
+function CategoryListComponent_div_97_Template(rf, ctx) {
   if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div")(1, "small", 79);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](2, "Category name is required.");
@@ -1411,7 +1406,6 @@ class CategoryListComponent {
   }
   editcategory(data) {
     this.editCategoryId = data.category_id; // Store ID
-    console.log(data);
     this.editCategoryForm.patchValue({
       name: data.name,
       is_active: data.is_active
@@ -1440,11 +1434,10 @@ class CategoryListComponent {
   }
   getTableData(pageOption) {
     this.data.getCategoryList().subscribe(apiRes => {
-      console.log(apiRes);
       this.tableData = [];
       this.serialNumberArray = [];
       this.totalData = apiRes.totalData;
-      apiRes.data.map((res, index) => {
+      apiRes.data.categories.map((res, index) => {
         const serialNumber = index + 1;
         if (index >= pageOption.skip && serialNumber <= pageOption.limit) {
           res.sNo = serialNumber;
@@ -1536,9 +1529,9 @@ class CategoryListComponent {
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵloadQuery"]()) && (ctx.addCategoryModal = _t.first);
         }
       },
-      decls: 134,
+      decls: 132,
       vars: 19,
-      consts: [[1, "page-header"], [1, "add-item", "d-flex"], [1, "page-title"], [1, "table-top-head"], ["data-bs-toggle", "tooltip", "data-bs-placement", "top", "title", "Pdf", "matTooltip", "Pdf", "matTooltipPosition", "above"], ["src", "assets/img/icons/pdf.svg", "alt", "img"], ["data-bs-toggle", "tooltip", "data-bs-placement", "top", "title", "Excel", "matTooltip", "Excel", "matTooltipPosition", "above"], ["src", "assets/img/icons/excel.svg", "alt", "img"], ["data-bs-toggle", "tooltip", "data-bs-placement", "top", "title", "Print", "matTooltip", "Print", "matTooltipPosition", "above"], [1, "feather", "icon-printer", "feather-rotate-ccw"], ["data-bs-toggle", "tooltip", "data-bs-placement", "top", "title", "Refresh", "matTooltip", "Refresh", "matTooltipPosition", "above"], [1, "feather", "icon-rotate-ccw", "feather-rotate-ccw"], ["data-bs-toggle", "tooltip", "data-bs-placement", "top", "title", "Collapse", "matTooltip", "Collapse", "matTooltipPosition", "above", "id", "collapse-header", 3, "click"], [1, "feather", "icon-chevron-up", "feather-chevron-up"], [1, "feather", "icon-chevron-down", "feather-chevron-down"], [1, "page-btn"], ["href", "javascript:void(0);", "data-bs-toggle", "modal", "data-bs-target", "#add-category", 1, "btn", "btn-added"], [1, "feather", "icon-plus-circle", "me-2"], [1, "card", "table-list-card"], [1, "card-body"], [1, "table-top"], [1, "search-set"], [1, "search-input"], ["href", "javascript:void(0);", 1, "btn", "btn-searchset"], [1, "feather", "icon-search", "feather-search"], [1, "dataTables_filter"], ["type", "search", "placeholder", "Search...", 1, "form-control", 3, "ngModelChange", "ngModel", "ngModelOptions"], ["id", "filter_inputs", 1, "card", 3, "ngClass"], [1, "card-body", "pb-0"], [1, "row"], [1, "col-lg-3", "col-sm-6", "col-12"], [1, "input-blocks"], [1, "feather", "icon-zap", "info-img"], ["placeholder", "Choose Brand", 1, "space-select", "select", 3, "ngModelChange", "ngModel", "ngModelOptions"], [3, "value"], [1, "feather", "icon-calendar", "info-img"], [1, "input-groupicon", "date-input1"], ["type", "text", "bsDatepicker", "", "placeholder", "Choose Date", "container", ".date-input1", 1, "datetimepicker"], [1, "feather", "icon-stop-circle", "info-img"], [1, "col-lg-3", "col-sm-6", "col-12", "ms-auto"], [1, "btn", "btn-filters", "ms-auto"], [1, "table-responsive"], [1, "table", "datanew"], ["matSort", "", 3, "matSortChange"], ["mat-sort-header", "category"], ["mat-sort-header", "categorySlug"], ["mat-sort-header", "status"], [1, "no-sort"], ["id", "add-category", 1, "modal", "fade"], [1, "modal-dialog", "modal-dialog-centered", "custom-modal-two"], [1, "modal-content"], [1, "page-wrapper-new", "p-0"], [1, "content"], [1, "modal-header", "border-0", "custom-modal-header"], ["type", "button", "data-bs-dismiss", "modal", "aria-label", "Close", 1, "close"], ["aria-hidden", "true"], [1, "modal-body", "custom-modal-body"], [3, "ngSubmit", "formGroup"], [1, "mb-3"], [1, "form-label"], ["type", "text", "formControlName", "name", 1, "form-control"], [4, "ngIf"], [1, "modal-footer-btn"], ["type", "button", "data-bs-dismiss", "modal", 1, "btn", "btn-cancel", "me-2"], ["type", "submit", 1, "btn", "btn-submit", 3, "disabled"], ["id", "edit-category", 1, "modal", "fade"], [1, "mb-0"], [1, "status-toggle", "modal-status", "d-flex", "justify-content-between", "align-items-center"], [1, "status-label"], ["type", "checkbox", "id", "user3", "formControlName", "is_active", 1, "check"], ["for", "user3", 1, "checktoggle"], ["type", "submit", 1, "btn", "btn-submit"], [1, "badge", 3, "ngClass"], [1, "action-table-data"], [1, "edit-delete-action"], ["href", "javascript:void(0);", "data-bs-toggle", "modal", "data-bs-target", "#edit-category", 1, "me-2", "p-2", 3, "click"], [1, "feather", "icon-edit", "feather-edit"], ["href", "javascript:void(0);", 1, "confirm-text", "p-2", 3, "click"], [1, "feather", "icon-trash-2", "feather-trash-2"], [1, "text-danger"]],
+      consts: [[1, "page-header"], [1, "add-item", "d-flex"], [1, "page-title"], [1, "table-top-head"], ["data-bs-toggle", "tooltip", "data-bs-placement", "top", "title", "Pdf", "matTooltip", "Pdf", "matTooltipPosition", "above"], ["src", "assets/img/icons/pdf.svg", "alt", "img"], ["data-bs-toggle", "tooltip", "data-bs-placement", "top", "title", "Excel", "matTooltip", "Excel", "matTooltipPosition", "above"], ["src", "assets/img/icons/excel.svg", "alt", "img"], ["data-bs-toggle", "tooltip", "data-bs-placement", "top", "title", "Print", "matTooltip", "Print", "matTooltipPosition", "above"], [1, "feather", "icon-printer", "feather-rotate-ccw"], ["data-bs-toggle", "tooltip", "data-bs-placement", "top", "title", "Refresh", "matTooltip", "Refresh", "matTooltipPosition", "above"], [1, "feather", "icon-rotate-ccw", "feather-rotate-ccw"], ["data-bs-toggle", "tooltip", "data-bs-placement", "top", "title", "Collapse", "matTooltip", "Collapse", "matTooltipPosition", "above", "id", "collapse-header", 3, "click"], [1, "feather", "icon-chevron-up", "feather-chevron-up"], [1, "feather", "icon-chevron-down", "feather-chevron-down"], [1, "page-btn"], ["href", "javascript:void(0);", "data-bs-toggle", "modal", "data-bs-target", "#add-category", 1, "btn", "btn-added"], [1, "feather", "icon-plus-circle", "me-2"], [1, "card", "table-list-card"], [1, "card-body"], [1, "table-top"], [1, "search-set"], [1, "search-input"], ["href", "javascript:void(0);", 1, "btn", "btn-searchset"], [1, "feather", "icon-search", "feather-search"], [1, "dataTables_filter"], ["type", "search", "placeholder", "Search...", 1, "form-control", 3, "ngModelChange", "ngModel", "ngModelOptions"], ["id", "filter_inputs", 1, "card", 3, "ngClass"], [1, "card-body", "pb-0"], [1, "row"], [1, "col-lg-3", "col-sm-6", "col-12"], [1, "input-blocks"], [1, "feather", "icon-zap", "info-img"], ["placeholder", "Choose Brand", 1, "space-select", "select", 3, "ngModelChange", "ngModel", "ngModelOptions"], [3, "value"], [1, "feather", "icon-calendar", "info-img"], [1, "input-groupicon", "date-input1"], ["type", "text", "bsDatepicker", "", "placeholder", "Choose Date", "container", ".date-input1", 1, "datetimepicker"], [1, "feather", "icon-stop-circle", "info-img"], [1, "col-lg-3", "col-sm-6", "col-12", "ms-auto"], [1, "btn", "btn-filters", "ms-auto"], [1, "table-responsive"], [1, "table", "datanew"], ["matSort", "", 3, "matSortChange"], ["mat-sort-header", "categorySlug"], ["mat-sort-header", "category"], ["mat-sort-header", "status"], [1, "no-sort"], ["id", "add-category", 1, "modal", "fade"], [1, "modal-dialog", "modal-dialog-centered", "custom-modal-two"], [1, "modal-content"], [1, "page-wrapper-new", "p-0"], [1, "content"], [1, "modal-header", "border-0", "custom-modal-header"], ["type", "button", "data-bs-dismiss", "modal", "aria-label", "Close", 1, "close"], ["aria-hidden", "true"], [1, "modal-body", "custom-modal-body"], [3, "ngSubmit", "formGroup"], [1, "mb-3"], [1, "form-label"], ["type", "text", "formControlName", "name", 1, "form-control"], [4, "ngIf"], [1, "modal-footer-btn"], ["type", "button", "data-bs-dismiss", "modal", 1, "btn", "btn-cancel", "me-2"], ["type", "submit", 1, "btn", "btn-submit", 3, "disabled"], ["id", "edit-category", 1, "modal", "fade"], [1, "mb-0"], [1, "status-toggle", "modal-status", "d-flex", "justify-content-between", "align-items-center"], [1, "status-label"], ["type", "checkbox", "id", "user3", "formControlName", "is_active", 1, "check"], ["for", "user3", 1, "checktoggle"], ["type", "submit", 1, "btn", "btn-submit"], [1, "badge", 3, "ngClass"], [1, "action-table-data"], [1, "edit-delete-action"], ["href", "javascript:void(0);", "data-bs-toggle", "modal", "data-bs-target", "#edit-category", 1, "me-2", "p-2", 3, "click"], [1, "feather", "icon-edit", "feather-edit"], ["href", "javascript:void(0);", 1, "confirm-text", "p-2", 3, "click"], [1, "feather", "icon-trash-2", "feather-trash-2"], [1, "text-danger"]],
       template: function CategoryListComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "h4");
@@ -1613,72 +1606,69 @@ class CategoryListComponent {
             return ctx.sortData($event);
           });
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](67, "th", 44);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](68, "sNo");
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](68, "Category Id");
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](69, "th", 44);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](69, "th", 45);
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](70, "Category Name");
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](71, "th", 45);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](72, "Category Id");
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](71, "th", 46);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](72, "Status");
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](73, "th", 46);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](74, "Status");
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](75, "th", 47);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](76, "Action");
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](73, "th", 47);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](74, "Action");
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](77, "tbody");
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrepeaterCreate"](78, CategoryListComponent_For_79_Template, 16, 8, "tr", null, _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrepeaterTrackByIdentity"]);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](75, "tbody");
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrepeaterCreate"](76, CategoryListComponent_For_77_Template, 14, 7, "tr", null, _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrepeaterTrackByIdentity"]);
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](80, "app-custom-pagination");
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](78, "app-custom-pagination");
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](81, "div", 48)(82, "div", 49)(83, "div", 50)(84, "div", 51)(85, "div", 52)(86, "div", 53)(87, "div", 2)(88, "h4");
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](89, "Create Category");
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](79, "div", 48)(80, "div", 49)(81, "div", 50)(82, "div", 51)(83, "div", 52)(84, "div", 53)(85, "div", 2)(86, "h4");
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](87, "Create Category");
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](90, "button", 54)(91, "span", 55);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](92, "\u00D7");
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](88, "button", 54)(89, "span", 55);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](90, "\u00D7");
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](93, "div", 56)(94, "form", 57);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("ngSubmit", function CategoryListComponent_Template_form_ngSubmit_94_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](91, "div", 56)(92, "form", 57);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("ngSubmit", function CategoryListComponent_Template_form_ngSubmit_92_listener() {
             return ctx.onSubmit();
           });
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](95, "div", 58)(96, "label", 59);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](97, "Category Name");
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](93, "div", 58)(94, "label", 59);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](95, "Category Name");
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](98, "input", 60);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](99, CategoryListComponent_div_99_Template, 3, 0, "div", 61);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](96, "input", 60);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](97, CategoryListComponent_div_97_Template, 3, 0, "div", 61);
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](100, "div", 62)(101, "button", 63);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](102, "Cancel");
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](98, "div", 62)(99, "button", 63);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](100, "Cancel");
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](103, "button", 64);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](104, "Create Category");
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](101, "button", 64);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](102, "Create Category");
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()()()()()()()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](105, "div", 65)(106, "div", 49)(107, "div", 50)(108, "div", 51)(109, "div", 52)(110, "div", 53)(111, "div", 2)(112, "h4");
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](113, "Edit Category");
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](103, "div", 65)(104, "div", 49)(105, "div", 50)(106, "div", 51)(107, "div", 52)(108, "div", 53)(109, "div", 2)(110, "h4");
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](111, "Edit Category");
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](114, "button", 54)(115, "span", 55);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](116, "\u00D7");
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](112, "button", 54)(113, "span", 55);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](114, "\u00D7");
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](117, "div", 56)(118, "form", 57);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("ngSubmit", function CategoryListComponent_Template_form_ngSubmit_118_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](115, "div", 56)(116, "form", 57);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("ngSubmit", function CategoryListComponent_Template_form_ngSubmit_116_listener() {
             return ctx.onUpdate();
           });
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](119, "div", 58)(120, "label", 59);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](121, "Category");
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](117, "div", 58)(118, "label", 59);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](119, "Category");
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](122, "input", 60);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](120, "input", 60);
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](123, "div", 66)(124, "div", 67)(125, "span", 68);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](126, "Status");
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](121, "div", 66)(122, "div", 67)(123, "span", 68);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](124, "Status");
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](127, "input", 69)(128, "label", 70);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](125, "input", 69)(126, "label", 70);
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](129, "div", 62)(130, "button", 63);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](131, "Cancel");
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](127, "div", 62)(128, "button", 63);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](129, "Cancel");
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](132, "button", 71);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](133, "Save Changes");
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](130, "button", 71);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](131, "Save Changes");
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()()()()()()()();
         }
         if (rf & 2) {
@@ -1702,7 +1692,7 @@ class CategoryListComponent {
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngModelOptions", _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵpureFunction0"](18, _c1));
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrepeater"](ctx.selectedList3);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](22);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](20);
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrepeater"](ctx.tableData);
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](16);
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("formGroup", ctx.categoryForm);
