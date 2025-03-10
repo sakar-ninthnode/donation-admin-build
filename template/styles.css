@@ -70891,6 +70891,7 @@ caption {
   background-color: var(--bs-table-accent-bg);
   --bs-table-accent-bg: rgba(var(--primary-rgb), 0.4);
   color: #ffffff;
+  cursor: pointer;
 }
 .table.table-primary .table-active {
   background-color: var(--bs-table-accent-bg);
@@ -70917,6 +70918,7 @@ caption {
   background-color: var(--bs-table-accent-bg);
   --bs-table-accent-bg: rgba(var(--secondary-rgb), 0.4);
   color: #ffffff;
+  cursor: pointer;
 }
 .table.table-secondary .table-active {
   background-color: var(--bs-table-accent-bg);
@@ -70943,6 +70945,7 @@ caption {
   background-color: var(--bs-table-accent-bg);
   --bs-table-accent-bg: rgba(var(--warning-rgb), 0.4);
   color: #ffffff;
+  cursor: pointer;
 }
 .table.table-warning .table-active {
   background-color: var(--bs-table-accent-bg);
@@ -70969,6 +70972,7 @@ caption {
   background-color: var(--bs-table-accent-bg);
   --bs-table-accent-bg: rgba(var(--success-rgb), 0.4);
   color: #ffffff;
+  cursor: pointer;
 }
 .table.table-success .table-active {
   background-color: var(--bs-table-accent-bg);
@@ -70995,6 +70999,7 @@ caption {
   background-color: var(--bs-table-accent-bg);
   --bs-table-accent-bg: rgba(var(--danger-rgb), 0.4);
   color: #ffffff;
+  cursor: pointer;
 }
 .table.table-danger .table-active {
   background-color: var(--bs-table-accent-bg);
@@ -71021,6 +71026,7 @@ caption {
   background-color: var(--bs-table-accent-bg);
   --bs-table-accent-bg: rgba(var(--info-rgb), 0.4);
   color: #ffffff;
+  cursor: pointer;
 }
 .table.table-info .table-active {
   background-color: var(--bs-table-accent-bg);
@@ -71047,6 +71053,7 @@ caption {
   background-color: var(--bs-table-accent-bg);
   --bs-table-accent-bg: rgba(var(--light-rgb), 0.4);
   color: #ffffff;
+  cursor: pointer;
 }
 .table.table-light .table-active {
   background-color: var(--bs-table-accent-bg);
@@ -71073,6 +71080,7 @@ caption {
   background-color: var(--bs-table-accent-bg);
   --bs-table-accent-bg: rgba(var(--dark-rgb), 0.4);
   color: #ffffff;
+  cursor: pointer;
 }
 .table.table-dark .table-active {
   background-color: var(--bs-table-accent-bg);
@@ -71141,6 +71149,7 @@ caption {
 .table.table-hover > tbody > tr:hover > * {
   --bs-table-accent-bg: #f7f8f9;
   color: #5B6670;
+  cursor: pointer;
 }
 .table .table-active {
   --bs-table-accent-bg: #f8f9fa;

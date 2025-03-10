@@ -2155,6 +2155,55 @@ class DataService {
       return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => new Error(error.message || 'Something went wrong!'));
     }));
   }
+  getMessagesUsers() {
+    const token = localStorage.getItem('authToken'); // Get token from localStorage
+    if (!token) {
+      return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => new Error('No authentication token found'));
+    }
+    let apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/users`;
+    return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.from)(fetch(apiUrl, {
+      method: 'GET',
+      headers: {
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      }
+    }).then(response => {
+      if (!response.ok) {
+        return response.json().then(err => {
+          throw new Error(err.message || 'Failed to fetch users');
+        });
+      }
+      return response.json();
+    }).then(data => ({
+      // data: data.results.users || [], // Ensure it's an array
+      data: data.results.users || [],
+      // Ensure it's an array
+      totalData: data.results.users.length || 0 // Provide a default number
+    }))).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_4__.catchError)(error => {
+      console.error('Fetch error:', error);
+      return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => new Error(error.message || 'Something went wrong!'));
+    }));
+  }
+  getTicketsByUserId(userId) {
+    const token = localStorage.getItem('authToken'); // Get token from localStorage
+    const httpOptions = {
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      })
+    };
+    return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/users/${userId}`, httpOptions);
+  }
+  getMessagesByTicketId(ticket_id) {
+    const token = localStorage.getItem('authToken'); // Get token from localStorage
+    const httpOptions = {
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      })
+    };
+    return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/messages/${ticket_id}`, httpOptions);
+  }
   getQrCode() {
     return this.http.get('assets/JSON/qrcode.json').pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_1__.map)(res => {
       return res;
@@ -2538,6 +2587,13 @@ class SidebarService {
         menuValue: 'Donations',
         icon: 'box',
         route: _core_index__WEBPACK_IMPORTED_MODULE_0__.routes.salesList,
+        hasSubRoute: false,
+        showSubRoute: false,
+        access: ["Platform Admin"]
+      }, {
+        menuValue: 'Help Desk',
+        icon: 'file-text',
+        route: _core_index__WEBPACK_IMPORTED_MODULE_0__.routes.chat,
         hasSubRoute: false,
         showSubRoute: false,
         access: ["Platform Admin"]

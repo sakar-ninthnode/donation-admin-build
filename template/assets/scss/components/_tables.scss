@@ -17,6 +17,7 @@
     background-color: var(--bs-table-accent-bg);
     --bs-table-accent-bg: rgba(#{$color-bg}, 0.4);
     color: $white;
+    cursor: pointer;
   }
   .table-active {
     background-color: var(--bs-table-accent-bg);
@@ -224,6 +225,7 @@ caption {
   &.table-hover > tbody > tr:hover > * {
     --bs-table-accent-bg: #{$default-background};
     color: $text-color;
+    cursor: pointer;
   }
   .table-active {
     --bs-table-accent-bg: #{$light};
