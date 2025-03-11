@@ -2204,6 +2204,18 @@ class DataService {
     };
     return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/messages/${ticket_id}`, httpOptions);
   }
+  submitMessage(ticket_id, messageText) {
+    const token = localStorage.getItem('authToken'); // Get token from localStorage
+    const httpOptions = {
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      })
+    };
+    return this.http.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/message/${ticket_id}`, {
+      message: messageText
+    }, httpOptions);
+  }
   getQrCode() {
     return this.http.get('assets/JSON/qrcode.json').pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_1__.map)(res => {
       return res;
@@ -2570,7 +2582,7 @@ class SidebarService {
         subRoutes: [],
         access: ["Platform Admin"]
       }, {
-        menuValue: 'Refferal',
+        menuValue: 'Referral',
         icon: 'user',
         route: _core_index__WEBPACK_IMPORTED_MODULE_0__.routes.refferal,
         hasSubRoute: false,
