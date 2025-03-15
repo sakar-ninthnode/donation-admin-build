@@ -540,6 +540,8 @@ caption {
     .table-responsive {
         padding: 24px;
         border-top: 1px solid $gray-400;
+        overflow-x: auto;
+        overflow-y: hidden !important;
         .dataTables_wrapper {
             border: 0;
             padding: 0;

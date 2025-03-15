@@ -5690,7 +5690,7 @@ fieldset:disabled .btn {
 .form-floating > .form-control:focus ~ label::after,
 .form-floating > .form-control:not(:placeholder-shown) ~ label::after,
 .form-floating > .form-select ~ label::after {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   border-radius: 4px;
 }
 

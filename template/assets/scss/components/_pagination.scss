@@ -57,7 +57,7 @@
             .page-link {
                 border-radius: $border-radius;
                 background-color: $primary;
-                color: $white;
+                color: #333 !important;
             }
             &:hover {
                 .page-link {
@@ -124,7 +124,7 @@
         &.active {
             .page-link {
                 background-color: $primary;
-                color: $white;
+                color: #333 !important;
             }
             &:hover {
                 .page-link {
@@ -154,7 +154,7 @@
                 border: 0;
                 border-radius: $border-radius;
                 background-color: $primary;
-                color: $white;
+                color: #333 !important;
             }
             &:hover {
                 .page-link {

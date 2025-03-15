@@ -26,9 +26,6 @@ const routes = [{
 }, {
   path: '',
   loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_auth_auth_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./auth/auth.module */ 60841)).then(m => m.AuthModule)
-}, {
-  path: 'error-pages',
-  loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_error-pages_error-pages_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./error-pages/error-pages.module */ 24079)).then(m => m.ErrorPagesModule)
 }
 // {
 //   path: '**',
@@ -245,185 +242,6 @@ class LoaderComponent {
     });
   }
 }
-
-/***/ }),
-
-/***/ 42362:
-/*!***********************************************************************************************!*\
-  !*** ./src/app/core-component/settings/common/settings-sidebar/settings-sidebar.component.ts ***!
-  \***********************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   SettingsSidebarComponent: () => (/* binding */ SettingsSidebarComponent)
-/* harmony export */ });
-/* harmony import */ var src_app_core_helpers_routes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/app/core/helpers/routes */ 4450);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 37580);
-/* harmony import */ var src_app_core_service_common_common_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/core/service/common/common.service */ 53410);
-/* harmony import */ var src_app_core_service_sidebar_sidebar_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/core/service/sidebar/sidebar.service */ 79950);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ 60316);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ 95072);
-
-
-
-
-
-
-const _c0 = a0 => ({
-  "subdrop": a0
-});
-const _c1 = (a0, a1) => ({
-  "d-block": a0,
-  "d-none": a1
-});
-function SettingsSidebarComponent_For_7_For_8_Template(rf, ctx) {
-  if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "li")(1, "a", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-  }
-  if (rf & 2) {
-    const subMenu_r4 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("routerLink", subMenu_r4.routes);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate"](subMenu_r4.title);
-  }
-}
-function SettingsSidebarComponent_For_7_Template(rf, ctx) {
-  if (rf & 1) {
-    const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "li", 5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function SettingsSidebarComponent_For_7_Template_li_click_0_listener() {
-      const menu_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r1).$implicit;
-      const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
-      return _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵresetView"](ctx_r2.toggleSubMenu(menu_r2));
-    });
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](1, "a", 6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](2, "i");
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](3, "span");
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](5, "span", 7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](6, "ul", 8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrepeaterCreate"](7, SettingsSidebarComponent_For_7_For_8_Template, 3, 2, "li", null, _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrepeaterTrackByIdentity"]);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-  }
-  if (rf & 2) {
-    const menu_r2 = ctx.$implicit;
-    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction1"](7, _c0, menu_r2.expanded));
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("active", ctx_r2.page === menu_r2.page);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassMap"](menu_r2.icon);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate"](menu_r2.title);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction2"](9, _c1, menu_r2.expanded, !menu_r2.expanded));
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrepeater"](menu_r2.subMenu);
-  }
-}
-class SettingsSidebarComponent {
-  constructor(common, setting) {
-    this.common = common;
-    this.setting = setting;
-    this.routes = src_app_core_helpers_routes__WEBPACK_IMPORTED_MODULE_0__.routes;
-    this.base = '';
-    this.page = '';
-    this.last = '';
-    this.menuItems = [];
-    this.common.base.subscribe(base => {
-      this.base = base;
-    });
-    this.common.page.subscribe(page => {
-      this.page = page;
-    });
-    this.common.last.subscribe(last => {
-      this.last = last;
-    });
-    this.menuItems = this.setting.settings_sidebar;
-  }
-  toggleSubMenu(menuItem) {
-    menuItem.expanded = !menuItem.expanded;
-  }
-  static {
-    this.ɵfac = function SettingsSidebarComponent_Factory(t) {
-      return new (t || SettingsSidebarComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](src_app_core_service_common_common_service__WEBPACK_IMPORTED_MODULE_1__.CommonService), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](src_app_core_service_sidebar_sidebar_service__WEBPACK_IMPORTED_MODULE_2__.SidebarService));
-    };
-  }
-  static {
-    this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({
-      type: SettingsSidebarComponent,
-      selectors: [["app-settings-sidebar"]],
-      decls: 8,
-      vars: 0,
-      consts: [["id", "sidebar2", 1, "sidebars", "settings-sidebar", "stickybar"], [1, "sidebar-inner", "slimscroll"], ["id", "sidebar-menu5", 1, "sidebar-menu"], [1, "submenu-open"], [1, "submenu", 3, "ngClass"], [1, "submenu", 3, "click", "ngClass"], ["href", "javascript:void(0);"], [1, "menu-arrow"], [3, "ngClass"], ["routerLinkActive", "active", 3, "routerLink"]],
-      template: function SettingsSidebarComponent_Template(rf, ctx) {
-        if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "ul")(4, "li", 3)(5, "ul");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrepeaterCreate"](6, SettingsSidebarComponent_For_7_Template, 9, 12, "li", 4, _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrepeaterTrackByIdentity"]);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()()()()();
-        }
-        if (rf & 2) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](6);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrepeater"](ctx.menuItems);
-        }
-      },
-      dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_4__.NgClass, _angular_router__WEBPACK_IMPORTED_MODULE_5__.RouterLink, _angular_router__WEBPACK_IMPORTED_MODULE_5__.RouterLinkActive],
-      styles: ["/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */"],
-      changeDetection: 0
-    });
-  }
-}
-
-/***/ }),
-
-/***/ 25165:
-/*!********************************************************************************************!*\
-  !*** ./src/app/core-component/settings/common/settings-sidebar/settings-sidebar.module.ts ***!
-  \********************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   SettingsSidebarModule: () => (/* binding */ SettingsSidebarModule)
-/* harmony export */ });
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ 60316);
-/* harmony import */ var _settings_sidebar_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./settings-sidebar.component */ 42362);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ 95072);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 37580);
-
-
-
-
-class SettingsSidebarModule {
-  static {
-    this.ɵfac = function SettingsSidebarModule_Factory(t) {
-      return new (t || SettingsSidebarModule)();
-    };
-  }
-  static {
-    this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({
-      type: SettingsSidebarModule
-    });
-  }
-  static {
-    this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({
-      imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__.CommonModule, _angular_router__WEBPACK_IMPORTED_MODULE_3__.RouterModule]
-    });
-  }
-}
-(function () {
-  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](SettingsSidebarModule, {
-    declarations: [_settings_sidebar_component__WEBPACK_IMPORTED_MODULE_0__.SettingsSidebarComponent],
-    imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__.CommonModule, _angular_router__WEBPACK_IMPORTED_MODULE_3__.RouterModule],
-    exports: [_settings_sidebar_component__WEBPACK_IMPORTED_MODULE_0__.SettingsSidebarComponent]
-  });
-})();
 
 /***/ }),
 
@@ -1547,12 +1365,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   DataService: () => (/* binding */ DataService)
 /* harmony export */ });
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common/http */ 46443);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ 46443);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ 70271);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ 77919);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ 95429);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs */ 95429);
 /* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../environments/environment */ 45312);
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ 61318);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/operators */ 61318);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core */ 37580);
 
 
@@ -1613,37 +1431,58 @@ class DataService {
   //       })
   //     );
   // }
-  getCategoryList() {
+  getCategoryList(page) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
+    let pageNum = page || 1;
     if (!token) {
       return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => new Error('No authentication token found'));
     }
-    return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.from)(fetch(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/categories`, {
-      method: 'GET',
-      headers: {
+    let apiUrl = '';
+    apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/categories?page=${pageNum}&page_size=10`;
+    const httpOptions = {
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
-      }
-    }).then(response => {
-      if (!response.ok) {
-        return response.json().then(err => {
-          throw new Error(err.message || 'Failed to fetch users');
-        });
-      }
-      return response.json();
-    }).then(data => ({
-      data: data.results || [],
-      // Ensure it's an array
-      totalData: data.results.length || 0 // Provide a default number
-    }))).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_4__.catchError)(error => {
-      console.error('Fetch error:', error);
-      return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => new Error(error.message || 'Something went wrong!'));
-    }));
+      })
+    };
+    return this.http.get(apiUrl, httpOptions);
   }
+  // public getCategoryList(): Observable<apiResultFormat> {
+  //   const token = localStorage.getItem('authToken'); // Get token from localStorage
+  //   if (!token) {
+  //     return throwError(() => new Error('No authentication token found'));
+  //   }
+  //   return from(
+  //     fetch(`${environment.BACKEND_URL}/admin/categories`, {
+  //       method: 'GET',
+  //       headers: {
+  //         'Authorization': `Bearer ${token}`,
+  //         'Content-Type': 'application/json'
+  //       }
+  //     })
+  //     .then(response => {
+  //       if (!response.ok) {
+  //         return response.json().then(err => {
+  //           throw new Error(err.message || 'Failed to fetch users');
+  //         });
+  //       }
+  //       return response.json();
+  //     })
+  //     .then(data => ({
+  //       data: data.results || [], // Ensure it's an array
+  //       totalData: data.results.length || 0, // Provide a default number
+  //     }))
+  //   ).pipe(
+  //     catchError(error => {
+  //       console.error('Fetch error:', error);
+  //       return throwError(() => new Error(error.message || 'Something went wrong!'));
+  //     })
+  //   );
+  // }
   createCategory(categoryData) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     const httpOptions = {
-      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
       })
@@ -1653,7 +1492,7 @@ class DataService {
   updateCategory(editCategoryId, userData) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     const httpOptions = {
-      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
       })
@@ -1670,37 +1509,26 @@ class DataService {
       return res;
     }));
   }
-  getAnnouncementList() {
+  getAnnouncementList(page) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
+    let pageNum = page || 1;
     if (!token) {
       return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => new Error('No authentication token found'));
     }
-    return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.from)(fetch(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/announcements`, {
-      method: 'GET',
-      headers: {
+    let apiUrl = '';
+    apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/announcements?page=${pageNum}&page_size=10`;
+    const httpOptions = {
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
-      }
-    }).then(response => {
-      if (!response.ok) {
-        return response.json().then(err => {
-          throw new Error(err.message || 'Failed to fetch users');
-        });
-      }
-      return response.json();
-    }).then(data => ({
-      data: data.results.announcements || [],
-      // Ensure it's an array
-      totalData: data.results.announcements.length || 0 // Provide a default number
-    }))).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_4__.catchError)(error => {
-      console.error('Fetch error:', error);
-      return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => new Error(error.message || 'Something went wrong!'));
-    }));
+      })
+    };
+    return this.http.get(apiUrl, httpOptions);
   }
   createAnnouncement(userData) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     const httpOptions = {
-      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
       })
@@ -1710,7 +1538,7 @@ class DataService {
   updateAnnouncement(editAnnouncementId, userData) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     const httpOptions = {
-      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
       })
@@ -1720,7 +1548,7 @@ class DataService {
   deleteAnnouncement(editAnnouncementId) {
     const token = localStorage.getItem('authToken') || '';
     const httpOptions = {
-      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
       })
@@ -1955,7 +1783,7 @@ class DataService {
   getDonationList(stat) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     const httpOptions = {
-      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
       })
@@ -1969,7 +1797,7 @@ class DataService {
   getSubcategoryConditions(subcategory_id) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     const httpOptions = {
-      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
       })
@@ -1979,7 +1807,7 @@ class DataService {
   updateDonationStatus(donation_id, donationData) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     const httpOptions = {
-      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
       })
@@ -1989,7 +1817,7 @@ class DataService {
   updateDonationCondition(donated_product_id, donationData) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     const httpOptions = {
-      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
       })
@@ -2068,7 +1896,7 @@ class DataService {
   deleteUser(userId) {
     const token = localStorage.getItem('authToken') || '';
     const httpOptions = {
-      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
       })
@@ -2078,7 +1906,7 @@ class DataService {
   createUser(userData) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     const httpOptions = {
-      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
       })
@@ -2088,15 +1916,16 @@ class DataService {
   updateUser(editUserId, userData) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     const httpOptions = {
-      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
       })
     };
     return this.http.patch(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/users/${editUserId}`, userData, httpOptions);
   }
-  getUsers(roleId) {
+  getUsers(roleId, page) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
+    let pageNum = page || 1;
     if (!token) {
       return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => new Error('No authentication token found'));
     }
@@ -2104,36 +1933,22 @@ class DataService {
     if (roleId) {
       apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/users?filter_by_role_id=${roleId}&page=1&page_size=10`;
     } else {
-      apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/users?page=1&page_size=10`;
+      apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/users?page=${pageNum}&page_size=10`;
     }
-    return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.from)(fetch(apiUrl, {
-      method: 'GET',
-      headers: {
+    const httpOptions = {
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
-      }
-    }).then(response => {
-      if (!response.ok) {
-        return response.json().then(err => {
-          throw new Error(err.message || 'Failed to fetch users');
-        });
-      }
-      return response.json();
-    }).then(data => ({
-      data: data.results.users || [],
-      // Ensure it's an array
-      totalData: data.results.users.length || 0 // Provide a default number
-    }))).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_4__.catchError)(error => {
-      console.error('Fetch error:', error);
-      return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => new Error(error.message || 'Something went wrong!'));
-    }));
+      })
+    };
+    return this.http.get(apiUrl, httpOptions);
   }
   getUserRoles() {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     if (!token) {
       return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => new Error('No authentication token found'));
     }
-    return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.from)(fetch(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/roles`, {
+    return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.from)(fetch(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/roles`, {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${token}`,
@@ -2150,7 +1965,7 @@ class DataService {
       data: data.results || [],
       // Ensure it's an array
       totalData: data.results.length || 0 // Provide a default number
-    }))).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_4__.catchError)(error => {
+    }))).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.catchError)(error => {
       console.error('Fetch error:', error);
       return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => new Error(error.message || 'Something went wrong!'));
     }));
@@ -2161,7 +1976,7 @@ class DataService {
       return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => new Error('No authentication token found'));
     }
     let apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/users`;
-    return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.from)(fetch(apiUrl, {
+    return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.from)(fetch(apiUrl, {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${token}`,
@@ -2179,7 +1994,7 @@ class DataService {
       data: data.results.users || [],
       // Ensure it's an array
       totalData: data.results.users.length || 0 // Provide a default number
-    }))).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_4__.catchError)(error => {
+    }))).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.catchError)(error => {
       console.error('Fetch error:', error);
       return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => new Error(error.message || 'Something went wrong!'));
     }));
@@ -2187,7 +2002,7 @@ class DataService {
   getTicketsByUserId(userId) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     const httpOptions = {
-      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
       })
@@ -2197,7 +2012,7 @@ class DataService {
   getMessagesByTicketId(ticket_id) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     const httpOptions = {
-      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
       })
@@ -2207,7 +2022,7 @@ class DataService {
   submitMessage(ticket_id, messageText) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     const httpOptions = {
-      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
       })
@@ -2248,37 +2063,26 @@ class DataService {
   //     })
   //   );
   // }
-  getSubCategories() {
+  getSubCategories(page) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
+    let pageNum = page || 1;
     if (!token) {
       return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => new Error('No authentication token found'));
     }
-    return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.from)(fetch(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/subcategories`, {
-      method: 'GET',
-      headers: {
+    let apiUrl = '';
+    apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/subcategories?page=${pageNum}&page_size=10`;
+    const httpOptions = {
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
-      }
-    }).then(response => {
-      if (!response.ok) {
-        return response.json().then(err => {
-          throw new Error(err.message || 'Failed to fetch users');
-        });
-      }
-      return response.json();
-    }).then(data => ({
-      data: data.results.subcategories || [],
-      // Ensure it's an array
-      totalData: data.results.length || 0 // Provide a default number
-    }))).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_4__.catchError)(error => {
-      console.error('Fetch error:', error);
-      return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => new Error(error.message || 'Something went wrong!'));
-    }));
+      })
+    };
+    return this.http.get(apiUrl, httpOptions);
   }
   createSubCategory(categoryData) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     const httpOptions = {
-      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
       })
@@ -2292,7 +2096,7 @@ class DataService {
   updateSubCategory(categoryData) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     const httpOptions = {
-      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
       })
@@ -2306,7 +2110,7 @@ class DataService {
   updateSubCategoryConditions(categoryData) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     const httpOptions = {
-      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
       })
@@ -2329,20 +2133,21 @@ class DataService {
   //     })
   //   );
   // }
-  getWareHouse() {
+  getWareHouse(page) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
+    let pageNum = page || 1;
     const httpOptions = {
-      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
       })
     };
-    return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/warehouse`, httpOptions);
+    return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/warehouse?page=${pageNum}&page_size=10`, httpOptions);
   }
   createWareHouse(warehouseData) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     const httpOptions = {
-      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
       })
@@ -2352,7 +2157,7 @@ class DataService {
   updateWareHouse(editWarehouseId, warehouseData) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     const httpOptions = {
-      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpHeaders({
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
       })
@@ -2431,7 +2236,7 @@ class DataService {
   }
   static {
     this.ɵfac = function DataService_Factory(t) {
-      return new (t || DataService)(_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpClient));
+      return new (t || DataService)(_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpClient));
     };
   }
   static {
@@ -6163,222 +5968,115 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   CustomPaginationComponent: () => (/* binding */ CustomPaginationComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 37580);
-/* harmony import */ var _pagination_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pagination.service */ 96414);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ 60316);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 37580);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ 60316);
 
 
 
-const _c0 = a0 => ({
-  disabled: a0
-});
-function CustomPaginationComponent_For_13_Conditional_3_Template(rf, ctx) {
+const _c0 = () => [];
+function CustomPaginationComponent_nav_8_li_5_Template(rf, ctx) {
   if (rf & 1) {
-    const _r4 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "li", 12);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function CustomPaginationComponent_For_13_Conditional_3_Template_li_click_0_listener() {
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r4);
-      const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
-      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵresetView"](ctx_r2.moveToPage(ctx_r2.currentPage - 2));
+    const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "li")(1, "button", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function CustomPaginationComponent_nav_8_li_5_Template_button_click_1_listener() {
+      const i_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r3).index;
+      const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r1.changePage(i_r4 + 1));
     });
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "a", 13);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2, " ... ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
   }
   if (rf & 2) {
-    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("hidden", ctx_r2.currentPage === 1);
+    const i_r4 = ctx.index;
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("active", ctx_r1.pagination.current_page === i_r4 + 1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", i_r4 + 1, " ");
   }
 }
-function CustomPaginationComponent_For_13_Conditional_4_Template(rf, ctx) {
+function CustomPaginationComponent_nav_8_Template(rf, ctx) {
   if (rf & 1) {
-    const _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "li", 12);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function CustomPaginationComponent_For_13_Conditional_4_Template_li_click_0_listener() {
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r5);
-      const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
-      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵresetView"](ctx_r2.moveToPage(ctx_r2.currentPage + 2));
+    const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nav")(1, "ul", 2)(2, "li", 7)(3, "button", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function CustomPaginationComponent_nav_8_Template_button_click_3_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r1);
+      const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r1.changePage(ctx_r1.pagination.prev_page));
     });
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "a", 13);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2, " ... ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "i", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, CustomPaginationComponent_nav_8_li_5_Template, 3, 3, "li", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "li", 7)(7, "button", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function CustomPaginationComponent_nav_8_Template_button_click_7_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r1);
+      const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r1.changePage(ctx_r1.pagination.next_page));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](8, "i", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
   }
   if (rf & 2) {
-    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("hidden", ctx_r2.currentPage >= ctx_r2.pageNumberArray[ctx_r2.pageNumberArray.length - 2] || ctx_r2.totalData < ctx_r2.serialNumberArray[ctx_r2.serialNumberArray.length - 1]);
-  }
-}
-function CustomPaginationComponent_For_13_Template(rf, ctx) {
-  if (rf & 1) {
-    const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "li", 6)(1, "a", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function CustomPaginationComponent_For_13_Template_a_click_1_listener() {
-      const item_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r1).$implicit;
-      const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
-      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵresetView"](ctx_r2.moveToPage(item_r2));
-    });
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](3, CustomPaginationComponent_For_13_Conditional_3_Template, 3, 1, "li", 11)(4, CustomPaginationComponent_For_13_Conditional_4_Template, 3, 1, "li", 11);
-  }
-  if (rf & 2) {
-    const item_r2 = ctx.$implicit;
-    const i_r6 = ctx.$index;
-    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("active", item_r2 === ctx_r2.currentPage);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngClass", ctx_r2.pageNumberArray[ctx_r2.currentPage - 2] > item_r2 && item_r2 !== 1 && ctx_r2.pageNumberArray.length > 6 || ctx_r2.pageNumberArray[ctx_r2.currentPage] < item_r2 && item_r2 !== 1 && ctx_r2.pageNumberArray.length > 6 && ctx_r2.pageNumberArray.length !== item_r2 ? "hide-page-no" : "show-page-no");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", item_r2, " ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵconditional"](3, i_r6 === 0 && ctx_r2.pageNumberArray.length > 6 && ctx_r2.currentPage > 2 ? 3 : -1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵconditional"](4, i_r6 === ctx_r2.pageNumberArray.length - 2 && ctx_r2.pageNumberArray.length > 6 ? 4 : -1);
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("disabled", !ctx_r1.pagination.has_prev);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", !ctx_r1.pagination.has_prev);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](7, _c0).constructor(ctx_r1.pagination.total_pages));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("disabled", !ctx_r1.pagination.has_next);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", !ctx_r1.pagination.has_next);
   }
 }
 class CustomPaginationComponent {
-  //** / pagination variables
-  constructor(pagination) {
-    this.pagination = pagination;
-    this.pageSize = 10;
-    this.tableData = [];
-    // pagination variables
-    this.lastIndex = 0;
-    this.totalData = 0;
-    this.skip = 0;
-    this.limit = this.pageSize;
-    this.pageIndex = 0;
-    this.serialNumberArray = [];
-    this.currentPage = 1;
-    this.pageNumberArray = [];
-    this.pageSelection = [];
-    this.totalPages = 0;
-    this.tableData = [];
-    this.pagination.calculatePageSize.subscribe(res => {
-      this.calculateTotalPages(res.totalData, res.pageSize, res.tableData, res.serialNumberArray);
-      this.pageSize = res.pageSize;
-    });
-    this.pagination.changePagesize.subscribe(res => {
-      this.changePageSize(res.pageSize);
-    });
+  constructor() {
+    this.pageChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter(); // Output event to emit page change
   }
-  getMoreData(event) {
-    if (event == 'next') {
-      this.currentPage++;
-      this.pageIndex = this.currentPage - 1;
-      this.limit += this.pageSize;
-      this.skip = this.pageSize * this.pageIndex;
-      // this.getTableData();
-      this.pagination.tablePageSize.next({
-        skip: this.skip,
-        limit: this.limit,
-        pageSize: this.pageSize
-      });
-    } else if (event == 'previous') {
-      this.currentPage--;
-      this.pageIndex = this.currentPage - 1;
-      this.limit -= this.pageSize;
-      this.skip = this.pageSize * this.pageIndex;
-      // this.getTableData();
-      this.pagination.tablePageSize.next({
-        skip: this.skip,
-        limit: this.limit,
-        pageSize: this.pageSize
-      });
-    }
-  }
-  moveToPage(pageNumber) {
-    this.currentPage = pageNumber;
-    this.skip = this.pageSelection[pageNumber - 1].skip;
-    this.limit = this.pageSelection[pageNumber - 1].limit;
-    if (pageNumber > this.currentPage) {
-      this.pageIndex = pageNumber - 1;
-    } else if (pageNumber < this.currentPage) {
-      this.pageIndex = pageNumber + 1;
-    }
-    // this.getTableData();
-    this.pagination.tablePageSize.next({
-      skip: this.skip,
-      limit: this.limit,
-      pageSize: this.pageSize
-    });
-  }
-  changePageSize(pageSize) {
-    this.pageSelection = [];
-    this.limit = pageSize;
-    this.skip = 0;
-    this.currentPage = 1;
-    // this.getTableData();
-    this.pagination.tablePageSize.next({
-      skip: this.skip,
-      limit: this.limit,
-      pageSize: this.pageSize
-    });
-  }
-  calculateTotalPages(totalData, pageSize, tableData, serialNumberArray) {
-    this.tableData = tableData;
-    this.pageNumberArray = [];
-    this.serialNumberArray = serialNumberArray;
-    this.totalData = totalData;
-    this.totalPages = totalData / pageSize;
-    if (this.totalPages % 1 != 0) {
-      this.totalPages = Math.trunc(this.totalPages + 1);
-    }
-    for (let i = 1; i <= this.totalPages; i++) {
-      const limit = pageSize * i;
-      const skip = limit - pageSize;
-      this.pageNumberArray.push(i);
-      this.pageSelection.push({
-        skip: skip,
-        limit: limit
-      });
+  changePage(page) {
+    if (page >= 1 && page <= this.pagination.total_pages) {
+      this.pageChange.emit(page);
     }
   }
   static {
     this.ɵfac = function CustomPaginationComponent_Factory(t) {
-      return new (t || CustomPaginationComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_pagination_service__WEBPACK_IMPORTED_MODULE_0__.PaginationService));
+      return new (t || CustomPaginationComponent)();
     };
   }
   static {
-    this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({
+    this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: CustomPaginationComponent,
       selectors: [["app-custom-pagination"]],
-      decls: 17,
-      vars: 8,
-      consts: [[1, "table-footer"], [1, "dataTables_length"], [1, "pagination"], [1, "entries"], [1, "col-sm-12", "col-md-7"], [1, "pagination_section"], [1, "page-item", 3, "ngClass"], ["href", "javascript:void(0);", "tabindex", "-1", 1, "page-link", 3, "click"], [1, "fa", "fa-angle-left"], ["href", "javascript:void(0);", 1, "page-link", 3, "click"], [1, "fa", "fa-angle-right"], [1, "page-item", 3, "hidden"], [1, "page-item", 3, "click", "hidden"], ["href", "javascript:void(0);", 1, "page-link"]],
+      inputs: {
+        pagination: "pagination"
+      },
+      outputs: {
+        pageChange: "pageChange"
+      },
+      decls: 9,
+      vars: 3,
+      consts: [[1, "table-footer"], [1, "dataTables_length"], [1, "pagination"], [1, "entries"], [1, "col-sm-12", "col-md-7"], [1, "pagination_section"], [4, "ngIf"], [1, "page-item"], [1, "page-link", 3, "click", "disabled"], [1, "fa", "fa-angle-left"], [4, "ngFor", "ngForOf"], [1, "fa", "fa-angle-right"], [1, "page-link", 3, "click"]],
       template: function CustomPaginationComponent_Template(rf, ctx) {
         if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0)(1, "div", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](2, "label");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "div", 2)(4, "div", 3);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](5);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](6, "div", 4)(7, "div", 5)(8, "ul", 2)(9, "li", 6)(10, "a", 7);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function CustomPaginationComponent_Template_a_click_10_listener() {
-            return ctx.getMoreData("previous");
-          });
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](11, "i", 8);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrepeaterCreate"](12, CustomPaginationComponent_For_13_Template, 5, 6, null, null, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrepeaterTrackByIdentity"]);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](14, "li", 6)(15, "a", 9);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function CustomPaginationComponent_Template_a_click_15_listener() {
-            return ctx.getMoreData("next");
-          });
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](16, "i", 10);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()()()()()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0)(1, "div", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 2)(4, "div", 3);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 4)(7, "div", 5);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](8, CustomPaginationComponent_nav_8_Template, 9, 8, "nav", 6);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
         }
         if (rf & 2) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](5);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate2"](" Showing ", ctx.limit, " of ", ctx.totalData, " Results ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction1"](4, _c0, ctx.currentPage === 1));
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrepeater"](ctx.pageNumberArray);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction1"](6, _c0, ctx.currentPage === ctx.pageNumberArray[ctx.pageNumberArray.length - 1] || ctx.tableData.length === 0));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"](" Showing ", ctx.pagination.page_size, " of ", ctx.pagination.total_items, " Results ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.pagination.total_pages > 1);
         }
       },
-      dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_2__.NgClass],
+      dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_1__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_1__.NgIf],
       styles: ["/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */"]
     });
   }
@@ -6428,54 +6126,6 @@ class CustomPaginationModule {
     exports: [_custom_pagination_component__WEBPACK_IMPORTED_MODULE_0__.CustomPaginationComponent]
   });
 })();
-
-/***/ }),
-
-/***/ 96414:
-/*!****************************************************************!*\
-  !*** ./src/app/shared/custom-pagination/pagination.service.ts ***!
-  \****************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   PaginationService: () => (/* binding */ PaginationService)
-/* harmony export */ });
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rxjs */ 75797);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 37580);
-
-
-class PaginationService {
-  constructor() {
-    this.tablePageSize = new rxjs__WEBPACK_IMPORTED_MODULE_0__.BehaviorSubject({
-      skip: 0,
-      limit: 10,
-      pageSize: 10
-    });
-    this.calculatePageSize = new rxjs__WEBPACK_IMPORTED_MODULE_0__.BehaviorSubject({
-      totalData: 0,
-      pageSize: 10,
-      tableData: [],
-      tableDataCopy: [],
-      serialNumberArray: []
-    });
-    this.changePagesize = new rxjs__WEBPACK_IMPORTED_MODULE_0__.BehaviorSubject({
-      pageSize: 10
-    });
-  }
-  static {
-    this.ɵfac = function PaginationService_Factory(t) {
-      return new (t || PaginationService)();
-    };
-  }
-  static {
-    this.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
-      token: PaginationService,
-      factory: PaginationService.ɵfac,
-      providedIn: 'root'
-    });
-  }
-}
 
 /***/ }),
 
@@ -6646,40 +6296,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   sharedModule: () => (/* binding */ sharedModule)
 /* harmony export */ });
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/common/http */ 46443);
-/* harmony import */ var ng_apexcharts__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ng-apexcharts */ 33117);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/common/http */ 46443);
+/* harmony import */ var ng_apexcharts__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ng-apexcharts */ 33117);
 /* harmony import */ var _core_core_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/core.index */ 82351);
 /* harmony import */ var _core_interceptor_spinner_spinner_interceptor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/interceptor/spinner/spinner.interceptor */ 8326);
 /* harmony import */ var _material_material_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./material/material.module */ 36403);
 /* harmony import */ var _feather_feather_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./feather/feather.module */ 31747);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/forms */ 34456);
-/* harmony import */ var ngx_owl_carousel_o__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ngx-owl-carousel-o */ 96821);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/forms */ 34456);
+/* harmony import */ var ngx_owl_carousel_o__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ngx-owl-carousel-o */ 96821);
 /* harmony import */ var _custom_pagination_custom_pagination_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./custom-pagination/custom-pagination.module */ 52955);
-/* harmony import */ var _fullcalendar_angular__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @fullcalendar/angular */ 87997);
+/* harmony import */ var _fullcalendar_angular__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @fullcalendar/angular */ 87997);
 /* harmony import */ var src_app_shared_ngx_bootstrap_ngxbootstrap_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/shared/ngx-bootstrap/ngxbootstrap.module */ 97086);
-/* harmony import */ var _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/cdk/drag-drop */ 50854);
-/* harmony import */ var ng2_charts__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ng2-charts */ 57839);
-/* harmony import */ var ngx_editor__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ngx-editor */ 97283);
-/* harmony import */ var ngx_bootstrap_popover__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ngx-bootstrap/popover */ 64393);
-/* harmony import */ var _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @angular/material/tooltip */ 80640);
-/* harmony import */ var primeng_toast__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! primeng/toast */ 61225);
-/* harmony import */ var ngx_bootstrap_datepicker__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ngx-bootstrap/datepicker */ 98379);
-/* harmony import */ var _core_component_settings_common_settings_sidebar_settings_sidebar_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../core-component/settings/common/settings-sidebar/settings-sidebar.module */ 25165);
-/* harmony import */ var ngx_mask__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ngx-mask */ 46015);
-/* harmony import */ var ngx_dropzone__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ngx-dropzone */ 53947);
-/* harmony import */ var _angular_material_stepper__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @angular/material/stepper */ 56622);
-/* harmony import */ var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! @angular/material/form-field */ 24950);
-/* harmony import */ var _angular_material_chips__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! @angular/material/chips */ 12772);
-/* harmony import */ var _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! @angular/material/autocomplete */ 79771);
-/* harmony import */ var lightgallery_angular__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! lightgallery/angular */ 4935);
-/* harmony import */ var ngx_mat_intl_tel_input__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ngx-mat-intl-tel-input */ 81503);
-/* harmony import */ var ngx_countup__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ngx-countup */ 67305);
-/* harmony import */ var ngx_bootstrap_timepicker__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ngx-bootstrap/timepicker */ 3387);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common */ 60316);
-/* harmony import */ var angular_feather__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! angular-feather */ 54341);
-/* harmony import */ var angular_feather_icons__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! angular-feather/icons */ 51474);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/core */ 37580);
-
+/* harmony import */ var _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/cdk/drag-drop */ 50854);
+/* harmony import */ var ng2_charts__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ng2-charts */ 57839);
+/* harmony import */ var ngx_editor__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ngx-editor */ 97283);
+/* harmony import */ var ngx_bootstrap_popover__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ngx-bootstrap/popover */ 64393);
+/* harmony import */ var _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @angular/material/tooltip */ 80640);
+/* harmony import */ var primeng_toast__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! primeng/toast */ 61225);
+/* harmony import */ var ngx_bootstrap_datepicker__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ngx-bootstrap/datepicker */ 98379);
+/* harmony import */ var ngx_mask__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ngx-mask */ 46015);
+/* harmony import */ var ngx_dropzone__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ngx-dropzone */ 53947);
+/* harmony import */ var _angular_material_stepper__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @angular/material/stepper */ 56622);
+/* harmony import */ var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @angular/material/form-field */ 24950);
+/* harmony import */ var _angular_material_chips__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! @angular/material/chips */ 12772);
+/* harmony import */ var _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! @angular/material/autocomplete */ 79771);
+/* harmony import */ var lightgallery_angular__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! lightgallery/angular */ 4935);
+/* harmony import */ var ngx_mat_intl_tel_input__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ngx-mat-intl-tel-input */ 81503);
+/* harmony import */ var ngx_countup__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ngx-countup */ 67305);
+/* harmony import */ var ngx_bootstrap_timepicker__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ngx-bootstrap/timepicker */ 3387);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ 60316);
+/* harmony import */ var angular_feather__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! angular-feather */ 54341);
+/* harmony import */ var angular_feather_icons__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! angular-feather/icons */ 51474);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/core */ 37580);
 
 
 
@@ -6717,7 +6365,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const icons = {
-  Tool: angular_feather_icons__WEBPACK_IMPORTED_MODULE_7__.Tool
+  Tool: angular_feather_icons__WEBPACK_IMPORTED_MODULE_6__.Tool
 };
 class sharedModule {
   static {
@@ -6726,29 +6374,29 @@ class sharedModule {
     };
   }
   static {
-    this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineNgModule"]({
+    this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineNgModule"]({
       type: sharedModule
     });
   }
   static {
-    this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineInjector"]({
-      providers: [_core_core_index__WEBPACK_IMPORTED_MODULE_0__.DataService, _angular_common__WEBPACK_IMPORTED_MODULE_9__.DatePipe, ngx_bootstrap_timepicker__WEBPACK_IMPORTED_MODULE_10__.TimepickerActions, ngx_bootstrap_datepicker__WEBPACK_IMPORTED_MODULE_11__.BsDatepickerConfig, {
-        provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_12__.HTTP_INTERCEPTORS,
+    this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineInjector"]({
+      providers: [_core_core_index__WEBPACK_IMPORTED_MODULE_0__.DataService, _angular_common__WEBPACK_IMPORTED_MODULE_8__.DatePipe, ngx_bootstrap_timepicker__WEBPACK_IMPORTED_MODULE_9__.TimepickerActions, ngx_bootstrap_datepicker__WEBPACK_IMPORTED_MODULE_10__.BsDatepickerConfig, {
+        provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_11__.HTTP_INTERCEPTORS,
         useClass: _core_interceptor_spinner_spinner_interceptor__WEBPACK_IMPORTED_MODULE_1__.SpinnerInterceptor,
         multi: true
       }],
-      imports: [_feather_feather_module__WEBPACK_IMPORTED_MODULE_3__.FeatherIconModule, _material_material_module__WEBPACK_IMPORTED_MODULE_2__.MaterialModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_12__.HttpClientModule, ng_apexcharts__WEBPACK_IMPORTED_MODULE_13__.NgApexchartsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_14__.FormsModule, ngx_owl_carousel_o__WEBPACK_IMPORTED_MODULE_15__.CarouselModule, _custom_pagination_custom_pagination_module__WEBPACK_IMPORTED_MODULE_4__.CustomPaginationModule, _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_16__.DragDropModule, ngx_mask__WEBPACK_IMPORTED_MODULE_17__.NgxMaskModule.forRoot({
+      imports: [_feather_feather_module__WEBPACK_IMPORTED_MODULE_3__.FeatherIconModule, _material_material_module__WEBPACK_IMPORTED_MODULE_2__.MaterialModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_11__.HttpClientModule, ng_apexcharts__WEBPACK_IMPORTED_MODULE_12__.NgApexchartsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_13__.FormsModule, ngx_owl_carousel_o__WEBPACK_IMPORTED_MODULE_14__.CarouselModule, _custom_pagination_custom_pagination_module__WEBPACK_IMPORTED_MODULE_4__.CustomPaginationModule, _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_15__.DragDropModule, ngx_mask__WEBPACK_IMPORTED_MODULE_16__.NgxMaskModule.forRoot({
         showMaskTyped: false
-      }), ng2_charts__WEBPACK_IMPORTED_MODULE_18__.NgChartsModule.forRoot(), _fullcalendar_angular__WEBPACK_IMPORTED_MODULE_19__.FullCalendarModule, src_app_shared_ngx_bootstrap_ngxbootstrap_module__WEBPACK_IMPORTED_MODULE_5__.NgxbootstrapModule, ngx_editor__WEBPACK_IMPORTED_MODULE_20__.NgxEditorModule, ngx_bootstrap_popover__WEBPACK_IMPORTED_MODULE_21__.PopoverModule, _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_22__.MatTooltipModule, primeng_toast__WEBPACK_IMPORTED_MODULE_23__.ToastModule, ngx_bootstrap_datepicker__WEBPACK_IMPORTED_MODULE_11__.BsDatepickerModule.forRoot(), _core_component_settings_common_settings_sidebar_settings_sidebar_module__WEBPACK_IMPORTED_MODULE_6__.SettingsSidebarModule, ngx_mask__WEBPACK_IMPORTED_MODULE_17__.NgxMaskModule.forRoot({
+      }), ng2_charts__WEBPACK_IMPORTED_MODULE_17__.NgChartsModule.forRoot(), _fullcalendar_angular__WEBPACK_IMPORTED_MODULE_18__.FullCalendarModule, src_app_shared_ngx_bootstrap_ngxbootstrap_module__WEBPACK_IMPORTED_MODULE_5__.NgxbootstrapModule, ngx_editor__WEBPACK_IMPORTED_MODULE_19__.NgxEditorModule, ngx_bootstrap_popover__WEBPACK_IMPORTED_MODULE_20__.PopoverModule, _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_21__.MatTooltipModule, primeng_toast__WEBPACK_IMPORTED_MODULE_22__.ToastModule, ngx_bootstrap_datepicker__WEBPACK_IMPORTED_MODULE_10__.BsDatepickerModule.forRoot(), ngx_mask__WEBPACK_IMPORTED_MODULE_16__.NgxMaskModule.forRoot({
         showMaskTyped: false
-      }), ngx_dropzone__WEBPACK_IMPORTED_MODULE_24__.NgxDropzoneModule, _angular_material_stepper__WEBPACK_IMPORTED_MODULE_25__.MatStepperModule, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_26__.MatFormFieldModule, _angular_material_chips__WEBPACK_IMPORTED_MODULE_27__.MatChipsModule, _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_28__.MatAutocompleteModule, _angular_forms__WEBPACK_IMPORTED_MODULE_14__.ReactiveFormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_14__.ReactiveFormsModule, lightgallery_angular__WEBPACK_IMPORTED_MODULE_29__.LightgalleryModule, ngx_mat_intl_tel_input__WEBPACK_IMPORTED_MODULE_30__.NgxMatIntlTelInputComponent, ngx_countup__WEBPACK_IMPORTED_MODULE_31__.CountUpModule, ngx_bootstrap_timepicker__WEBPACK_IMPORTED_MODULE_10__.TimepickerModule, angular_feather__WEBPACK_IMPORTED_MODULE_32__.FeatherModule.pick(icons), _material_material_module__WEBPACK_IMPORTED_MODULE_2__.MaterialModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_12__.HttpClientModule, _feather_feather_module__WEBPACK_IMPORTED_MODULE_3__.FeatherIconModule, ng_apexcharts__WEBPACK_IMPORTED_MODULE_13__.NgApexchartsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_14__.FormsModule, ngx_owl_carousel_o__WEBPACK_IMPORTED_MODULE_15__.CarouselModule, _custom_pagination_custom_pagination_module__WEBPACK_IMPORTED_MODULE_4__.CustomPaginationModule, _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_16__.DragDropModule, ng2_charts__WEBPACK_IMPORTED_MODULE_18__.NgChartsModule, _fullcalendar_angular__WEBPACK_IMPORTED_MODULE_19__.FullCalendarModule, src_app_shared_ngx_bootstrap_ngxbootstrap_module__WEBPACK_IMPORTED_MODULE_5__.NgxbootstrapModule, ngx_mask__WEBPACK_IMPORTED_MODULE_17__.NgxMaskModule, ngx_editor__WEBPACK_IMPORTED_MODULE_20__.NgxEditorModule, ngx_bootstrap_popover__WEBPACK_IMPORTED_MODULE_21__.PopoverModule, _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_22__.MatTooltipModule, primeng_toast__WEBPACK_IMPORTED_MODULE_23__.ToastModule, ngx_bootstrap_datepicker__WEBPACK_IMPORTED_MODULE_11__.BsDatepickerModule, _core_component_settings_common_settings_sidebar_settings_sidebar_module__WEBPACK_IMPORTED_MODULE_6__.SettingsSidebarModule, ngx_mask__WEBPACK_IMPORTED_MODULE_17__.NgxMaskModule, ngx_dropzone__WEBPACK_IMPORTED_MODULE_24__.NgxDropzoneModule, _angular_material_stepper__WEBPACK_IMPORTED_MODULE_25__.MatStepperModule, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_26__.MatFormFieldModule, _angular_material_chips__WEBPACK_IMPORTED_MODULE_27__.MatChipsModule, _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_28__.MatAutocompleteModule, _angular_forms__WEBPACK_IMPORTED_MODULE_14__.ReactiveFormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_14__.ReactiveFormsModule, lightgallery_angular__WEBPACK_IMPORTED_MODULE_29__.LightgalleryModule, ngx_countup__WEBPACK_IMPORTED_MODULE_31__.CountUpModule, ngx_bootstrap_timepicker__WEBPACK_IMPORTED_MODULE_10__.TimepickerModule, angular_feather__WEBPACK_IMPORTED_MODULE_32__.FeatherModule]
+      }), ngx_dropzone__WEBPACK_IMPORTED_MODULE_23__.NgxDropzoneModule, _angular_material_stepper__WEBPACK_IMPORTED_MODULE_24__.MatStepperModule, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_25__.MatFormFieldModule, _angular_material_chips__WEBPACK_IMPORTED_MODULE_26__.MatChipsModule, _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_27__.MatAutocompleteModule, _angular_forms__WEBPACK_IMPORTED_MODULE_13__.ReactiveFormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_13__.ReactiveFormsModule, lightgallery_angular__WEBPACK_IMPORTED_MODULE_28__.LightgalleryModule, ngx_mat_intl_tel_input__WEBPACK_IMPORTED_MODULE_29__.NgxMatIntlTelInputComponent, ngx_countup__WEBPACK_IMPORTED_MODULE_30__.CountUpModule, ngx_bootstrap_timepicker__WEBPACK_IMPORTED_MODULE_9__.TimepickerModule, angular_feather__WEBPACK_IMPORTED_MODULE_31__.FeatherModule.pick(icons), _material_material_module__WEBPACK_IMPORTED_MODULE_2__.MaterialModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_11__.HttpClientModule, _feather_feather_module__WEBPACK_IMPORTED_MODULE_3__.FeatherIconModule, ng_apexcharts__WEBPACK_IMPORTED_MODULE_12__.NgApexchartsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_13__.FormsModule, ngx_owl_carousel_o__WEBPACK_IMPORTED_MODULE_14__.CarouselModule, _custom_pagination_custom_pagination_module__WEBPACK_IMPORTED_MODULE_4__.CustomPaginationModule, _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_15__.DragDropModule, ng2_charts__WEBPACK_IMPORTED_MODULE_17__.NgChartsModule, _fullcalendar_angular__WEBPACK_IMPORTED_MODULE_18__.FullCalendarModule, src_app_shared_ngx_bootstrap_ngxbootstrap_module__WEBPACK_IMPORTED_MODULE_5__.NgxbootstrapModule, ngx_mask__WEBPACK_IMPORTED_MODULE_16__.NgxMaskModule, ngx_editor__WEBPACK_IMPORTED_MODULE_19__.NgxEditorModule, ngx_bootstrap_popover__WEBPACK_IMPORTED_MODULE_20__.PopoverModule, _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_21__.MatTooltipModule, primeng_toast__WEBPACK_IMPORTED_MODULE_22__.ToastModule, ngx_bootstrap_datepicker__WEBPACK_IMPORTED_MODULE_10__.BsDatepickerModule, ngx_mask__WEBPACK_IMPORTED_MODULE_16__.NgxMaskModule, ngx_dropzone__WEBPACK_IMPORTED_MODULE_23__.NgxDropzoneModule, _angular_material_stepper__WEBPACK_IMPORTED_MODULE_24__.MatStepperModule, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_25__.MatFormFieldModule, _angular_material_chips__WEBPACK_IMPORTED_MODULE_26__.MatChipsModule, _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_27__.MatAutocompleteModule, _angular_forms__WEBPACK_IMPORTED_MODULE_13__.ReactiveFormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_13__.ReactiveFormsModule, lightgallery_angular__WEBPACK_IMPORTED_MODULE_28__.LightgalleryModule, ngx_countup__WEBPACK_IMPORTED_MODULE_30__.CountUpModule, ngx_bootstrap_timepicker__WEBPACK_IMPORTED_MODULE_9__.TimepickerModule, angular_feather__WEBPACK_IMPORTED_MODULE_31__.FeatherModule]
     });
   }
 }
 (function () {
-  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵsetNgModuleScope"](sharedModule, {
-    imports: [_feather_feather_module__WEBPACK_IMPORTED_MODULE_3__.FeatherIconModule, _material_material_module__WEBPACK_IMPORTED_MODULE_2__.MaterialModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_12__.HttpClientModule, ng_apexcharts__WEBPACK_IMPORTED_MODULE_13__.NgApexchartsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_14__.FormsModule, ngx_owl_carousel_o__WEBPACK_IMPORTED_MODULE_15__.CarouselModule, _custom_pagination_custom_pagination_module__WEBPACK_IMPORTED_MODULE_4__.CustomPaginationModule, _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_16__.DragDropModule, ngx_mask__WEBPACK_IMPORTED_MODULE_17__.NgxMaskModule, ng2_charts__WEBPACK_IMPORTED_MODULE_18__.NgChartsModule, _fullcalendar_angular__WEBPACK_IMPORTED_MODULE_19__.FullCalendarModule, src_app_shared_ngx_bootstrap_ngxbootstrap_module__WEBPACK_IMPORTED_MODULE_5__.NgxbootstrapModule, ngx_editor__WEBPACK_IMPORTED_MODULE_20__.NgxEditorModule, ngx_bootstrap_popover__WEBPACK_IMPORTED_MODULE_21__.PopoverModule, _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_22__.MatTooltipModule, primeng_toast__WEBPACK_IMPORTED_MODULE_23__.ToastModule, ngx_bootstrap_datepicker__WEBPACK_IMPORTED_MODULE_11__.BsDatepickerModule, _core_component_settings_common_settings_sidebar_settings_sidebar_module__WEBPACK_IMPORTED_MODULE_6__.SettingsSidebarModule, ngx_mask__WEBPACK_IMPORTED_MODULE_17__.NgxMaskModule, ngx_dropzone__WEBPACK_IMPORTED_MODULE_24__.NgxDropzoneModule, _angular_material_stepper__WEBPACK_IMPORTED_MODULE_25__.MatStepperModule, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_26__.MatFormFieldModule, _angular_material_chips__WEBPACK_IMPORTED_MODULE_27__.MatChipsModule, _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_28__.MatAutocompleteModule, _angular_forms__WEBPACK_IMPORTED_MODULE_14__.ReactiveFormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_14__.ReactiveFormsModule, lightgallery_angular__WEBPACK_IMPORTED_MODULE_29__.LightgalleryModule, ngx_mat_intl_tel_input__WEBPACK_IMPORTED_MODULE_30__.NgxMatIntlTelInputComponent, ngx_countup__WEBPACK_IMPORTED_MODULE_31__.CountUpModule, ngx_bootstrap_timepicker__WEBPACK_IMPORTED_MODULE_10__.TimepickerModule, angular_feather__WEBPACK_IMPORTED_MODULE_32__.FeatherModule],
-    exports: [_material_material_module__WEBPACK_IMPORTED_MODULE_2__.MaterialModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_12__.HttpClientModule, _feather_feather_module__WEBPACK_IMPORTED_MODULE_3__.FeatherIconModule, ng_apexcharts__WEBPACK_IMPORTED_MODULE_13__.NgApexchartsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_14__.FormsModule, ngx_owl_carousel_o__WEBPACK_IMPORTED_MODULE_15__.CarouselModule, _custom_pagination_custom_pagination_module__WEBPACK_IMPORTED_MODULE_4__.CustomPaginationModule, _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_16__.DragDropModule, ng2_charts__WEBPACK_IMPORTED_MODULE_18__.NgChartsModule, _fullcalendar_angular__WEBPACK_IMPORTED_MODULE_19__.FullCalendarModule, src_app_shared_ngx_bootstrap_ngxbootstrap_module__WEBPACK_IMPORTED_MODULE_5__.NgxbootstrapModule, ngx_mask__WEBPACK_IMPORTED_MODULE_17__.NgxMaskModule, ngx_editor__WEBPACK_IMPORTED_MODULE_20__.NgxEditorModule, ngx_bootstrap_popover__WEBPACK_IMPORTED_MODULE_21__.PopoverModule, _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_22__.MatTooltipModule, primeng_toast__WEBPACK_IMPORTED_MODULE_23__.ToastModule, ngx_bootstrap_datepicker__WEBPACK_IMPORTED_MODULE_11__.BsDatepickerModule, _core_component_settings_common_settings_sidebar_settings_sidebar_module__WEBPACK_IMPORTED_MODULE_6__.SettingsSidebarModule, ngx_mask__WEBPACK_IMPORTED_MODULE_17__.NgxMaskModule, ngx_dropzone__WEBPACK_IMPORTED_MODULE_24__.NgxDropzoneModule, _angular_material_stepper__WEBPACK_IMPORTED_MODULE_25__.MatStepperModule, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_26__.MatFormFieldModule, _angular_material_chips__WEBPACK_IMPORTED_MODULE_27__.MatChipsModule, _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_28__.MatAutocompleteModule, _angular_forms__WEBPACK_IMPORTED_MODULE_14__.ReactiveFormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_14__.ReactiveFormsModule, lightgallery_angular__WEBPACK_IMPORTED_MODULE_29__.LightgalleryModule, ngx_mat_intl_tel_input__WEBPACK_IMPORTED_MODULE_30__.NgxMatIntlTelInputComponent, ngx_countup__WEBPACK_IMPORTED_MODULE_31__.CountUpModule, ngx_bootstrap_timepicker__WEBPACK_IMPORTED_MODULE_10__.TimepickerModule, angular_feather__WEBPACK_IMPORTED_MODULE_32__.FeatherModule]
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵsetNgModuleScope"](sharedModule, {
+    imports: [_feather_feather_module__WEBPACK_IMPORTED_MODULE_3__.FeatherIconModule, _material_material_module__WEBPACK_IMPORTED_MODULE_2__.MaterialModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_11__.HttpClientModule, ng_apexcharts__WEBPACK_IMPORTED_MODULE_12__.NgApexchartsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_13__.FormsModule, ngx_owl_carousel_o__WEBPACK_IMPORTED_MODULE_14__.CarouselModule, _custom_pagination_custom_pagination_module__WEBPACK_IMPORTED_MODULE_4__.CustomPaginationModule, _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_15__.DragDropModule, ngx_mask__WEBPACK_IMPORTED_MODULE_16__.NgxMaskModule, ng2_charts__WEBPACK_IMPORTED_MODULE_17__.NgChartsModule, _fullcalendar_angular__WEBPACK_IMPORTED_MODULE_18__.FullCalendarModule, src_app_shared_ngx_bootstrap_ngxbootstrap_module__WEBPACK_IMPORTED_MODULE_5__.NgxbootstrapModule, ngx_editor__WEBPACK_IMPORTED_MODULE_19__.NgxEditorModule, ngx_bootstrap_popover__WEBPACK_IMPORTED_MODULE_20__.PopoverModule, _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_21__.MatTooltipModule, primeng_toast__WEBPACK_IMPORTED_MODULE_22__.ToastModule, ngx_bootstrap_datepicker__WEBPACK_IMPORTED_MODULE_10__.BsDatepickerModule, ngx_mask__WEBPACK_IMPORTED_MODULE_16__.NgxMaskModule, ngx_dropzone__WEBPACK_IMPORTED_MODULE_23__.NgxDropzoneModule, _angular_material_stepper__WEBPACK_IMPORTED_MODULE_24__.MatStepperModule, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_25__.MatFormFieldModule, _angular_material_chips__WEBPACK_IMPORTED_MODULE_26__.MatChipsModule, _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_27__.MatAutocompleteModule, _angular_forms__WEBPACK_IMPORTED_MODULE_13__.ReactiveFormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_13__.ReactiveFormsModule, lightgallery_angular__WEBPACK_IMPORTED_MODULE_28__.LightgalleryModule, ngx_mat_intl_tel_input__WEBPACK_IMPORTED_MODULE_29__.NgxMatIntlTelInputComponent, ngx_countup__WEBPACK_IMPORTED_MODULE_30__.CountUpModule, ngx_bootstrap_timepicker__WEBPACK_IMPORTED_MODULE_9__.TimepickerModule, angular_feather__WEBPACK_IMPORTED_MODULE_31__.FeatherModule],
+    exports: [_material_material_module__WEBPACK_IMPORTED_MODULE_2__.MaterialModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_11__.HttpClientModule, _feather_feather_module__WEBPACK_IMPORTED_MODULE_3__.FeatherIconModule, ng_apexcharts__WEBPACK_IMPORTED_MODULE_12__.NgApexchartsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_13__.FormsModule, ngx_owl_carousel_o__WEBPACK_IMPORTED_MODULE_14__.CarouselModule, _custom_pagination_custom_pagination_module__WEBPACK_IMPORTED_MODULE_4__.CustomPaginationModule, _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_15__.DragDropModule, ng2_charts__WEBPACK_IMPORTED_MODULE_17__.NgChartsModule, _fullcalendar_angular__WEBPACK_IMPORTED_MODULE_18__.FullCalendarModule, src_app_shared_ngx_bootstrap_ngxbootstrap_module__WEBPACK_IMPORTED_MODULE_5__.NgxbootstrapModule, ngx_mask__WEBPACK_IMPORTED_MODULE_16__.NgxMaskModule, ngx_editor__WEBPACK_IMPORTED_MODULE_19__.NgxEditorModule, ngx_bootstrap_popover__WEBPACK_IMPORTED_MODULE_20__.PopoverModule, _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_21__.MatTooltipModule, primeng_toast__WEBPACK_IMPORTED_MODULE_22__.ToastModule, ngx_bootstrap_datepicker__WEBPACK_IMPORTED_MODULE_10__.BsDatepickerModule, ngx_mask__WEBPACK_IMPORTED_MODULE_16__.NgxMaskModule, ngx_dropzone__WEBPACK_IMPORTED_MODULE_23__.NgxDropzoneModule, _angular_material_stepper__WEBPACK_IMPORTED_MODULE_24__.MatStepperModule, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_25__.MatFormFieldModule, _angular_material_chips__WEBPACK_IMPORTED_MODULE_26__.MatChipsModule, _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_27__.MatAutocompleteModule, _angular_forms__WEBPACK_IMPORTED_MODULE_13__.ReactiveFormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_13__.ReactiveFormsModule, lightgallery_angular__WEBPACK_IMPORTED_MODULE_28__.LightgalleryModule, ngx_mat_intl_tel_input__WEBPACK_IMPORTED_MODULE_29__.NgxMatIntlTelInputComponent, ngx_countup__WEBPACK_IMPORTED_MODULE_30__.CountUpModule, ngx_bootstrap_timepicker__WEBPACK_IMPORTED_MODULE_9__.TimepickerModule, angular_feather__WEBPACK_IMPORTED_MODULE_31__.FeatherModule]
   });
 })();
 

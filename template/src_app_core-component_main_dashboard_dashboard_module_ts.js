@@ -11,7 +11,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   AdminDashboardComponent: () => (/* binding */ AdminDashboardComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/table */ 77697);
 /* harmony import */ var src_app_core_helpers_routes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/app/core/helpers/routes */ 4450);
 /* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! sweetalert2 */ 37581);
 /* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(sweetalert2__WEBPACK_IMPORTED_MODULE_1__);
@@ -20,12 +19,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_app_core_service_settings_settings_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/core/service/settings/settings.service */ 35026);
 /* harmony import */ var src_app_core_service_data_data_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/core/service/data/data.service */ 67812);
 /* harmony import */ var src_app_shared_shared_index__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/shared/shared.index */ 31287);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/router */ 95072);
-/* harmony import */ var _angular_material_sort__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/sort */ 22047);
-/* harmony import */ var ng_apexcharts__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ng-apexcharts */ 33117);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/forms */ 34456);
-/* harmony import */ var ngx_countup__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ngx-countup */ 67305);
-
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/router */ 95072);
+/* harmony import */ var _angular_material_sort__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/sort */ 22047);
+/* harmony import */ var ng_apexcharts__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ng-apexcharts */ 33117);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/forms */ 34456);
+/* harmony import */ var ngx_countup__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ngx-countup */ 67305);
 
 
 
@@ -169,42 +167,33 @@ class AdminDashboardComponent {
     this.common.currency$.subscribe(res => {
       this.currency = res;
     });
-    this.data.getDataTable().subscribe(apiRes => {
-      this.totalData = apiRes.totalData;
-      this.pagination.tablePageSize.subscribe(res => {
-        if (this.router.url == this.routes.adminDashboard) {
-          this.getTableData({
-            skip: res.skip,
-            limit: this.totalData
-          });
-          this.pageSize = res.pageSize;
-        }
-      });
-    });
+    // this.data.getDataTable().subscribe((apiRes: apiResultFormat) => {
+    //   this.totalData = apiRes.totalData;
+    //   this.pagination.tablePageSize.subscribe((res: tablePageSize) => {
+    //     if (this.router.url == this.routes.adminDashboard) {
+    //       this.getTableData({ skip: res.skip, limit: this.totalData });
+    //       this.pageSize = res.pageSize;
+    //     }
+    //   });
+    // });
   }
   //** / pagination variables
-  getTableData(pageOption) {
-    this.data.getExpiredProduct().subscribe(apiRes => {
-      this.tableData = [];
-      this.serialNumberArray = [];
-      this.totalData = apiRes.totalData;
-      apiRes.data.map((res, index) => {
-        const serialNumber = index + 1;
-        if (index >= pageOption.skip && serialNumber <= pageOption.limit) {
-          res.sNo = serialNumber;
-          this.tableData.push(res);
-          this.serialNumberArray.push(serialNumber);
-        }
-      });
-      this.dataSource = new _angular_material_table__WEBPACK_IMPORTED_MODULE_7__.MatTableDataSource(this.tableData);
-      this.pagination.calculatePageSize.next({
-        totalData: this.totalData,
-        pageSize: this.pageSize,
-        tableData: this.tableData,
-        serialNumberArray: this.serialNumberArray
-      });
-    });
-  }
+  // private getTableData(pageOption: pageSelection): void {
+  //   this.data.getExpiredProduct().subscribe((apiRes: apiResultFormat) => {
+  //     this.tableData = [];
+  //     this.serialNumberArray = [];
+  //     this.totalData = apiRes.totalData;
+  //     apiRes.data.map((res: expiredproduct, index: number) => {
+  //       const serialNumber = index + 1;
+  //       if (index >= pageOption.skip && serialNumber <= pageOption.limit) {
+  //         res.sNo = serialNumber;
+  //         this.tableData.push(res);
+  //         this.serialNumberArray.push(serialNumber);
+  //       }
+  //     });
+  //     this.dataSource = new MatTableDataSource<expiredproduct>(this.tableData);
+  //   });
+  // }
   confirmColor() {
     const swalWithBootstrapButtons = sweetalert2__WEBPACK_IMPORTED_MODULE_1___default().mixin({
       customClass: {
@@ -241,7 +230,7 @@ class AdminDashboardComponent {
   }
   static {
     this.ɵfac = function AdminDashboardComponent_Factory(t) {
-      return new (t || AdminDashboardComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](src_app_core_service_common_common_service__WEBPACK_IMPORTED_MODULE_2__.CommonService), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](src_app_core_service_settings_settings_service__WEBPACK_IMPORTED_MODULE_3__.SettingsService), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](src_app_core_service_data_data_service__WEBPACK_IMPORTED_MODULE_4__.DataService), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](src_app_shared_shared_index__WEBPACK_IMPORTED_MODULE_5__.PaginationService), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_8__.Router));
+      return new (t || AdminDashboardComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](src_app_core_service_common_common_service__WEBPACK_IMPORTED_MODULE_2__.CommonService), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](src_app_core_service_settings_settings_service__WEBPACK_IMPORTED_MODULE_3__.SettingsService), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](src_app_core_service_data_data_service__WEBPACK_IMPORTED_MODULE_4__.DataService), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](src_app_shared_shared_index__WEBPACK_IMPORTED_MODULE_5__.PaginationService), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_7__.Router));
     };
   }
   static {
@@ -498,7 +487,7 @@ class AdminDashboardComponent {
           _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵrepeater"](ctx.tableData);
         }
       },
-      dependencies: [_angular_router__WEBPACK_IMPORTED_MODULE_8__.RouterLink, _angular_material_sort__WEBPACK_IMPORTED_MODULE_9__.MatSort, _angular_material_sort__WEBPACK_IMPORTED_MODULE_9__.MatSortHeader, ng_apexcharts__WEBPACK_IMPORTED_MODULE_10__.ChartComponent, _angular_forms__WEBPACK_IMPORTED_MODULE_11__.CheckboxControlValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_11__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_11__.NgModel, ngx_countup__WEBPACK_IMPORTED_MODULE_12__.CountUpDirective],
+      dependencies: [_angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterLink, _angular_material_sort__WEBPACK_IMPORTED_MODULE_8__.MatSort, _angular_material_sort__WEBPACK_IMPORTED_MODULE_8__.MatSortHeader, ng_apexcharts__WEBPACK_IMPORTED_MODULE_9__.ChartComponent, _angular_forms__WEBPACK_IMPORTED_MODULE_10__.CheckboxControlValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_10__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_10__.NgModel, ngx_countup__WEBPACK_IMPORTED_MODULE_11__.CountUpDirective],
       styles: ["/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */"]
     });
   }
