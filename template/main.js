@@ -1431,14 +1431,16 @@ class DataService {
   //       })
   //     );
   // }
-  getCategoryList(page) {
+  getCategoryList(page, searchText) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     let pageNum = page || 1;
     if (!token) {
       return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => new Error('No authentication token found'));
     }
-    let apiUrl = '';
-    apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/categories?page=${pageNum}&page_size=10`;
+    let apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/categories?page=${pageNum}&page_size=10`;
+    if (searchText) {
+      apiUrl += `&search_query=${encodeURIComponent(searchText)}`;
+    }
     const httpOptions = {
       headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
@@ -1780,7 +1782,7 @@ class DataService {
       return res;
     }));
   }
-  getDonationList(stat) {
+  getDonationList(pageNum, stat, searchText) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     const httpOptions = {
       headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
@@ -1788,11 +1790,14 @@ class DataService {
         'Content-Type': 'application/json'
       })
     };
+    let apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/donation?page=${pageNum}&page_size=10`;
     if (stat) {
-      return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/donation?status=${stat}`, httpOptions);
-    } else {
-      return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/donation`, httpOptions);
+      apiUrl += `&status=${encodeURIComponent(stat)}`;
     }
+    if (searchText) {
+      apiUrl += `&search_query=${encodeURIComponent(searchText)}`;
+    }
+    return this.http.get(apiUrl, httpOptions);
   }
   getSubcategoryConditions(subcategory_id) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
@@ -1923,17 +1928,20 @@ class DataService {
     };
     return this.http.patch(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/users/${editUserId}`, userData, httpOptions);
   }
-  getUsers(roleId, page) {
+  getUsers(roleId, page, searchText) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     let pageNum = page || 1;
     if (!token) {
       return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => new Error('No authentication token found'));
     }
-    let apiUrl = '';
+    let apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/users?page=${pageNum}&page_size=10`;
+    // Add roleId to the query params if it's provided
     if (roleId) {
-      apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/users?filter_by_role_id=${roleId}&page=1&page_size=10`;
-    } else {
-      apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/users?page=${pageNum}&page_size=10`;
+      apiUrl += `&filter_by_role_id=${roleId}`;
+    }
+    // Add searchText to the query params if it's provided
+    if (searchText) {
+      apiUrl += `&search_query=${encodeURIComponent(searchText)}`;
     }
     const httpOptions = {
       headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
@@ -2063,14 +2071,16 @@ class DataService {
   //     })
   //   );
   // }
-  getSubCategories(page) {
+  getSubCategories(page, searchText) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     let pageNum = page || 1;
     if (!token) {
       return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => new Error('No authentication token found'));
     }
-    let apiUrl = '';
-    apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/subcategories?page=${pageNum}&page_size=10`;
+    let apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/subcategories?page=${pageNum}&page_size=10`;
+    if (searchText) {
+      apiUrl += `&search_query=${encodeURIComponent(searchText)}`;
+    }
     const httpOptions = {
       headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
@@ -2133,16 +2143,20 @@ class DataService {
   //     })
   //   );
   // }
-  getWareHouse(page) {
+  getWareHouse(page, searchText) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     let pageNum = page || 1;
+    let apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/warehouse?page=${pageNum}&page_size=10`;
+    if (searchText) {
+      apiUrl += `&search_query=${encodeURIComponent(searchText)}`;
+    }
     const httpOptions = {
       headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
       })
     };
-    return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/warehouse?page=${pageNum}&page_size=10`, httpOptions);
+    return this.http.get(apiUrl, httpOptions);
   }
   createWareHouse(warehouseData) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
@@ -2392,7 +2406,7 @@ class SidebarService {
         route: _core_index__WEBPACK_IMPORTED_MODULE_0__.routes.refferal,
         hasSubRoute: false,
         showSubRoute: false,
-        access: ["Platform Admin"]
+        access: ["Platform Admin", "Warehouse Admin", "Support Staff"]
       }, {
         menuValue: 'Warehouses',
         icon: 'archive',
@@ -2406,14 +2420,14 @@ class SidebarService {
         route: _core_index__WEBPACK_IMPORTED_MODULE_0__.routes.salesList,
         hasSubRoute: false,
         showSubRoute: false,
-        access: ["Platform Admin"]
+        access: ["Platform Admin", "Warehouse Admin"]
       }, {
         menuValue: 'Help Desk',
         icon: 'file-text',
         route: _core_index__WEBPACK_IMPORTED_MODULE_0__.routes.chat,
         hasSubRoute: false,
         showSubRoute: false,
-        access: ["Platform Admin"]
+        access: ["Platform Admin", "Support Staff"]
       }]
     }
     // {
@@ -5974,11 +5988,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const _c0 = () => [];
-function CustomPaginationComponent_nav_8_li_5_Template(rf, ctx) {
+function CustomPaginationComponent_nav_6_li_5_Template(rf, ctx) {
   if (rf & 1) {
     const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "li")(1, "button", 12);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function CustomPaginationComponent_nav_8_li_5_Template_button_click_1_listener() {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "li")(1, "button", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function CustomPaginationComponent_nav_6_li_5_Template_button_click_1_listener() {
       const i_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r3).index;
       const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
       return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r1.changePage(i_r4 + 1));
@@ -5995,25 +6009,25 @@ function CustomPaginationComponent_nav_8_li_5_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", i_r4 + 1, " ");
   }
 }
-function CustomPaginationComponent_nav_8_Template(rf, ctx) {
+function CustomPaginationComponent_nav_6_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nav")(1, "ul", 2)(2, "li", 7)(3, "button", 8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function CustomPaginationComponent_nav_8_Template_button_click_3_listener() {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nav")(1, "ul", 2)(2, "li", 6)(3, "button", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function CustomPaginationComponent_nav_6_Template_button_click_3_listener() {
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r1);
       const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
       return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r1.changePage(ctx_r1.pagination.prev_page));
     });
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "i", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "i", 8);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, CustomPaginationComponent_nav_8_li_5_Template, 3, 3, "li", 10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "li", 7)(7, "button", 8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function CustomPaginationComponent_nav_8_Template_button_click_7_listener() {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, CustomPaginationComponent_nav_6_li_5_Template, 3, 3, "li", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "li", 6)(7, "button", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function CustomPaginationComponent_nav_6_Template_button_click_7_listener() {
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r1);
       const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
       return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r1.changePage(ctx_r1.pagination.next_page));
     });
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](8, "i", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](8, "i", 10);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
   }
   if (rf & 2) {
@@ -6054,25 +6068,20 @@ class CustomPaginationComponent {
       outputs: {
         pageChange: "pageChange"
       },
-      decls: 9,
-      vars: 3,
-      consts: [[1, "table-footer"], [1, "dataTables_length"], [1, "pagination"], [1, "entries"], [1, "col-sm-12", "col-md-7"], [1, "pagination_section"], [4, "ngIf"], [1, "page-item"], [1, "page-link", 3, "click", "disabled"], [1, "fa", "fa-angle-left"], [4, "ngFor", "ngForOf"], [1, "fa", "fa-angle-right"], [1, "page-link", 3, "click"]],
+      decls: 7,
+      vars: 1,
+      consts: [[1, "table-footer"], [1, "dataTables_length"], [1, "pagination"], [1, "col-sm-12", "col-md-7"], [1, "pagination_section"], [4, "ngIf"], [1, "page-item"], [1, "page-link", 3, "click", "disabled"], [1, "fa", "fa-angle-left"], [4, "ngFor", "ngForOf"], [1, "fa", "fa-angle-right"], [1, "page-link", 3, "click"]],
       template: function CustomPaginationComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0)(1, "div", 1);
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "label");
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 2)(4, "div", 3);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 4)(7, "div", 5);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](8, CustomPaginationComponent_nav_8_Template, 9, 8, "nav", 6);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 2)(4, "div", 3)(5, "div", 4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, CustomPaginationComponent_nav_6_Template, 9, 8, "nav", 5);
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
         }
         if (rf & 2) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"](" Showing ", ctx.pagination.page_size, " of ", ctx.pagination.total_items, " Results ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.pagination.total_pages > 1);
         }
       },
