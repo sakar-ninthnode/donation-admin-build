@@ -1978,34 +1978,27 @@ class DataService {
       return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => new Error(error.message || 'Something went wrong!'));
     }));
   }
-  getMessagesUsers() {
+  getMessagesUsers(page, searchText, ticketType) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
+    let pageNum = page || 1;
     if (!token) {
       return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => new Error('No authentication token found'));
     }
-    let apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/users`;
-    return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.from)(fetch(apiUrl, {
-      method: 'GET',
-      headers: {
+    let apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/users?page=${pageNum}&page_size=10`;
+    // Add searchText to the query params if it's provided
+    if (searchText) {
+      apiUrl += `&search_query=${encodeURIComponent(searchText)}`;
+    }
+    if (ticketType && ticketType != 'All') {
+      apiUrl += `&search_by_ticket_status=${ticketType}`;
+    }
+    const httpOptions = {
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
-      }
-    }).then(response => {
-      if (!response.ok) {
-        return response.json().then(err => {
-          throw new Error(err.message || 'Failed to fetch users');
-        });
-      }
-      return response.json();
-    }).then(data => ({
-      // data: data.results.users || [], // Ensure it's an array
-      data: data.results.users || [],
-      // Ensure it's an array
-      totalData: data.results.users.length || 0 // Provide a default number
-    }))).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.catchError)(error => {
-      console.error('Fetch error:', error);
-      return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => new Error(error.message || 'Something went wrong!'));
-    }));
+      })
+    };
+    return this.http.get(apiUrl, httpOptions);
   }
   getTicketsByUserId(userId) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
@@ -2016,6 +2009,17 @@ class DataService {
       })
     };
     return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/users/${userId}`, httpOptions);
+  }
+  closeTicket(ticketId) {
+    const token = localStorage.getItem('authToken'); // Get token from localStorage
+    const httpOptions = {
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      })
+    };
+    console.log('clicked');
+    return this.http.patch(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/close-ticket/${ticketId}`, {}, httpOptions);
   }
   getMessagesByTicketId(ticket_id) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
@@ -2420,7 +2424,7 @@ class SidebarService {
         route: _core_index__WEBPACK_IMPORTED_MODULE_0__.routes.salesList,
         hasSubRoute: false,
         showSubRoute: false,
-        access: ["Platform Admin", "Warehouse Admin"]
+        access: ["Platform Admin", "Warehouse Admin", "Support Staff"]
       }, {
         menuValue: 'Help Desk',
         icon: 'file-text',

@@ -1035,7 +1035,7 @@ const routes = [{
   component: _core_component_component__WEBPACK_IMPORTED_MODULE_0__.CoreComponentComponent,
   children: [{
     path: 'application',
-    loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_core-component_main_application_application_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ././main/application/application.module */ 5247)).then(m => m.ApplicationModule)
+    loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_sweetalert2_dist_sweetalert2_all_js"), __webpack_require__.e("common"), __webpack_require__.e("src_app_core-component_main_application_application_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ././main/application/application.module */ 5247)).then(m => m.ApplicationModule)
   }, {
     path: 'inventory',
     loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_sweetalert2_dist_sweetalert2_all_js"), __webpack_require__.e("common"), __webpack_require__.e("src_app_core-component_inventory_inventory_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ./inventory/inventory.module */ 14847)).then(m => m.InventoryModule)
