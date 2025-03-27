@@ -1415,6 +1415,20 @@ class ProfileService {
       headers
     });
   }
+  updatePassword(profileData) {
+    const token = localStorage.getItem('authToken'); // Retrieve token
+    const headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__.HttpHeaders().set('Authorization', `Bearer ${token}`);
+    const params = {
+      new_password: profileData.password,
+      email: profileData.email
+    };
+    return this.http.patch(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/reset-password`, {},
+    // Empty body since params are passed in URL
+    {
+      headers,
+      params
+    });
+  }
   static {
     this.ɵfac = function ProfileService_Factory(t) {
       return new (t || ProfileService)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__.HttpClient));

@@ -1790,12 +1790,12 @@ class DataService {
         'Content-Type': 'application/json'
       })
     };
-    let apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/donation?page=${pageNum}&page_size=10`;
+    let apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/donation/products?page=${pageNum}&page_size=10`;
     if (stat) {
       apiUrl += `&status=${encodeURIComponent(stat)}`;
     }
     if (searchText) {
-      apiUrl += `&search_query=${encodeURIComponent(searchText)}`;
+      apiUrl += `&search_params=${encodeURIComponent(searchText)}`;
     }
     return this.http.get(apiUrl, httpOptions);
   }

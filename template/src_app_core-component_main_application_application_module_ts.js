@@ -217,6 +217,44 @@ function ChatComponent_mat_option_17_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", filter_r3.lable, " ");
   }
 }
+function ChatComponent_li_21_span_11_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "span", 39);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](1, "Open: ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
+  }
+}
+function ChatComponent_li_21_span_12_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "span", 40);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const user_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]().$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate"](user_r5.open_tickets);
+  }
+}
+function ChatComponent_li_21_span_13_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "span", 41);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](1, "Closed: ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
+  }
+}
+function ChatComponent_li_21_span_14_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "span", 42);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const user_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]().$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate"](user_r5.closed_tickets);
+  }
+}
 function ChatComponent_li_21_Template(rf, ctx) {
   if (rf & 1) {
     const _r4 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵgetCurrentView"]();
@@ -232,18 +270,9 @@ function ChatComponent_li_21_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](5, "div", 32)(6, "div")(7, "h5");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](8);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](9, "div", 33)(10, "div", 34)(11, "span", 35);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](12, "Open: ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](13, "span", 36);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](14);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](15, "span", 37);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](16, "Closed: ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](17, "span", 38);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](18);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()()()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](9, "div", 33)(10, "div", 34);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](11, ChatComponent_li_21_span_11_Template, 2, 0, "span", 35)(12, ChatComponent_li_21_span_12_Template, 2, 1, "span", 36)(13, ChatComponent_li_21_span_13_Template, 2, 0, "span", 37)(14, ChatComponent_li_21_span_14_Template, 2, 1, "span", 38);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()()();
   }
   if (rf & 2) {
     const user_r5 = ctx.$implicit;
@@ -251,21 +280,25 @@ function ChatComponent_li_21_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("src", user_r5.profile_img_url || "assets/img/avatar/avatar-2.jpg", _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵsanitizeUrl"]);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](4);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate2"]("", user_r5.first_name || "NA", " ", user_r5.last_name || "NA", "");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate"](user_r5.open_tickets);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate"](user_r5.closed_tickets);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", user_r5.open_tickets > 0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", user_r5.open_tickets > 0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", user_r5.closed_tickets > 0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", user_r5.closed_tickets > 0);
   }
 }
 function ChatComponent_div_24_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 39)(1, "div", 40)(2, "div", 41)(3, "ul", 42)(4, "li", 43)(5, "a", 44);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](6, "i", 45);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 43)(1, "div", 44)(2, "div", 45)(3, "ul", 46)(4, "li", 47)(5, "a", 48);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](6, "i", 49);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](7, "figure", 46);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](7, "figure", 50);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](8, "img", 31);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](9, "div", 47)(10, "h5");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](9, "div", 51)(10, "h5");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](11);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()()();
   }
@@ -280,7 +313,7 @@ function ChatComponent_div_24_Template(rf, ctx) {
 function ChatComponent_div_25_a_6_Template(rf, ctx) {
   if (rf & 1) {
     const _r7 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "a", 52);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "a", 56);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("click", function ChatComponent_div_25_a_6_Template_a_click_0_listener() {
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r7);
       const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"](2);
@@ -293,18 +326,18 @@ function ChatComponent_div_25_a_6_Template(rf, ctx) {
 function ChatComponent_div_25_Template(rf, ctx) {
   if (rf & 1) {
     const _r6 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 48)(1, "div")(2, "a", 49);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 52)(1, "div")(2, "a", 53);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("click", function ChatComponent_div_25_Template_a_click_2_listener() {
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r6);
       const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
       return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r1.selectTicket(null, "hide"));
     });
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](3, "i", 50);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](3, "i", 54);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](4, "h5");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](5);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](6, ChatComponent_div_25_a_6_Template, 2, 0, "a", 51);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](6, ChatComponent_div_25_a_6_Template, 2, 0, "a", 55);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
   }
   if (rf & 2) {
@@ -318,7 +351,7 @@ function ChatComponent_div_25_Template(rf, ctx) {
 function ChatComponent_div_26_tr_15_Template(rf, ctx) {
   if (rf & 1) {
     const _r8 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "tr", 61);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "tr", 65);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("click", function ChatComponent_div_26_tr_15_Template_tr_click_0_listener() {
       const ticket_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r8).$implicit;
       const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"](2);
@@ -327,7 +360,7 @@ function ChatComponent_div_26_tr_15_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](1, "td");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](3, "td")(4, "span", 62);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](3, "td")(4, "span", 66);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](5);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()();
   }
@@ -343,17 +376,17 @@ function ChatComponent_div_26_tr_15_Template(rf, ctx) {
 }
 function ChatComponent_div_26_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 53)(1, "div", 54)(2, "div", 55)(3, "h5", 56);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 57)(1, "div", 58)(2, "div", 59)(3, "h5", 60);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](4, "Tickets");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](5, "div", 57)(6, "div", 58)(7, "table", 59)(8, "thead")(9, "tr")(10, "th");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](5, "div", 61)(6, "div", 62)(7, "table", 63)(8, "thead")(9, "tr")(10, "th");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](11, "Subject");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](12, "th");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](13, "Status");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](14, "tbody");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](15, ChatComponent_div_26_tr_15_Template, 6, 6, "tr", 60);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](15, ChatComponent_div_26_tr_15_Template, 6, 6, "tr", 64);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()()()()();
   }
   if (rf & 2) {
@@ -364,15 +397,15 @@ function ChatComponent_div_26_Template(rf, ctx) {
 }
 function ChatComponent_div_27_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 63);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 67);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](1, " Select a User ");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
   }
 }
 function ChatComponent_ng_scrollbar_28_div_4_div_1_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 72);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](1, "img", 73);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 76);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](1, "img", 77);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
   }
   if (rf & 2) {
@@ -383,15 +416,15 @@ function ChatComponent_ng_scrollbar_28_div_4_div_1_Template(rf, ctx) {
 }
 function ChatComponent_ng_scrollbar_28_div_4_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 67);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](1, ChatComponent_ng_scrollbar_28_div_4_div_1_Template, 2, 1, "div", 68);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](2, "div", 69)(3, "div", 70)(4, "h6");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 71);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](1, ChatComponent_ng_scrollbar_28_div_4_div_1_Template, 2, 1, "div", 72);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](2, "div", 73)(3, "div", 74)(4, "h6");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](5);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](6, "span");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](7);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵpipe"](8, "date");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](9, "div", 71);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](9, "div", 75);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](10);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()();
   }
@@ -412,8 +445,8 @@ function ChatComponent_ng_scrollbar_28_div_4_Template(rf, ctx) {
 }
 function ChatComponent_ng_scrollbar_28_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "ng-scrollbar", null, 0)(2, "div", 64)(3, "div", 65);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](4, ChatComponent_ng_scrollbar_28_div_4_Template, 11, 15, "div", 66);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "ng-scrollbar", null, 0)(2, "div", 68)(3, "div", 69);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](4, ChatComponent_ng_scrollbar_28_div_4_Template, 11, 15, "div", 70);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()();
   }
   if (rf & 2) {
@@ -425,13 +458,13 @@ function ChatComponent_ng_scrollbar_28_Template(rf, ctx) {
 function ChatComponent_div_29_Template(rf, ctx) {
   if (rf & 1) {
     const _r11 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 74)(1, "form", 75);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 78)(1, "form", 79);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("ngSubmit", function ChatComponent_div_29_Template_form_ngSubmit_1_listener() {
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r11);
       const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
       return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r1.submitMessage());
     });
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](2, "input", 76);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](2, "input", 80);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtwoWayListener"]("ngModelChange", function ChatComponent_div_29_Template_input_ngModelChange_2_listener($event) {
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r11);
       const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
@@ -439,8 +472,8 @@ function ChatComponent_div_29_Template(rf, ctx) {
       return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"]($event);
     });
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](3, "div", 77)(4, "button", 78);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](5, "i", 79);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](3, "div", 81)(4, "button", 82);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](5, "i", 83);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()()();
   }
   if (rf & 2) {
@@ -479,13 +512,16 @@ class ChatComponent {
     }];
     this.getUsersData();
   }
-  ngAfterViewInit() {
+  ngAfterViewChecked() {
     this.scrollToBottom();
   }
   scrollToBottom() {
-    setTimeout(() => {
-      this.chatContainer.nativeElement.scrollTop = this.chatContainer.nativeElement.scrollHeight;
-    }, 100);
+    if (this.chatContainer) {
+      this.chatContainer.scrollTo({
+        bottom: 0,
+        duration: 0
+      });
+    }
   }
   getUsersData() {
     this.data.getMessagesUsers(this.page, this.savedSearchText, this.filterSelectedTicket).subscribe(apiRes => {
@@ -560,7 +596,6 @@ class ChatComponent {
     };
   }
   selectTicket(ticket, event) {
-    console.log(ticket);
     if (event == 'show') {
       this.getMessagesData(ticket.ticket_id);
       this.selectedTicketId = ticket.ticket_id;
@@ -601,7 +636,7 @@ class ChatComponent {
       },
       decls: 30,
       vars: 11,
-      consts: [["chatContainer", ""], [1, "sidebar-group", "left-sidebar", "chat_sidebar"], ["id", "chats", 1, "left-sidebar-wrap", "sidebar", "active", "slimscroll"], [1, "slimscroll-active-sidebar"], [1, "left-chat-title", "all-chats", "d-flex", "justify-content-between", "align-items-center"], [1, "setting-title-head"], [1, "p-2", 2, "position", "relative"], [1, "d-flex"], ["type", "text", "placeholder", "Search...", 1, "form-control", 3, "ngModelChange", "keydown.enter", "ngModel"], ["href", "javascript:void(0);", 1, "btn", "btn-searchset", 2, "width", "80px", 3, "click"], [1, "bx", "bx-search"], ["class", "btn btn-clear", 3, "click", 4, "ngIf"], [3, "ngModelChange", "selectionChange", "ngModel"], [3, "value", 4, "ngFor", "ngForOf"], ["visibility", "hover"], ["id", "chatsidebar", 1, "sidebar-body", "chat-body"], [1, "user-list", "mb-4", "pb-4"], ["class", "user-list-item", 4, "ngFor", "ngForOf"], ["id", "middle", 1, "chat", "chat-messages"], [1, "slimscroll"], ["class", "chat-header", 4, "ngIf"], ["class", "chat-header justify-content-start", 4, "ngIf"], ["class", "col-lg-12 mt-4", 4, "ngIf"], ["class", "h-100 d-flex justify-content-center align-items-center", 4, "ngIf"], [4, "ngIf"], ["class", "chat-footer", 4, "ngIf"], [1, "btn", "btn-clear", 3, "click"], [3, "value"], [1, "user-list-item"], ["href", "javascript:void(0);", 1, "d-flex", "flex-column", 3, "click"], [1, "avatar"], ["alt", "image", 1, "rounded-circle", 3, "src"], [1, "users-list-body"], [1, "last-chat-time"], [1, "chat-pin"], [1, "pr-2"], [1, "bg-success", "rounded-circle", 2, "padding", "4px 10px", "font-size", "10px"], [1, "pl-2", "pr-2"], [1, "bg-danger", "rounded-circle", 2, "padding", "4px 10px", "font-size", "10px"], [1, "chat-header"], [1, "user-details"], [1, "d-lg-none"], [1, "list-inline", "mt-2", "me-2"], [1, "list-inline-item"], ["href", "javascript:void(0);", "data-chat", "open", 1, "text-muted", "px-0", "left_sides"], [1, "fas", "fa-arrow-left"], [1, "avatar", "ms-1"], [1, "mt-1"], [1, "chat-header", "justify-content-start"], ["href", "javascript:void(0)", 1, "btn", "btn-outline-light", 3, "click"], [1, "bx", "bx-arrow-back"], ["class", "btn btn-primary ml-4 rounded", "href", "javascript:void(0);", 3, "click", 4, "ngIf"], ["href", "javascript:void(0);", 1, "btn", "btn-primary", "ml-4", "rounded", 3, "click"], [1, "col-lg-12", "mt-4"], [1, "card"], [1, "card-header"], [1, "card-title"], [1, "card-body"], [1, "table-responsive"], [1, "table", "table-hover", "mb-0"], [3, "click", 4, "ngFor", "ngForOf"], [3, "click"], [1, "px-2", 3, "ngClass"], [1, "h-100", "d-flex", "justify-content-center", "align-items-center"], [1, "chat-body"], [1, "messages", 2, "padding-bottom", "200px"], [3, "ngClass", 4, "ngFor", "ngForOf"], [3, "ngClass"], ["class", "chat-avatar", 4, "ngIf"], [1, "chat-content"], [1, "chat-profile-name", 3, "ngClass"], [1, "message-content"], [1, "chat-avatar"], ["alt", "image", 1, "rounded-circle", "dreams_chat", 3, "src"], [1, "chat-footer"], [3, "ngSubmit"], ["type", "text", "placeholder", "Type your message here...", "name", "message", "required", "", 1, "form-control", "chat_form", 3, "ngModelChange", "ngModel"], [1, "form-buttons"], ["type", "submit", 1, "btn", "send-btn"], [1, "bx", "bx-paper-plane"]],
+      consts: [["chatContainer", ""], [1, "sidebar-group", "left-sidebar", "chat_sidebar"], ["id", "chats", 1, "left-sidebar-wrap", "sidebar", "active", "slimscroll"], [1, "slimscroll-active-sidebar"], [1, "left-chat-title", "all-chats", "d-flex", "justify-content-between", "align-items-center"], [1, "setting-title-head"], [1, "p-2", 2, "position", "relative"], [1, "d-flex"], ["type", "text", "placeholder", "Search...", 1, "form-control", 3, "ngModelChange", "keydown.enter", "ngModel"], ["href", "javascript:void(0);", 1, "btn", "btn-searchset", 2, "width", "80px", 3, "click"], [1, "bx", "bx-search"], ["class", "btn btn-clear", 3, "click", 4, "ngIf"], [3, "ngModelChange", "selectionChange", "ngModel"], [3, "value", 4, "ngFor", "ngForOf"], ["visibility", "hover"], ["id", "chatsidebar", 1, "sidebar-body", "chat-body"], [1, "user-list", "mb-4", "pb-4"], ["class", "user-list-item", 4, "ngFor", "ngForOf"], ["id", "middle", 1, "chat", "chat-messages"], [1, "slimscroll"], ["class", "chat-header", 4, "ngIf"], ["class", "chat-header justify-content-start", 4, "ngIf"], ["class", "col-lg-12 mt-4", 4, "ngIf"], ["class", "h-100 d-flex justify-content-center align-items-center", 4, "ngIf"], [4, "ngIf"], ["class", "chat-footer", 4, "ngIf"], [1, "btn", "btn-clear", 3, "click"], [3, "value"], [1, "user-list-item"], ["href", "javascript:void(0);", 1, "d-flex", "flex-column", 3, "click"], [1, "avatar"], ["alt", "image", 1, "rounded-circle", 3, "src"], [1, "users-list-body"], [1, "last-chat-time"], [1, "chat-pin"], ["class", "pr-2", 4, "ngIf"], ["class", "bg-success rounded-circle", "style", "padding: 4px 10px; font-size: 10px;", 4, "ngIf"], ["class", "pl-2 pr-2", 4, "ngIf"], ["class", "bg-danger rounded-circle", "style", "padding: 4px 10px; font-size: 10px;", 4, "ngIf"], [1, "pr-2"], [1, "bg-success", "rounded-circle", 2, "padding", "4px 10px", "font-size", "10px"], [1, "pl-2", "pr-2"], [1, "bg-danger", "rounded-circle", 2, "padding", "4px 10px", "font-size", "10px"], [1, "chat-header"], [1, "user-details"], [1, "d-lg-none"], [1, "list-inline", "mt-2", "me-2"], [1, "list-inline-item"], ["href", "javascript:void(0);", "data-chat", "open", 1, "text-muted", "px-0", "left_sides"], [1, "fas", "fa-arrow-left"], [1, "avatar", "ms-1"], [1, "mt-1"], [1, "chat-header", "justify-content-start"], ["href", "javascript:void(0)", 1, "btn", "btn-outline-light", 3, "click"], [1, "bx", "bx-arrow-back"], ["class", "btn btn-primary ml-4 rounded", "href", "javascript:void(0);", 3, "click", 4, "ngIf"], ["href", "javascript:void(0);", 1, "btn", "btn-primary", "ml-4", "rounded", 3, "click"], [1, "col-lg-12", "mt-4"], [1, "card"], [1, "card-header"], [1, "card-title"], [1, "card-body"], [1, "table-responsive"], [1, "table", "table-hover", "mb-0"], [3, "click", 4, "ngFor", "ngForOf"], [3, "click"], [1, "px-2", 3, "ngClass"], [1, "h-100", "d-flex", "justify-content-center", "align-items-center"], [1, "chat-body"], [1, "messages", 2, "padding-bottom", "200px"], [3, "ngClass", 4, "ngFor", "ngForOf"], [3, "ngClass"], ["class", "chat-avatar", 4, "ngIf"], [1, "chat-content"], [1, "chat-profile-name", 3, "ngClass"], [1, "message-content"], [1, "chat-avatar"], ["alt", "image", 1, "rounded-circle", "dreams_chat", 3, "src"], [1, "chat-footer"], [3, "ngSubmit"], ["type", "text", "placeholder", "Type your message here...", "name", "message", "required", "", 1, "form-control", "chat_form", 3, "ngModelChange", "ngModel"], [1, "form-buttons"], ["type", "submit", 1, "btn", "send-btn"], [1, "bx", "bx-paper-plane"]],
       template: function ChatComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 1)(1, "div", 2)(2, "div", 3)(3, "div", 4)(4, "div", 5)(5, "h4");
@@ -637,7 +672,7 @@ class ChatComponent {
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](17, ChatComponent_mat_option_17_Template, 2, 2, "mat-option", 13);
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()();
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](18, "ng-scrollbar", 14)(19, "div", 15)(20, "ul", 16);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](21, ChatComponent_li_21_Template, 19, 5, "li", 17);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](21, ChatComponent_li_21_Template, 15, 7, "li", 17);
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()()()()();
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](22, "div", 18)(23, "div", 19);
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](24, ChatComponent_div_24_Template, 12, 2, "div", 20)(25, ChatComponent_div_25_Template, 7, 2, "div", 21)(26, ChatComponent_div_26_Template, 16, 1, "div", 22)(27, ChatComponent_div_27_Template, 2, 0, "div", 23)(28, ChatComponent_ng_scrollbar_28_Template, 5, 1, "ng-scrollbar", 24);
@@ -667,7 +702,7 @@ class ChatComponent {
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", ctx.showMessages);
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", ctx.showMessages);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", ctx.selectedTicketStatus === "Open" && ctx.showMessages);
         }
       },
       dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_5__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_5__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_5__.NgIf, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__.MatLabel, _angular_material_select__WEBPACK_IMPORTED_MODULE_7__.MatSelect, _angular_material_core__WEBPACK_IMPORTED_MODULE_8__.MatOption, _angular_forms__WEBPACK_IMPORTED_MODULE_9__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_9__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_9__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_9__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_9__.RequiredValidator, _angular_forms__WEBPACK_IMPORTED_MODULE_9__.NgModel, _angular_forms__WEBPACK_IMPORTED_MODULE_9__.NgForm, ngx_scrollbar__WEBPACK_IMPORTED_MODULE_10__.NgScrollbar, _angular_common__WEBPACK_IMPORTED_MODULE_5__.DatePipe],
