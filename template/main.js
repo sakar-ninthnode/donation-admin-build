@@ -1819,6 +1819,16 @@ class DataService {
     };
     return this.http.patch(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/donation/${donation_id}/pickup`, donationData, httpOptions);
   }
+  scheduleProductPickupRequest(product_id) {
+    const token = localStorage.getItem('authToken'); // Get token from localStorage
+    const httpOptions = {
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      })
+    };
+    return this.http.patch(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/shiprocket/schedule-pickup/${product_id}`, {}, httpOptions);
+  }
   updateDonationCondition(donated_product_id, donationData) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     const httpOptions = {
@@ -6430,7 +6440,7 @@ __webpack_require__.r(__webpack_exports__);
 // The list of file replacements can be found in `angular.json`.
 const environment = {
   production: false,
-  BACKEND_URL: 'http://donation.theninthnode.com/api/v1'
+  BACKEND_URL: 'https://donation.theninthnode.com/api/v1'
 };
 /*
  * For easier debugging in development mode, you can import the following file

@@ -591,7 +591,7 @@ function RefferalComponent_div_31_Template(rf, ctx) {
   if (rf & 1) {
     const _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 2)(1, "div", 5)(2, "h4", 6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](3, "Update Batch Points");
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](3, "Update Badge Points");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](4, "div", 3)(5, "form", 7);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("ngSubmit", function RefferalComponent_div_31_Template_form_ngSubmit_5_listener() {
@@ -615,7 +615,7 @@ function RefferalComponent_div_31_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](19, RefferalComponent_div_31_input_19_Template, 1, 0, "input", 33)(20, RefferalComponent_div_31_div_20_Template, 2, 0, "div", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](21, "button", 24);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](22, " Update Batch Points ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](22, " Update Badge Points ");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()()();
   }
   if (rf & 2) {
@@ -624,21 +624,21 @@ function RefferalComponent_div_31_Template(rf, ctx) {
     let tmp_7_0;
     const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("formGroup", ctx_r1.batchPointsForm);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("formGroup", ctx_r1.badgePointsForm);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx_r1.batchPointsForm.get("bronze_points"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx_r1.badgePointsForm.get("bronze_points"));
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ((tmp_3_0 = ctx_r1.batchPointsForm.get("bronze_points")) == null ? null : tmp_3_0.invalid) && ((tmp_3_0 = ctx_r1.batchPointsForm.get("bronze_points")) == null ? null : tmp_3_0.touched));
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ((tmp_3_0 = ctx_r1.badgePointsForm.get("bronze_points")) == null ? null : tmp_3_0.invalid) && ((tmp_3_0 = ctx_r1.badgePointsForm.get("bronze_points")) == null ? null : tmp_3_0.touched));
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx_r1.batchPointsForm.get("silver_points"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx_r1.badgePointsForm.get("silver_points"));
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ((tmp_5_0 = ctx_r1.batchPointsForm.get("silver_points")) == null ? null : tmp_5_0.invalid) && ((tmp_5_0 = ctx_r1.batchPointsForm.get("silver_points")) == null ? null : tmp_5_0.touched));
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ((tmp_5_0 = ctx_r1.badgePointsForm.get("silver_points")) == null ? null : tmp_5_0.invalid) && ((tmp_5_0 = ctx_r1.badgePointsForm.get("silver_points")) == null ? null : tmp_5_0.touched));
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx_r1.batchPointsForm.get("gold_points"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx_r1.badgePointsForm.get("gold_points"));
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ((tmp_7_0 = ctx_r1.batchPointsForm.get("gold_points")) == null ? null : tmp_7_0.invalid) && ((tmp_7_0 = ctx_r1.batchPointsForm.get("gold_points")) == null ? null : tmp_7_0.touched));
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ((tmp_7_0 = ctx_r1.badgePointsForm.get("gold_points")) == null ? null : tmp_7_0.invalid) && ((tmp_7_0 = ctx_r1.badgePointsForm.get("gold_points")) == null ? null : tmp_7_0.touched));
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("disabled", ctx_r1.batchPointsForm.invalid);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("disabled", ctx_r1.badgePointsForm.invalid);
   }
 }
 class RefferalComponent {
@@ -659,7 +659,7 @@ class RefferalComponent {
       points_for_referrer: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.required, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.pattern('^[0-9]+$')]],
       points_for_referee: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.required, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.pattern('^[0-9]+$')]]
     });
-    this.batchPointsForm = this.fb.group({
+    this.badgePointsForm = this.fb.group({
       bronze_points: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.required, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.pattern('^[0-9]+$')]],
       silver_points: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.required, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.pattern('^[0-9]+$')]],
       gold_points: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.required, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.pattern('^[0-9]+$')]]
@@ -703,7 +703,7 @@ class RefferalComponent {
   loadBatchPoints() {
     this.referralService.getBatchPointsData().subscribe(data => {
       let Obj = data.results;
-      this.batchPointsForm.patchValue({
+      this.badgePointsForm.patchValue({
         bronze_points: Obj.bronze_points,
         silver_points: Obj.silver_points,
         gold_points: Obj.gold_points
@@ -748,10 +748,10 @@ class RefferalComponent {
     });
   }
   updateBatchPoints() {
-    if (this.batchPointsForm.invalid) {
+    if (this.badgePointsForm.invalid) {
       return;
     }
-    this.referralService.updateBatchPointsData(this.batchPointsForm.value).subscribe(response => {
+    this.referralService.updateBatchPointsData(this.badgePointsForm.value).subscribe(response => {
       sweetalert2__WEBPACK_IMPORTED_MODULE_0___default().fire({
         icon: 'success',
         title: 'Updated Successfully!',
@@ -842,7 +842,7 @@ class RefferalComponent {
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ((tmp_8_0 = ctx.referralForm.get("ios_link")) == null ? null : tmp_8_0.invalid) && ((tmp_8_0 = ctx.referralForm.get("ios_link")) == null ? null : tmp_8_0.touched));
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", (ctx.userRole === "Warehouse Admin" || ctx.userRole === "Support Staff") && ctx.referralForm.valid);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx.userRole === "Platform Admin");
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx.userRole === "Platform Admin" && ctx.referralForm.valid);
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"]();
