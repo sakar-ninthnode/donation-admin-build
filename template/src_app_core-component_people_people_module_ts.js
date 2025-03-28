@@ -475,7 +475,7 @@ class WarehouseComponent {
       warehouse_name: data.warehouse_name,
       address_line_1: data.address_line_1,
       address_line_2: data.address_line_2,
-      land_mark: data.land_mark,
+      landmark: data.landmark,
       warehouse_sq_ft: data.warehouse_sq_ft,
       city: data.city,
       state: data.state,
