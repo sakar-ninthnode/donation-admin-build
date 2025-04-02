@@ -1938,7 +1938,7 @@ class DataService {
     };
     return this.http.patch(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/users/${editUserId}`, userData, httpOptions);
   }
-  getUsers(roleId, page, searchText) {
+  getUsers(roleId, status, page, searchText) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     let pageNum = page || 1;
     if (!token) {
@@ -1948,6 +1948,9 @@ class DataService {
     // Add roleId to the query params if it's provided
     if (roleId) {
       apiUrl += `&filter_by_role_id=${roleId}`;
+    }
+    if (status != 'all') {
+      apiUrl += `&filter_by_status=${status}`;
     }
     // Add searchText to the query params if it's provided
     if (searchText) {
@@ -1988,20 +1991,34 @@ class DataService {
       return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => new Error(error.message || 'Something went wrong!'));
     }));
   }
-  getMessagesUsers(page, searchText, ticketType) {
+  getHelpDeskTickets(page, ticketType, city) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     let pageNum = page || 1;
     if (!token) {
       return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => new Error('No authentication token found'));
     }
-    let apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/users?page=${pageNum}&page_size=10`;
+    let apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/tickets?page=${pageNum}&page_size=10`;
     // Add searchText to the query params if it's provided
-    if (searchText) {
-      apiUrl += `&search_query=${encodeURIComponent(searchText)}`;
+    if (city != 'All') {
+      apiUrl += `&filter_by_city=${city}`;
     }
     if (ticketType && ticketType != 'All') {
-      apiUrl += `&search_by_ticket_status=${ticketType}`;
+      apiUrl += `&filter_by=${ticketType}`;
     }
+    const httpOptions = {
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      })
+    };
+    return this.http.get(apiUrl, httpOptions);
+  }
+  getCities() {
+    const token = localStorage.getItem('authToken'); // Get token from localStorage
+    if (!token) {
+      return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => new Error('No authentication token found'));
+    }
+    let apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/cities`;
     const httpOptions = {
       headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
