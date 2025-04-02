@@ -1035,25 +1035,25 @@ const routes = [{
   component: _core_component_component__WEBPACK_IMPORTED_MODULE_0__.CoreComponentComponent,
   children: [{
     path: 'application',
-    loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_sweetalert2_dist_sweetalert2_all_js"), __webpack_require__.e("common"), __webpack_require__.e("src_app_core-component_main_application_application_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ././main/application/application.module */ 5247)).then(m => m.ApplicationModule)
+    loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_sweetalert2_dist_sweetalert2_all_js"), __webpack_require__.e("src_app_core-component_main_application_application_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ././main/application/application.module */ 5247)).then(m => m.ApplicationModule)
   }, {
     path: 'inventory',
-    loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_sweetalert2_dist_sweetalert2_all_js"), __webpack_require__.e("common"), __webpack_require__.e("src_app_core-component_inventory_inventory_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ./inventory/inventory.module */ 14847)).then(m => m.InventoryModule)
+    loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_sweetalert2_dist_sweetalert2_all_js"), __webpack_require__.e("default-src_app_shared_shared_index_ts-node_modules_xlsx_xlsx_mjs"), __webpack_require__.e("src_app_core-component_inventory_inventory_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ./inventory/inventory.module */ 14847)).then(m => m.InventoryModule)
   }, {
     path: 'pages',
     loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_sweetalert2_dist_sweetalert2_all_js"), __webpack_require__.e("src_app_core-component_pages_pages_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ./pages/pages.module */ 67507)).then(m => m.PagesModule)
   }, {
     path: 'dashboard',
-    loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_sweetalert2_dist_sweetalert2_all_js"), __webpack_require__.e("common"), __webpack_require__.e("src_app_core-component_main_dashboard_dashboard_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ./main/dashboard/dashboard.module */ 17147)).then(m => m.DashboardModule)
+    loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_sweetalert2_dist_sweetalert2_all_js"), __webpack_require__.e("src_app_core-component_main_dashboard_dashboard_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ./main/dashboard/dashboard.module */ 17147)).then(m => m.DashboardModule)
   }, {
     path: 'user-management',
-    loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_sweetalert2_dist_sweetalert2_all_js"), __webpack_require__.e("common"), __webpack_require__.e("src_app_core-component_user-management_user-management_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ./user-management/user-management.module */ 73559)).then(m => m.UserManagementModule)
+    loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_sweetalert2_dist_sweetalert2_all_js"), __webpack_require__.e("default-src_app_shared_shared_index_ts-node_modules_xlsx_xlsx_mjs"), __webpack_require__.e("src_app_core-component_user-management_user-management_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ./user-management/user-management.module */ 73559)).then(m => m.UserManagementModule)
   }, {
     path: 'sales',
-    loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_sweetalert2_dist_sweetalert2_all_js"), __webpack_require__.e("common"), __webpack_require__.e("src_app_core-component_sales_sales_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ./sales/sales.module */ 43851)).then(m => m.SalesModule)
+    loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_sweetalert2_dist_sweetalert2_all_js"), __webpack_require__.e("src_app_core-component_sales_sales_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ./sales/sales.module */ 43851)).then(m => m.SalesModule)
   }, {
     path: 'people',
-    loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_sweetalert2_dist_sweetalert2_all_js"), __webpack_require__.e("common"), __webpack_require__.e("src_app_core-component_people_people_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ./people/people.module */ 467)).then(m => m.PeopleModule)
+    loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_sweetalert2_dist_sweetalert2_all_js"), __webpack_require__.e("default-src_app_shared_shared_index_ts-node_modules_xlsx_xlsx_mjs"), __webpack_require__.e("src_app_core-component_people_people_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ./people/people.module */ 467)).then(m => m.PeopleModule)
   }]
 }];
 class CoreComponentRoutingModule {
