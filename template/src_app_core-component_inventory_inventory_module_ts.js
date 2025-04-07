@@ -510,7 +510,7 @@ class AnnouncementListComponent {
             return ctx.sortData($event);
           });
           _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](45, "thead")(46, "tr")(47, "th", 30);
-          _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](48, "Announcement id");
+          _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](48, "Id");
           _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](49, "th", 31);
           _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](50, "Title");

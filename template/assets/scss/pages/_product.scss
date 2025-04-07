@@ -364,7 +364,7 @@
     @include margin-padding(null, 5px 10px);
     @include rounded(8px);
     border: 1px solid $success;
-    font-size: $font-size-base;
+    font-size: 10px;
    
 }
 .badge-linedanger,.badge-linedangered {
@@ -372,9 +372,14 @@
     @include margin-padding(null, 5px 10px);
     @include rounded(8px);
     border: 1px solid $danger;
-    font-size: $font-size-base;
-   
-       
+    font-size: 10px;      
+}
+.badge-linewarning {
+    color: '#f0ad4e';
+    @include margin-padding(null, 5px 10px);
+    @include rounded(8px);
+    border: 1px solid '#f0ad4e';
+    font-size: 10px;
 }
 span {
     &.badge {

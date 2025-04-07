@@ -22252,15 +22252,25 @@ body.mini-sidebar.expand-menu .sidebar .sidebar-menu > ul > li.submenu-open ul l
   padding: 5px 10px;
   border-radius: 8px;
   border: 1px solid #28C76F;
-  font-size: 14px;
+  font-size: 10px;
 }
-
+.badge-linewarning {
+  color: #f0ad4e;
+  background-color: transparent;
+  border: 1px solid #f0ad4e;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+  line-height: 1;
+}
 .badge-linedanger, .badge-linedangered {
   color: #FF0000;
   padding: 5px 10px;
   border-radius: 8px;
   border: 1px solid #FF0000;
-  font-size: 14px;
+  font-size: 10px;
 }
 
 span.badge.badges-warning {

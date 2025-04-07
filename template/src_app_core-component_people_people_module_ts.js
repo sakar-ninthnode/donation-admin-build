@@ -182,15 +182,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const _c0 = (a0, a1, a2) => ({
+const _c0 = (a0, a1) => ({
   "badge-linesuccess": a0,
-  "badge-linedanger": a1,
-  "badge-linewarning": a2
+  "badge-linedanger": a1
 });
+const _c1 = () => ({
+  border: "1px solid #f0ad4e",
+  color: "#f0ad4e"
+});
+const _c2 = () => ({});
 function WarehouseComponent_button_25_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "button", 105);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "button", 106);
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵlistener"]("click", function WarehouseComponent_button_25_Template_button_click_0_listener() {
       _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵrestoreView"](_r1);
       const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵnextContext"]();
@@ -207,8 +211,8 @@ function WarehouseComponent_button_25_Template(rf, ctx) {
 }
 function WarehouseComponent_Conditional_47_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "tr")(1, "td", 106);
-    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](2, " No data found ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "tr")(1, "td", 107);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](2, "No data found");
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()();
   }
 }
@@ -235,16 +239,16 @@ function WarehouseComponent_For_49_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](13, "td");
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](14);
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](15, "td")(16, "span", 107);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](15, "td")(16, "span", 108);
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](17);
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](18, "td", 108)(19, "div", 109)(20, "a", 110);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](18, "td", 109)(19, "div", 110)(20, "a", 111);
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵlistener"]("click", function WarehouseComponent_For_49_Template_a_click_20_listener() {
       const data_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵrestoreView"](_r3).$implicit;
       const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵnextContext"]();
       return _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵresetView"](ctx_r1.editeWarehouse(data_r4));
     });
-    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](21, "i", 111);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](21, "i", 112);
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()()()();
   }
   if (rf & 2) {
@@ -264,21 +268,231 @@ function WarehouseComponent_For_49_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtextInterpolate"](data_r4.email);
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵpureFunction3"](9, _c0, data_r4.status === "OPERATIONAL", data_r4.status === "NON OPERATIONAL", data_r4.status === "NOT ACCEPTING DONATIONS"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵpureFunction2"](10, _c0, data_r4.status === "OPERATIONAL", data_r4.status === "NON OPERATIONAL" || data_r4.status === "NOT ACCEPTING DONATIONS"))("ngStyle", (data_r4.status == null ? null : data_r4.status.trim()) === "NOT ACCEPTING DONATIONS" ? _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵpureFunction0"](13, _c1) : _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵpureFunction0"](14, _c2));
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtextInterpolate1"](" ", data_r4.status === "NON OPERATIONAL" ? "NON OPERATIONAL" : data_r4.status === "NOT ACCEPTING DONATIONS" ? "NOT ACCEPTING DONATIONS" : "OPERATIONAL", " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtextInterpolate1"](" ", data_r4.status, " ");
   }
 }
 function WarehouseComponent_small_170_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "small", 112);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "small", 113);
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](1, " This city is already in use. ");
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
   }
 }
-function WarehouseComponent_select_379_option_3_Template(rf, ctx) {
+function WarehouseComponent_div_186_small_1_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "option", 115);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "small", 115);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](1, " Phone number is required. ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
+  }
+}
+function WarehouseComponent_div_186_small_2_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "small", 115);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](1, " Enter a valid phone number. ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
+  }
+}
+function WarehouseComponent_div_186_small_3_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "small", 115);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](1, " This phone number is already in use. ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
+  }
+}
+function WarehouseComponent_div_186_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "div");
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtemplate"](1, WarehouseComponent_div_186_small_1_Template, 2, 0, "small", 114)(2, WarehouseComponent_div_186_small_2_Template, 2, 0, "small", 114)(3, WarehouseComponent_div_186_small_3_Template, 2, 0, "small", 114);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    let tmp_1_0;
+    let tmp_2_0;
+    let tmp_3_0;
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", (tmp_1_0 = ctx_r1.warehouseForm.get("phone_number")) == null ? null : tmp_1_0.errors == null ? null : tmp_1_0.errors["required"]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", (tmp_2_0 = ctx_r1.warehouseForm.get("phone_number")) == null ? null : tmp_2_0.errors == null ? null : tmp_2_0.errors["pattern"]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", (tmp_3_0 = ctx_r1.warehouseForm.get("phone_number")) == null ? null : tmp_3_0.errors == null ? null : tmp_3_0.errors["phoneNumberExists"]);
+  }
+}
+function WarehouseComponent_div_207_input_4_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](0, "input", 117);
+  }
+  if (rf & 2) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("disabled", true);
+  }
+}
+function WarehouseComponent_div_207_div_5_small_1_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "small", 115);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](1, " Email is required. ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
+  }
+}
+function WarehouseComponent_div_207_div_5_small_2_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "small", 115);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](1, " Enter a valid email. ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
+  }
+}
+function WarehouseComponent_div_207_div_5_small_3_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "small", 115);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](1, " This email is already in use. ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
+  }
+}
+function WarehouseComponent_div_207_div_5_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "div");
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtemplate"](1, WarehouseComponent_div_207_div_5_small_1_Template, 2, 0, "small", 114)(2, WarehouseComponent_div_207_div_5_small_2_Template, 2, 0, "small", 114)(3, WarehouseComponent_div_207_div_5_small_3_Template, 2, 0, "small", 114);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    let tmp_2_0;
+    let tmp_3_0;
+    let tmp_4_0;
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", (tmp_2_0 = ctx_r1.warehouseForm.get("email")) == null ? null : tmp_2_0.hasError("required"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", (tmp_3_0 = ctx_r1.warehouseForm.get("email")) == null ? null : tmp_3_0.hasError("email"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", (tmp_4_0 = ctx_r1.warehouseForm.get("email")) == null ? null : tmp_4_0.hasError("emailExists"));
+  }
+}
+function WarehouseComponent_div_207_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "div", 46)(1, "div", 91)(2, "label");
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](3, "Email");
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtemplate"](4, WarehouseComponent_div_207_input_4_Template, 1, 1, "input", 116)(5, WarehouseComponent_div_207_div_5_Template, 4, 3, "div", 93);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    let tmp_2_0;
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", ctx_r1.warehouseForm.get("email"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", ((tmp_2_0 = ctx_r1.warehouseForm.get("email")) == null ? null : tmp_2_0.invalid) && ((tmp_2_0 = ctx_r1.warehouseForm.get("email")) == null ? null : tmp_2_0.touched));
+  }
+}
+function WarehouseComponent_div_367_small_1_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "small", 115);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](1, " Phone number is required. ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
+  }
+}
+function WarehouseComponent_div_367_small_2_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "small", 115);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](1, " Enter a valid phone number. ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
+  }
+}
+function WarehouseComponent_div_367_small_3_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "small", 115);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](1, " This phone number is already in use. ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
+  }
+}
+function WarehouseComponent_div_367_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "div");
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtemplate"](1, WarehouseComponent_div_367_small_1_Template, 2, 0, "small", 114)(2, WarehouseComponent_div_367_small_2_Template, 2, 0, "small", 114)(3, WarehouseComponent_div_367_small_3_Template, 2, 0, "small", 114);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    let tmp_1_0;
+    let tmp_2_0;
+    let tmp_3_0;
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", (tmp_1_0 = ctx_r1.editWarehouseForm.get("phone_number")) == null ? null : tmp_1_0.errors == null ? null : tmp_1_0.errors["required"]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", (tmp_2_0 = ctx_r1.editWarehouseForm.get("phone_number")) == null ? null : tmp_2_0.errors == null ? null : tmp_2_0.errors["pattern"]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", (tmp_3_0 = ctx_r1.editWarehouseForm.get("phone_number")) == null ? null : tmp_3_0.errors == null ? null : tmp_3_0.errors["phoneNumberExists"]);
+  }
+}
+function WarehouseComponent_div_368_input_4_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](0, "input", 117);
+  }
+  if (rf & 2) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("disabled", true);
+  }
+}
+function WarehouseComponent_div_368_div_5_small_1_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "small", 115);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](1, " Email is required. ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
+  }
+}
+function WarehouseComponent_div_368_div_5_small_2_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "small", 115);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](1, " Enter a valid email. ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
+  }
+}
+function WarehouseComponent_div_368_div_5_small_3_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "small", 115);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](1, " This email is already in use. ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
+  }
+}
+function WarehouseComponent_div_368_div_5_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "div");
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtemplate"](1, WarehouseComponent_div_368_div_5_small_1_Template, 2, 0, "small", 114)(2, WarehouseComponent_div_368_div_5_small_2_Template, 2, 0, "small", 114)(3, WarehouseComponent_div_368_div_5_small_3_Template, 2, 0, "small", 114);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    let tmp_2_0;
+    let tmp_3_0;
+    let tmp_4_0;
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", (tmp_2_0 = ctx_r1.editWarehouseForm.get("email")) == null ? null : tmp_2_0.hasError("required"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", (tmp_3_0 = ctx_r1.editWarehouseForm.get("email")) == null ? null : tmp_3_0.hasError("email"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", (tmp_4_0 = ctx_r1.editWarehouseForm.get("email")) == null ? null : tmp_4_0.hasError("emailExists"));
+  }
+}
+function WarehouseComponent_div_368_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "div", 46)(1, "div", 91)(2, "label");
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](3, "Email");
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtemplate"](4, WarehouseComponent_div_368_input_4_Template, 1, 1, "input", 116)(5, WarehouseComponent_div_368_div_5_Template, 4, 3, "div", 93);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    let tmp_2_0;
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", ctx_r1.editWarehouseForm.get("email"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", ((tmp_2_0 = ctx_r1.editWarehouseForm.get("email")) == null ? null : tmp_2_0.invalid) && ((tmp_2_0 = ctx_r1.editWarehouseForm.get("email")) == null ? null : tmp_2_0.touched));
+  }
+}
+function WarehouseComponent_select_373_option_3_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "option", 120);
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
   }
@@ -289,12 +503,12 @@ function WarehouseComponent_select_379_option_3_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtextInterpolate1"](" ", stat_r5.label, " ");
   }
 }
-function WarehouseComponent_select_379_Template(rf, ctx) {
+function WarehouseComponent_select_373_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "select", 113)(1, "option", 49);
-    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](2, "Select a category");
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "select", 118)(1, "option", 49);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](2, " Select a category ");
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtemplate"](3, WarehouseComponent_select_379_option_3_Template, 2, 2, "option", 114);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtemplate"](3, WarehouseComponent_select_373_option_3_Template, 2, 2, "option", 119);
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
   }
   if (rf & 2) {
@@ -303,12 +517,12 @@ function WarehouseComponent_select_379_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngForOf", ctx_r1.statusOptions);
   }
 }
-function WarehouseComponent_div_380_Template(rf, ctx) {
+function WarehouseComponent_div_374_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "div", 46)(1, "div", 101)(2, "span", 102);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "div", 46)(1, "div", 103)(2, "span", 104);
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](3, "Remark");
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](4, "input", 116);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](4, "input", 121);
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()();
   }
 }
@@ -433,7 +647,7 @@ class WarehouseComponent {
       country: ['India'],
       pin_code: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required]],
       phone_number: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required]],
-      country_code: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required]],
+      country_code: ["91"],
       email: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required, _angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.email]]
     });
     this.editWarehouseForm = this.fb.group({
@@ -449,7 +663,7 @@ class WarehouseComponent {
       country: ['India'],
       pin_code: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required]],
       phone_number: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required]],
-      country_code: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required]],
+      country_code: ["91"],
       email: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required, _angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.email]],
       status: [''],
       remarks: ['']
@@ -504,6 +718,12 @@ class WarehouseComponent {
     });
   }
   onSubmit() {
+    this.warehouseForm.patchValue({
+      country: 'India'
+    });
+    this.warehouseForm.patchValue({
+      country_code: '91'
+    });
     if (this.warehouseForm.valid) {
       this.data.createWareHouse(this.warehouseForm.value).subscribe(response => {
         this.getTableData();
@@ -522,10 +742,26 @@ class WarehouseComponent {
             cityExists: true
           });
         }
+        if (error.error.status_message && error.error.status_message.toLowerCase().includes('email already')) {
+          this.warehouseForm.get('email')?.setErrors({
+            emailExists: true
+          });
+        }
+        if (error.error.status_message && error.error.status_message.toLowerCase().includes('phone number already exists')) {
+          this.warehouseForm.get('phone_number')?.setErrors({
+            phoneNumberExists: true
+          });
+        }
       });
     }
   }
   onUpdate() {
+    this.editWarehouseForm.patchValue({
+      country: 'India'
+    });
+    this.editWarehouseForm.patchValue({
+      country_code: '91'
+    });
     if (this.editWarehouseForm.valid) {
       const formData = {
         ...this.editWarehouseForm.value
@@ -541,6 +777,16 @@ class WarehouseComponent {
         // this.resetEditForm();
       }, error => {
         console.error('Error updating announcement', error);
+        if (error.error.status_message && error.error.status_message.toLowerCase().includes('email already')) {
+          this.editWarehouseForm.get('email')?.setErrors({
+            emailExists: true
+          });
+        }
+        if (error.error.status_message && error.error.status_message.toLowerCase().includes('phone number already')) {
+          this.editWarehouseForm.get('phone_number')?.setErrors({
+            phoneNumberExists: true
+          });
+        }
       });
     }
   }
@@ -658,9 +904,9 @@ class WarehouseComponent {
     this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineComponent"]({
       type: WarehouseComponent,
       selectors: [["app-warehouse"]],
-      decls: 386,
-      vars: 11,
-      consts: [[1, "page-header"], [1, "add-item", "d-flex"], [1, "page-title"], [1, "table-top-head"], ["data-bs-toggle", "tooltip", "data-bs-placement", "top", "matTooltip", "Excel", "matTooltipPosition", "above", 3, "click"], ["src", "assets/img/icons/excel.svg", "alt", "img"], [1, "page-btn"], ["href", "javascript:void(0);", "data-bs-toggle", "modal", "data-bs-target", "#add-units", 1, "btn", "btn-added"], [1, "feather", "icon-plus-circle", "me-2"], [1, "card", "table-list-card"], [1, "card-body"], [1, "table-top"], [1, "search-set", "ml-4"], [1, "search-input"], ["href", "javascript:void(0);", 1, "btn", "btn-searchset", 3, "click"], [1, "feather", "icon-search", "feather-search"], [1, "dataTables_filter"], ["placeholder", "Search...", 1, "form-control", 3, "ngModelChange", "keydown.enter", "ngModel"], ["class", "btn btn-clear", 3, "click", 4, "ngIf"], [1, "table-responsive"], ["matSort", "", "matSortActive", "Sno", "matSortDirection", "asc", "matSortDisableClear", "", 1, "table", "datanew", 3, "matSortChange"], ["mat-sort-header", "warehouse"], ["mat-sort-header", "contact"], ["mat-sort-header", "phone"], ["mat-sort-header", "totalproduct"], ["mat-sort-header", "createdOn"], ["mat-sort-header", "status"], [1, "no-sort"], [3, "pageChange", "pagination"], ["id", "add-units", 1, "modal", "fade"], [1, "modal-dialog", "modal-dialog-centered", "custom-modal-two"], [1, "modal-content"], [1, "page-wrapper-new", "p-0"], [1, "content"], [1, "modal-header", "border-0", "custom-modal-header"], ["type", "button", "data-bs-dismiss", "modal", "aria-label", "Close", 1, "close"], ["aria-hidden", "true"], [1, "modal-body", "custom-modal-body"], [3, "ngSubmit", "formGroup"], [1, "row"], [1, "col-lg-12"], [1, "mb-3"], [1, "form-label"], ["id", "warehouse_name", "formControlName", "warehouse_name", "type", "text", "required", "", 1, "form-control"], ["id", "address_line_1", "formControlName", "address_line_1", "type", "text", "required", "", 1, "form-control"], ["id", "address_line_2", "formControlName", "address_line_2", "type", "text", 1, "form-control"], [1, "col-lg-6"], ["id", "country", "formControlName", "country", "type", "text", "readonly", "", 1, "form-control"], ["id", "state", "formControlName", "state", "required", "", 1, "form-control"], ["value", "", "disabled", "", "selected", ""], ["value", "Andhra Pradesh"], ["value", "Arunachal Pradesh"], ["value", "Assam"], ["value", "Bihar"], ["value", "Chhattisgarh"], ["value", "Goa"], ["value", "Gujarat"], ["value", "Haryana"], ["value", "Himachal Pradesh"], ["value", "Jharkhand"], ["value", "Karnataka"], ["value", "Kerala"], ["value", "Madhya Pradesh"], ["value", "Maharashtra"], ["value", "Manipur"], ["value", "Meghalaya"], ["value", "Mizoram"], ["value", "Nagaland"], ["value", "Odisha"], ["value", "Punjab"], ["value", "Rajasthan"], ["value", "Sikkim"], ["value", "Tamil Nadu"], ["value", "Telangana"], ["value", "Tripura"], ["value", "Uttar Pradesh"], ["value", "Uttarakhand"], ["value", "West Bengal"], ["value", "Andaman and Nicobar Islands"], ["value", "Chandigarh"], ["value", "Dadra and Nagar Haveli and Daman and Diu"], ["value", "Lakshadweep"], ["value", "Delhi"], ["value", "Puducherry"], ["value", "Ladakh"], ["value", "Jammu and Kashmir"], [1, "mb-3", "mb-0"], ["id", "city", "formControlName", "city", "type", "text", "required", "", 1, "form-control"], ["class", "text-danger mb-2", 4, "ngIf"], ["id", "pin_code", "formControlName", "pin_code", "type", "text", "required", "", 1, "form-control"], ["id", "country_code", "formControlName", "country_code", "type", "text", "required", "", 1, "form-control"], ["id", "landmark", "formControlName", "landmark", "type", "text", "required", "", 1, "form-control"], ["id", "latitude", "formControlName", "latitude", "type", "text", "required", "", 1, "form-control"], ["id", "longitude", "formControlName", "longitude", "type", "text", "required", "", 1, "form-control"], ["id", "warehouse_sq_ft", "formControlName", "warehouse_sq_ft", "type", "text", "required", "", 1, "form-control"], ["id", "phone_number", "formControlName", "phone_number", "type", "text", "required", "", 1, "form-control"], ["id", "email", "formControlName", "email", "type", "email", "required", "", 1, "form-control"], [1, "modal-footer-btn"], ["type", "button", "data-bs-dismiss", "modal", 1, "btn", "btn-cancel", "me-2"], ["type", "submit", 1, "btn", "btn-submit", 3, "disabled"], ["id", "edit-units", 1, "modal", "fade"], [1, "status-toggle", "modal-status", "justify-content-between", "align-items-center"], [1, "status-label"], ["class", "form-select", "formControlName", "status", 4, "ngIf"], ["class", "col-lg-6", 4, "ngIf"], [1, "btn", "btn-clear", 3, "click"], ["colspan", "6", 1, "text-center", "text-muted"], [1, "badge", 3, "ngClass"], [1, "action-table-data"], [1, "edit-delete-action"], ["href", "javascript:void(0);", "data-bs-toggle", "modal", "data-bs-target", "#edit-units", 1, "me-2", "p-2", 3, "click"], [1, "feather", "icon-edit", "feather-edit"], [1, "text-danger", "mb-2"], ["formControlName", "status", 1, "form-select"], [3, "value", 4, "ngFor", "ngForOf"], [3, "value"], ["id", "remarks", "formControlName", "remarks", "type", "remarks", 1, "form-control"]],
+      decls: 380,
+      vars: 15,
+      consts: [[1, "page-header"], [1, "add-item", "d-flex"], [1, "page-title"], [1, "table-top-head"], ["data-bs-toggle", "tooltip", "data-bs-placement", "top", "matTooltip", "Excel", "matTooltipPosition", "above", 3, "click"], ["src", "assets/img/icons/excel.svg", "alt", "img"], [1, "page-btn"], ["href", "javascript:void(0);", "data-bs-toggle", "modal", "data-bs-target", "#add-units", 1, "btn", "btn-added"], [1, "feather", "icon-plus-circle", "me-2"], [1, "card", "table-list-card"], [1, "card-body"], [1, "table-top"], [1, "search-set", "ml-4"], [1, "search-input"], ["href", "javascript:void(0);", 1, "btn", "btn-searchset", 3, "click"], [1, "feather", "icon-search", "feather-search"], [1, "dataTables_filter"], ["placeholder", "Search...", 1, "form-control", 3, "ngModelChange", "keydown.enter", "ngModel"], ["class", "btn btn-clear", 3, "click", 4, "ngIf"], [1, "table-responsive"], ["matSort", "", "matSortActive", "Sno", "matSortDirection", "asc", "matSortDisableClear", "", 1, "table", "datanew", 3, "matSortChange"], ["mat-sort-header", "warehouse"], ["mat-sort-header", "contact"], ["mat-sort-header", "phone"], ["mat-sort-header", "totalproduct"], ["mat-sort-header", "createdOn"], ["mat-sort-header", "status"], [1, "no-sort"], [3, "pageChange", "pagination"], ["id", "add-units", 1, "modal", "fade"], [1, "modal-dialog", "modal-dialog-centered", "custom-modal-two"], [1, "modal-content"], [1, "page-wrapper-new", "p-0"], [1, "content"], [1, "modal-header", "border-0", "custom-modal-header"], ["type", "button", "data-bs-dismiss", "modal", "aria-label", "Close", 1, "close"], ["aria-hidden", "true"], [1, "modal-body", "custom-modal-body"], [3, "ngSubmit", "formGroup"], [1, "row"], [1, "col-lg-12"], [1, "mb-3"], [1, "form-label"], ["id", "warehouse_name", "formControlName", "warehouse_name", "type", "text", "required", "", 1, "form-control"], ["id", "address_line_1", "formControlName", "address_line_1", "type", "text", "required", "", 1, "form-control"], ["id", "address_line_2", "formControlName", "address_line_2", "type", "text", 1, "form-control"], [1, "col-lg-6"], ["type", "text", "value", "India", "disabled", "", 1, "form-control"], ["id", "state", "formControlName", "state", "required", "", 1, "form-control"], ["value", "", "disabled", "", "selected", ""], ["value", "Andhra Pradesh"], ["value", "Arunachal Pradesh"], ["value", "Assam"], ["value", "Bihar"], ["value", "Chhattisgarh"], ["value", "Goa"], ["value", "Gujarat"], ["value", "Haryana"], ["value", "Himachal Pradesh"], ["value", "Jharkhand"], ["value", "Karnataka"], ["value", "Kerala"], ["value", "Madhya Pradesh"], ["value", "Maharashtra"], ["value", "Manipur"], ["value", "Meghalaya"], ["value", "Mizoram"], ["value", "Nagaland"], ["value", "Odisha"], ["value", "Punjab"], ["value", "Rajasthan"], ["value", "Sikkim"], ["value", "Tamil Nadu"], ["value", "Telangana"], ["value", "Tripura"], ["value", "Uttar Pradesh"], ["value", "Uttarakhand"], ["value", "West Bengal"], ["value", "Andaman and Nicobar Islands"], ["value", "Chandigarh"], ["value", "Dadra and Nagar Haveli and Daman and Diu"], ["value", "Lakshadweep"], ["value", "Delhi"], ["value", "Puducherry"], ["value", "Ladakh"], ["value", "Jammu and Kashmir"], [1, "mb-3", "mb-0"], ["id", "city", "formControlName", "city", "type", "text", "required", "", 1, "form-control"], ["class", "text-danger mb-2", 4, "ngIf"], ["id", "pin_code", "formControlName", "pin_code", "type", "text", "required", "", 1, "form-control"], ["id", "country_code", "type", "text", "value", "91", "disabled", "", 1, "form-control"], [1, "input-blocks"], ["id", "phone_number", "formControlName", "phone_number", "type", "text", "required", "", 1, "form-control"], [4, "ngIf"], ["id", "latitude", "formControlName", "latitude", "type", "text", "required", "", 1, "form-control"], ["id", "longitude", "formControlName", "longitude", "type", "text", "required", "", 1, "form-control"], ["id", "landmark", "formControlName", "landmark", "type", "text", "required", "", 1, "form-control"], ["id", "warehouse_sq_ft", "formControlName", "warehouse_sq_ft", "type", "text", "required", "", 1, "form-control"], ["class", "col-lg-6", 4, "ngIf"], [1, "modal-footer-btn"], ["type", "button", "data-bs-dismiss", "modal", 1, "btn", "btn-cancel", "me-2"], ["type", "submit", 1, "btn", "btn-submit", 3, "disabled"], ["id", "edit-units", 1, "modal", "fade"], [1, "status-toggle", "modal-status", "justify-content-between", "align-items-center"], [1, "status-label"], ["class", "form-select", "formControlName", "status", 4, "ngIf"], [1, "btn", "btn-clear", 3, "click"], ["colspan", "6", 1, "text-center", "text-muted"], [1, "badge", 3, "ngClass", "ngStyle"], [1, "action-table-data"], [1, "edit-delete-action"], ["href", "javascript:void(0);", "data-bs-toggle", "modal", "data-bs-target", "#edit-units", 1, "me-2", "p-2", 3, "click"], [1, "feather", "icon-edit", "feather-edit"], [1, "text-danger", "mb-2"], ["class", "text-danger", 4, "ngIf"], [1, "text-danger"], ["type", "text", "class", "form-control", "formControlName", "email", 3, "disabled", 4, "ngIf"], ["type", "text", "formControlName", "email", 1, "form-control", 3, "disabled"], ["formControlName", "status", 1, "form-select"], [3, "value", 4, "ngFor", "ngForOf"], [3, "value"], ["id", "remarks", "formControlName", "remarks", "type", "remarks", 1, "form-control"]],
       template: function WarehouseComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "h4");
@@ -726,7 +972,7 @@ class WarehouseComponent {
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()()();
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](46, "tbody");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtemplate"](47, WarehouseComponent_Conditional_47_Template, 3, 0, "tr");
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵrepeaterCreate"](48, WarehouseComponent_For_49_Template, 22, 13, "tr", null, _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵrepeaterTrackByIdentity"]);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵrepeaterCreate"](48, WarehouseComponent_For_49_Template, 22, 15, "tr", null, _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵrepeaterTrackByIdentity"]);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()()();
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](50, "app-custom-pagination", 28);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵlistener"]("pageChange", function WarehouseComponent_Template_app_custom_pagination_pageChange_50_listener($event) {
@@ -773,7 +1019,7 @@ class WarehouseComponent {
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](94, "Andhra Pradesh");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](95, "option", 51);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](96, "Arunachal Pradesh");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](96, " Arunachal Pradesh ");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](97, "option", 52);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](98, "Assam");
@@ -854,13 +1100,13 @@ class WarehouseComponent {
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](148, "West Bengal");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](149, "option", 78);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](150, "Andaman and Nicobar Islands");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](150, " Andaman and Nicobar Islands ");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](151, "option", 79);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](152, "Chandigarh");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](153, "option", 80);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](154, "Dadra and Nagar Haveli and Daman and Diu");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](154, " Dadra and Nagar Haveli and Daman and Diu ");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](155, "option", 81);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](156, "Lakshadweep");
@@ -875,7 +1121,7 @@ class WarehouseComponent {
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](162, "Ladakh");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](163, "option", 85);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](164, "Jammu and Kashmir");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](164, " Jammu and Kashmir ");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()()()();
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](165, "div", 46)(166, "div", 86)(167, "label", 42);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](168, "City");
@@ -894,248 +1140,245 @@ class WarehouseComponent {
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](180, "input", 90);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](181, "div", 46)(182, "div", 86)(183, "label", 42);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](184, "Landmark");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](181, "div", 46)(182, "div", 91)(183, "label", 42);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](184, "Phone Number");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](185, "input", 91);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](185, "input", 92);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtemplate"](186, WarehouseComponent_div_186_Template, 4, 3, "div", 93);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](186, "div", 46)(187, "div", 86)(188, "label", 42);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](189, "Latitude");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](187, "div", 46)(188, "div", 86)(189, "label", 42);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](190, "Latitude");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](190, "input", 92);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](191, "input", 94);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](191, "div", 46)(192, "div", 86)(193, "label", 42);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](194, "Longitude");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](192, "div", 46)(193, "div", 86)(194, "label", 42);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](195, "Longitude");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](195, "input", 93);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](196, "input", 95);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](196, "div", 46)(197, "div", 86)(198, "label", 42);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](199, "Warehouse Size (Sq.ft)");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](197, "div", 46)(198, "div", 86)(199, "label", 42);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](200, "Landmark");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](200, "input", 94);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](201, "input", 96);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](201, "div", 46)(202, "div", 86)(203, "label", 42);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](204, "Phone Number");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](202, "div", 46)(203, "div", 86)(204, "label", 42);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](205, "Warehouse Size (Sq.ft)");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](205, "input", 95);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](206, "input", 97);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](206, "div", 46)(207, "div", 86)(208, "label", 42);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](209, "Email");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtemplate"](207, WarehouseComponent_div_207_Template, 6, 2, "div", 98);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](210, "input", 96);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](211, "div", 97)(212, "button", 98);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](213, "Cancel");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](208, "div", 99)(209, "button", 100);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](210, " Cancel ");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](214, "button", 99);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](215, "Create Warehouse");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](211, "button", 101);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](212, " Create Warehouse ");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()()()()()()()()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](216, "div", 100)(217, "div", 30)(218, "div", 31)(219, "div", 32)(220, "div", 33)(221, "div", 34)(222, "div", 2)(223, "h4");
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](224, "Edit Warehouse");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](213, "div", 102)(214, "div", 30)(215, "div", 31)(216, "div", 32)(217, "div", 33)(218, "div", 34)(219, "div", 2)(220, "h4");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](221, "Edit Warehouse");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](225, "button", 35)(226, "span", 36);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](227, "\u00D7");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](222, "button", 35)(223, "span", 36);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](224, "\u00D7");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](228, "div", 37)(229, "form", 38);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵlistener"]("ngSubmit", function WarehouseComponent_Template_form_ngSubmit_229_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](225, "div", 37)(226, "form", 38);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵlistener"]("ngSubmit", function WarehouseComponent_Template_form_ngSubmit_226_listener() {
             return ctx.onUpdate();
           });
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](230, "div", 39)(231, "div", 40)(232, "div", 41)(233, "label", 42);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](234, "Warehouse Name");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](227, "div", 39)(228, "div", 40)(229, "div", 41)(230, "label", 42);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](231, "Warehouse Name");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](235, "input", 43);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](232, "input", 43);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](236, "div", 40)(237, "div", 41)(238, "label", 42);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](239, "Address Line 1");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](233, "div", 40)(234, "div", 41)(235, "label", 42);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](236, "Address Line 1");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](240, "input", 44);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](237, "input", 44);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](241, "div", 40)(242, "div", 41)(243, "label", 42);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](244, "Address Line 2");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](238, "div", 40)(239, "div", 41)(240, "label", 42);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](241, "Address Line 2");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](245, "input", 45);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](242, "input", 45);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](246, "div", 46)(247, "div", 86)(248, "label", 42);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](249, "Landmark");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](243, "div", 46)(244, "div", 86)(245, "label", 42);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](246, "Latitude");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](250, "input", 91);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](247, "input", 94);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](251, "div", 46)(252, "div", 86)(253, "label", 42);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](254, "Latitude");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](248, "div", 46)(249, "div", 86)(250, "label", 42);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](251, "Longitude");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](255, "input", 92);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](252, "input", 95);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](256, "div", 46)(257, "div", 86)(258, "label", 42);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](259, "Longitude");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](253, "div", 46)(254, "div", 86)(255, "label", 42);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](256, "Landmark");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](260, "input", 93);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](257, "input", 96);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](261, "div", 46)(262, "div", 86)(263, "label", 42);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](264, "Warehouse Size (Sq.ft)");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](258, "div", 46)(259, "div", 86)(260, "label", 42);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](261, "Warehouse Size (Sq.ft)");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](265, "input", 94);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](262, "input", 97);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](266, "div", 46)(267, "div", 41)(268, "label", 42);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](269, "Country");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](263, "div", 46)(264, "div", 41)(265, "label", 42);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](266, "Country");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](270, "input", 47);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](267, "input", 47);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](271, "div", 46)(272, "div", 41)(273, "label", 42);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](274, "State");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](268, "div", 46)(269, "div", 41)(270, "label", 42);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](271, "State");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](275, "select", 48)(276, "option", 49);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](277, "Select State");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](272, "select", 48)(273, "option", 49);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](274, "Select State");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](278, "option", 50);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](279, "Andhra Pradesh");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](275, "option", 50);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](276, "Andhra Pradesh");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](280, "option", 51);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](281, "Arunachal Pradesh");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](277, "option", 51);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](278, " Arunachal Pradesh ");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](282, "option", 52);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](283, "Assam");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](279, "option", 52);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](280, "Assam");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](284, "option", 53);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](285, "Bihar");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](281, "option", 53);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](282, "Bihar");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](286, "option", 54);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](287, "Chhattisgarh");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](283, "option", 54);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](284, "Chhattisgarh");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](288, "option", 55);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](289, "Goa");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](285, "option", 55);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](286, "Goa");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](290, "option", 56);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](291, "Gujarat");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](287, "option", 56);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](288, "Gujarat");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](292, "option", 57);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](293, "Haryana");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](289, "option", 57);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](290, "Haryana");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](294, "option", 58);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](295, "Himachal Pradesh");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](291, "option", 58);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](292, "Himachal Pradesh");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](296, "option", 59);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](297, "Jharkhand");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](293, "option", 59);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](294, "Jharkhand");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](298, "option", 60);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](299, "Karnataka");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](295, "option", 60);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](296, "Karnataka");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](300, "option", 61);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](301, "Kerala");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](297, "option", 61);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](298, "Kerala");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](302, "option", 62);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](303, "Madhya Pradesh");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](299, "option", 62);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](300, "Madhya Pradesh");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](304, "option", 63);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](305, "Maharashtra");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](301, "option", 63);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](302, "Maharashtra");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](306, "option", 64);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](307, "Manipur");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](303, "option", 64);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](304, "Manipur");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](308, "option", 65);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](309, "Meghalaya");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](305, "option", 65);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](306, "Meghalaya");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](310, "option", 66);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](311, "Mizoram");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](307, "option", 66);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](308, "Mizoram");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](312, "option", 67);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](313, "Nagaland");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](309, "option", 67);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](310, "Nagaland");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](314, "option", 68);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](315, "Odisha");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](311, "option", 68);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](312, "Odisha");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](316, "option", 69);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](317, "Punjab");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](313, "option", 69);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](314, "Punjab");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](318, "option", 70);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](319, "Rajasthan");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](315, "option", 70);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](316, "Rajasthan");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](320, "option", 71);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](321, "Sikkim");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](317, "option", 71);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](318, "Sikkim");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](322, "option", 72);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](323, "Tamil Nadu");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](319, "option", 72);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](320, "Tamil Nadu");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](324, "option", 73);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](325, "Telangana");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](321, "option", 73);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](322, "Telangana");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](326, "option", 74);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](327, "Tripura");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](323, "option", 74);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](324, "Tripura");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](328, "option", 75);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](329, "Uttar Pradesh");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](325, "option", 75);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](326, "Uttar Pradesh");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](330, "option", 76);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](331, "Uttarakhand");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](327, "option", 76);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](328, "Uttarakhand");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](332, "option", 77);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](333, "West Bengal");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](329, "option", 77);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](330, "West Bengal");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](334, "option", 78);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](335, "Andaman and Nicobar Islands");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](331, "option", 78);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](332, " Andaman and Nicobar Islands ");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](336, "option", 79);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](337, "Chandigarh");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](333, "option", 79);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](334, "Chandigarh");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](338, "option", 80);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](339, "Dadra and Nagar Haveli and Daman and Diu");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](335, "option", 80);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](336, " Dadra and Nagar Haveli and Daman and Diu ");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](340, "option", 81);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](341, "Lakshadweep");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](337, "option", 81);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](338, "Lakshadweep");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](342, "option", 82);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](343, "Delhi");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](339, "option", 82);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](340, "Delhi");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](344, "option", 83);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](345, "Puducherry");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](341, "option", 83);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](342, "Puducherry");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](346, "option", 84);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](347, "Ladakh");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](343, "option", 84);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](344, "Ladakh");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](348, "option", 85);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](349, "Jammu and Kashmir");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](345, "option", 85);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](346, " Jammu and Kashmir ");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()()()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](350, "div", 46)(351, "div", 86)(352, "label", 42);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](353, "City");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](347, "div", 46)(348, "div", 86)(349, "label", 42);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](350, "City");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](354, "input", 87);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](351, "input", 87);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](355, "div", 46)(356, "div", 86)(357, "label", 42);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](358, "Pin Code");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](352, "div", 46)(353, "div", 86)(354, "label", 42);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](355, "Pin Code");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](359, "input", 89);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](356, "input", 89);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](360, "div", 46)(361, "div", 86)(362, "label", 42);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](363, "Country Code");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](357, "div", 46)(358, "div", 86)(359, "label", 42);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](360, "Country Code");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](364, "input", 90);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](361, "input", 90);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](365, "div", 46)(366, "div", 86)(367, "label", 42);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](368, "Phone Number");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](362, "div", 46)(363, "div", 91)(364, "label", 42);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](365, "Phone Number");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](369, "input", 95);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](366, "input", 92);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtemplate"](367, WarehouseComponent_div_367_Template, 4, 3, "div", 93);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](370, "div", 46)(371, "div", 86)(372, "label", 42);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](373, "Email");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtemplate"](368, WarehouseComponent_div_368_Template, 6, 2, "div", 98);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](369, "div", 46)(370, "div", 103)(371, "span", 104);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](372, "Donation Status");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](374, "input", 96);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtemplate"](373, WarehouseComponent_select_373_Template, 4, 1, "select", 105);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](375, "div", 46)(376, "div", 101)(377, "span", 102);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](378, "Donation Status");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtemplate"](374, WarehouseComponent_div_374_Template, 5, 0, "div", 98);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtemplate"](379, WarehouseComponent_select_379_Template, 4, 1, "select", 103);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtemplate"](380, WarehouseComponent_div_380_Template, 5, 0, "div", 104);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](375, "div", 99)(376, "button", 100);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](377, " Cancel ");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](381, "div", 97)(382, "button", 98);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](383, "Cancel");
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](384, "button", 99);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](385, "Create Warehouse");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](378, "button", 101);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](379, " Create Warehouse ");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()()()()()()()()();
         }
         if (rf & 2) {
           let tmp_6_0;
-          let tmp_10_0;
+          let tmp_7_0;
+          let tmp_11_0;
+          let tmp_14_0;
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](24);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtwoWayProperty"]("ngModel", ctx.filterSearchText);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"]();
@@ -1150,19 +1393,27 @@ class WarehouseComponent {
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("formGroup", ctx.warehouseForm);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](106);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", (tmp_6_0 = ctx.warehouseForm.get("city")) == null ? null : tmp_6_0.hasError("cityExists"));
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](44);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](16);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", ((tmp_7_0 = ctx.warehouseForm.get("phone_number")) == null ? null : tmp_7_0.touched) && ((tmp_7_0 = ctx.warehouseForm.get("phone_number")) == null ? null : tmp_7_0.invalid));
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](21);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", ctx.warehouseForm.get("email"));
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](4);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("disabled", ctx.warehouseForm.invalid);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](15);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("formGroup", ctx.editWarehouseForm);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](150);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](141);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", ((tmp_11_0 = ctx.editWarehouseForm.get("phone_number")) == null ? null : tmp_11_0.touched) && ((tmp_11_0 = ctx.editWarehouseForm.get("phone_number")) == null ? null : tmp_11_0.invalid));
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", ctx.editWarehouseForm.get("email"));
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](5);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", ctx.statusOptions);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", ((tmp_10_0 = ctx.editWarehouseForm.get("status")) == null ? null : tmp_10_0.value) !== ctx.selectedwarehouse.status);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", ((tmp_14_0 = ctx.editWarehouseForm.get("status")) == null ? null : tmp_14_0.value) !== ctx.selectedwarehouse.status);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](4);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("disabled", ctx.editWarehouseForm.invalid);
         }
       },
-      dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_11__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_11__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_11__.NgIf, _angular_material_sort__WEBPACK_IMPORTED_MODULE_12__.MatSort, _angular_material_sort__WEBPACK_IMPORTED_MODULE_12__.MatSortHeader, _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__.NgSelectOption, _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ɵNgSelectMultipleOption"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_8__.SelectControlValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_8__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_8__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_8__.RequiredValidator, _angular_forms__WEBPACK_IMPORTED_MODULE_8__.NgModel, _shared_custom_pagination_custom_pagination_component__WEBPACK_IMPORTED_MODULE_6__.CustomPaginationComponent, _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_13__.MatTooltip, _angular_forms__WEBPACK_IMPORTED_MODULE_8__.FormGroupDirective, _angular_forms__WEBPACK_IMPORTED_MODULE_8__.FormControlName],
+      dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_11__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_11__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_11__.NgIf, _angular_common__WEBPACK_IMPORTED_MODULE_11__.NgStyle, _angular_material_sort__WEBPACK_IMPORTED_MODULE_12__.MatSort, _angular_material_sort__WEBPACK_IMPORTED_MODULE_12__.MatSortHeader, _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__.NgSelectOption, _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ɵNgSelectMultipleOption"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_8__.SelectControlValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_8__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_8__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_8__.RequiredValidator, _angular_forms__WEBPACK_IMPORTED_MODULE_8__.NgModel, _shared_custom_pagination_custom_pagination_component__WEBPACK_IMPORTED_MODULE_6__.CustomPaginationComponent, _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_13__.MatTooltip, _angular_forms__WEBPACK_IMPORTED_MODULE_8__.FormGroupDirective, _angular_forms__WEBPACK_IMPORTED_MODULE_8__.FormControlName],
       styles: ["/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */"]
     });
   }

@@ -86975,7 +86975,7 @@ body .box .page-wrapper.pos-pg-wrapper {
   padding: 5px 10px;
   border-radius: 8px;
   border: 1px solid #28C76F;
-  font-size: 14px;
+  font-size: 10px;
 }
 
 .badge-linedanger, .badge-linedangered {
@@ -86983,7 +86983,15 @@ body .box .page-wrapper.pos-pg-wrapper {
   padding: 5px 10px;
   border-radius: 8px;
   border: 1px solid #FF0000;
-  font-size: 14px;
+  font-size: 10px;
+}
+
+.badge-linewarning {
+  color: "#f0ad4e";
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid "#f0ad4e";
+  font-size: 10px;
 }
 
 span.badge.badges-warning {

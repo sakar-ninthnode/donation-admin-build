@@ -1050,7 +1050,7 @@ const routes = [{
     loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_sweetalert2_dist_sweetalert2_all_js"), __webpack_require__.e("default-src_app_shared_shared_index_ts-node_modules_xlsx_xlsx_mjs"), __webpack_require__.e("src_app_core-component_user-management_user-management_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ./user-management/user-management.module */ 73559)).then(m => m.UserManagementModule)
   }, {
     path: 'sales',
-    loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_sweetalert2_dist_sweetalert2_all_js"), __webpack_require__.e("src_app_core-component_sales_sales_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ./sales/sales.module */ 43851)).then(m => m.SalesModule)
+    loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_sweetalert2_dist_sweetalert2_all_js"), __webpack_require__.e("default-src_app_shared_shared_index_ts-node_modules_xlsx_xlsx_mjs"), __webpack_require__.e("src_app_core-component_sales_sales_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ./sales/sales.module */ 43851)).then(m => m.SalesModule)
   }, {
     path: 'people',
     loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_sweetalert2_dist_sweetalert2_all_js"), __webpack_require__.e("default-src_app_shared_shared_index_ts-node_modules_xlsx_xlsx_mjs"), __webpack_require__.e("src_app_core-component_people_people_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ./people/people.module */ 467)).then(m => m.PeopleModule)
