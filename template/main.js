@@ -437,8 +437,11 @@ class routes {
   static get profile() {
     return this.pages + '/profile';
   }
-  static get refferal() {
-    return this.pages + '/refferal';
+  static get referral() {
+    return this.pages + '/referral';
+  }
+  static get paymentInfo() {
+    return this.pages + '/payment-info';
   }
   static get activities() {
     return this.pages + '/activities';
@@ -2434,7 +2437,14 @@ class SidebarService {
       }, {
         menuValue: 'Referral',
         icon: 'user',
-        route: _core_index__WEBPACK_IMPORTED_MODULE_0__.routes.refferal,
+        route: _core_index__WEBPACK_IMPORTED_MODULE_0__.routes.referral,
+        hasSubRoute: false,
+        showSubRoute: false,
+        access: ["Platform Admin", "Warehouse Admin", "Support Staff"]
+      }, {
+        menuValue: 'Payment Info',
+        icon: 'user',
+        route: _core_index__WEBPACK_IMPORTED_MODULE_0__.routes.paymentInfo,
         hasSubRoute: false,
         showSubRoute: false,
         access: ["Platform Admin", "Warehouse Admin", "Support Staff"]
