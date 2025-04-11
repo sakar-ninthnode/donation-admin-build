@@ -1177,7 +1177,7 @@ class WarehouseComponent {
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](212, " Create Warehouse ");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()()()()()()()()();
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](213, "div", 102)(214, "div", 30)(215, "div", 31)(216, "div", 32)(217, "div", 33)(218, "div", 34)(219, "div", 2)(220, "h4");
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](221, "Update Warehouse");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](221, "Edit Warehouse");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()();
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](222, "button", 35)(223, "span", 36);
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](224, "\u00D7");
@@ -1377,7 +1377,7 @@ class WarehouseComponent {
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](383, " Cancel ");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](384, "button", 101);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](385, " Create Warehouse ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](385, " Update Warehouse ");
           _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()()()()()()()()();
         }
         if (rf & 2) {

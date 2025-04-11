@@ -1812,7 +1812,7 @@ class DataService {
     };
     return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/subcategory/${subcategory_id}/condition`, httpOptions);
   }
-  updateDonationStatus(donation_id, donationData) {
+  updateDonationStatus(donation_product_id, donationData) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     const httpOptions = {
       headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
@@ -1820,7 +1820,7 @@ class DataService {
         'Content-Type': 'application/json'
       })
     };
-    return this.http.patch(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/donation/${donation_id}/pickup`, donationData, httpOptions);
+    return this.http.patch(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/donation/products/${donation_product_id}/pickup`, donationData, httpOptions);
   }
   scheduleProductPickupRequest(product_id) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
