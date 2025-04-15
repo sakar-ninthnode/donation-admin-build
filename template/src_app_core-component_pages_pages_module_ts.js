@@ -267,7 +267,7 @@ class PaymentInfo {
       template: function PaymentInfo_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "h4");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](3, "Referral");
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](3, "Payment Info");
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()();
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](4, "div", 2)(5, "div", 3)(6, "div", 4)(7, "div", 2)(8, "div", 5)(9, "h4", 6);
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](10, "Update Payment Info");

@@ -11,32 +11,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   AuthRoutingModule: () => (/* binding */ AuthRoutingModule)
 /* harmony export */ });
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @angular/router */ 95072);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/router */ 95072);
 /* harmony import */ var _auth_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./auth.component */ 40998);
 /* harmony import */ var _email_verification_email_verification_email_verification_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./email-verification/email-verification/email-verification.component */ 63602);
 /* harmony import */ var _email_verification_email_verification_2_email_verification_2_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./email-verification/email-verification-2/email-verification-2.component */ 44200);
 /* harmony import */ var _email_verification_email_verification_3_email_verification_3_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./email-verification/email-verification-3/email-verification-3.component */ 64630);
 /* harmony import */ var _reset_password_reset_password_2_reset_password_2_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./reset-password/reset-password-2/reset-password-2.component */ 89533);
 /* harmony import */ var _reset_password_reset_password_3_reset_password_3_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./reset-password/reset-password-3/reset-password-3.component */ 44347);
-/* harmony import */ var _reset_password_reset_password_reset_password_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./reset-password/reset-password/reset-password.component */ 41091);
-/* harmony import */ var _forgot_password_forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./forgot-password/forgot-password/forgot-password.component */ 44831);
-/* harmony import */ var _forgot_password_forgot_password_2_forgot_password_2_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./forgot-password/forgot-password-2/forgot-password-2.component */ 55887);
-/* harmony import */ var _register_register_2_register_2_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./register/register-2/register-2.component */ 95455);
-/* harmony import */ var _register_register_3_register_3_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./register/register-3/register-3.component */ 60481);
-/* harmony import */ var _signin_signin_3_signin_3_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./signin/signin-3/signin-3.component */ 21992);
-/* harmony import */ var _two_step_verification_two_step_verification_2_two_step_verification_2_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./two-step-verification/two-step-verification-2/two-step-verification-2.component */ 27221);
-/* harmony import */ var _two_step_verification_two_step_verification_two_step_verification_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./two-step-verification/two-step-verification/two-step-verification.component */ 21701);
-/* harmony import */ var _two_step_verification_two_step_verification_3_two_step_verification_3_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./two-step-verification/two-step-verification-3/two-step-verification-3.component */ 83737);
-/* harmony import */ var _lock_screen_lock_screen_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./lock-screen/lock-screen.component */ 30531);
-/* harmony import */ var _forgot_password_forgot_password_3_forgot_password_3_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./forgot-password/forgot-password-3/forgot-password-3.component */ 91567);
-/* harmony import */ var _successs_success_success_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./successs/success/success.component */ 67808);
-/* harmony import */ var _successs_success_2_success_2_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./successs/success-2/success-2.component */ 95104);
-/* harmony import */ var _successs_success_3_success_3_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./successs/success-3/success-3.component */ 34872);
-/* harmony import */ var _register_register_register_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./register/register/register.component */ 59885);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @angular/core */ 37580);
-
-
-
+/* harmony import */ var _forgot_password_forgot_password_2_forgot_password_2_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./forgot-password/forgot-password-2/forgot-password-2.component */ 55887);
+/* harmony import */ var _register_register_2_register_2_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./register/register-2/register-2.component */ 95455);
+/* harmony import */ var _register_register_3_register_3_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./register/register-3/register-3.component */ 60481);
+/* harmony import */ var _signin_signin_3_signin_3_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./signin/signin-3/signin-3.component */ 21992);
+/* harmony import */ var _two_step_verification_two_step_verification_2_two_step_verification_2_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./two-step-verification/two-step-verification-2/two-step-verification-2.component */ 27221);
+/* harmony import */ var _two_step_verification_two_step_verification_3_two_step_verification_3_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./two-step-verification/two-step-verification-3/two-step-verification-3.component */ 83737);
+/* harmony import */ var _lock_screen_lock_screen_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./lock-screen/lock-screen.component */ 30531);
+/* harmony import */ var _forgot_password_forgot_password_3_forgot_password_3_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./forgot-password/forgot-password-3/forgot-password-3.component */ 91567);
+/* harmony import */ var _successs_success_success_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./successs/success/success.component */ 67808);
+/* harmony import */ var _successs_success_2_success_2_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./successs/success-2/success-2.component */ 95104);
+/* harmony import */ var _successs_success_3_success_3_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./successs/success-3/success-3.component */ 34872);
+/* harmony import */ var _register_register_register_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./register/register/register.component */ 59885);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/core */ 37580);
 
 
 
@@ -82,49 +76,49 @@ const routes = [{
     component: _reset_password_reset_password_3_reset_password_3_component__WEBPACK_IMPORTED_MODULE_5__.ResetPassword3Component
   }, {
     path: 'reset-password',
-    component: _reset_password_reset_password_reset_password_component__WEBPACK_IMPORTED_MODULE_6__.ResetPasswordComponent
+    component: _reset_password_reset_password_3_reset_password_3_component__WEBPACK_IMPORTED_MODULE_5__.ResetPassword3Component
   }, {
     path: 'forgot-password',
-    component: _forgot_password_forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_7__.ForgotPasswordComponent
+    component: _forgot_password_forgot_password_3_forgot_password_3_component__WEBPACK_IMPORTED_MODULE_13__.ForgotPassword3Component
   }, {
     path: 'forgot-password-2',
-    component: _forgot_password_forgot_password_2_forgot_password_2_component__WEBPACK_IMPORTED_MODULE_8__.ForgotPassword2Component
+    component: _forgot_password_forgot_password_2_forgot_password_2_component__WEBPACK_IMPORTED_MODULE_6__.ForgotPassword2Component
   }, {
     path: 'forgot-password-3',
-    component: _forgot_password_forgot_password_3_forgot_password_3_component__WEBPACK_IMPORTED_MODULE_16__.ForgotPassword3Component
+    component: _forgot_password_forgot_password_3_forgot_password_3_component__WEBPACK_IMPORTED_MODULE_13__.ForgotPassword3Component
   }, {
     path: 'register',
-    component: _register_register_register_component__WEBPACK_IMPORTED_MODULE_20__.RegisterComponent
+    component: _register_register_register_component__WEBPACK_IMPORTED_MODULE_17__.RegisterComponent
   }, {
     path: 'register-2',
-    component: _register_register_2_register_2_component__WEBPACK_IMPORTED_MODULE_9__.Register2Component
+    component: _register_register_2_register_2_component__WEBPACK_IMPORTED_MODULE_7__.Register2Component
   }, {
     path: 'register-3',
-    component: _register_register_3_register_3_component__WEBPACK_IMPORTED_MODULE_10__.Register3Component
+    component: _register_register_3_register_3_component__WEBPACK_IMPORTED_MODULE_8__.Register3Component
   }, {
     path: 'signin',
-    component: _signin_signin_3_signin_3_component__WEBPACK_IMPORTED_MODULE_11__.Signin3Component
+    component: _signin_signin_3_signin_3_component__WEBPACK_IMPORTED_MODULE_9__.Signin3Component
   }, {
     path: 'two-step-verification',
-    component: _two_step_verification_two_step_verification_two_step_verification_component__WEBPACK_IMPORTED_MODULE_13__.TwoStepVerificationComponent
+    component: _two_step_verification_two_step_verification_3_two_step_verification_3_component__WEBPACK_IMPORTED_MODULE_11__.TwoStepVerification3Component
   }, {
     path: 'two-step-verification-2',
-    component: _two_step_verification_two_step_verification_2_two_step_verification_2_component__WEBPACK_IMPORTED_MODULE_12__.TwoStepVerification2Component
+    component: _two_step_verification_two_step_verification_2_two_step_verification_2_component__WEBPACK_IMPORTED_MODULE_10__.TwoStepVerification2Component
   }, {
     path: 'two-step-verification-3',
-    component: _two_step_verification_two_step_verification_3_two_step_verification_3_component__WEBPACK_IMPORTED_MODULE_14__.TwoStepVerification3Component
+    component: _two_step_verification_two_step_verification_3_two_step_verification_3_component__WEBPACK_IMPORTED_MODULE_11__.TwoStepVerification3Component
   }, {
     path: 'lock-screen',
-    component: _lock_screen_lock_screen_component__WEBPACK_IMPORTED_MODULE_15__.LockScreenComponent
+    component: _lock_screen_lock_screen_component__WEBPACK_IMPORTED_MODULE_12__.LockScreenComponent
   }, {
     path: 'success',
-    component: _successs_success_success_component__WEBPACK_IMPORTED_MODULE_17__.SuccessComponent
+    component: _successs_success_success_component__WEBPACK_IMPORTED_MODULE_14__.SuccessComponent
   }, {
     path: 'success-2',
-    component: _successs_success_2_success_2_component__WEBPACK_IMPORTED_MODULE_18__.Success2Component
+    component: _successs_success_2_success_2_component__WEBPACK_IMPORTED_MODULE_15__.Success2Component
   }, {
     path: 'success-3',
-    component: _successs_success_3_success_3_component__WEBPACK_IMPORTED_MODULE_19__.Success3Component
+    component: _successs_success_3_success_3_component__WEBPACK_IMPORTED_MODULE_16__.Success3Component
   }]
 }];
 class AuthRoutingModule {
@@ -134,20 +128,20 @@ class AuthRoutingModule {
     };
   }
   static {
-    this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_21__["ɵɵdefineNgModule"]({
+    this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_18__["ɵɵdefineNgModule"]({
       type: AuthRoutingModule
     });
   }
   static {
-    this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_21__["ɵɵdefineInjector"]({
-      imports: [_angular_router__WEBPACK_IMPORTED_MODULE_22__.RouterModule.forChild(routes), _angular_router__WEBPACK_IMPORTED_MODULE_22__.RouterModule]
+    this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_18__["ɵɵdefineInjector"]({
+      imports: [_angular_router__WEBPACK_IMPORTED_MODULE_19__.RouterModule.forChild(routes), _angular_router__WEBPACK_IMPORTED_MODULE_19__.RouterModule]
     });
   }
 }
 (function () {
-  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_21__["ɵɵsetNgModuleScope"](AuthRoutingModule, {
-    imports: [_angular_router__WEBPACK_IMPORTED_MODULE_22__.RouterModule],
-    exports: [_angular_router__WEBPACK_IMPORTED_MODULE_22__.RouterModule]
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_18__["ɵɵsetNgModuleScope"](AuthRoutingModule, {
+    imports: [_angular_router__WEBPACK_IMPORTED_MODULE_19__.RouterModule],
+    exports: [_angular_router__WEBPACK_IMPORTED_MODULE_19__.RouterModule]
   });
 })();
 
@@ -689,59 +683,37 @@ class ForgotPassword3Component {
     this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({
       type: ForgotPassword3Component,
       selectors: [["app-forgot-password-3"]],
-      decls: 46,
-      vars: 2,
-      consts: [[1, "account-content"], [1, "login-wrapper", "login-new"], [1, "container"], [1, "login-content", "user-login"], [1, "login-logo"], ["src", "assets/img/logo.png", "alt", "img"], [1, "login-logo", "logo-white", 3, "routerLink"], ["src", "assets/img/logo-white.png", "alt", ""], [1, "login-userset"], [1, "login-userheading"], [1, "form-login"], [1, "form-addons"], ["type", "email", 1, "form-control"], ["src", "assets/img/icons/mail.svg", "alt", "img"], ["type", "button", 1, "btn", "btn-login", 3, "click"], [1, "signinform", "text-center"], [1, "hover-a", 3, "routerLink"], [1, "form-setlogin", "or-text"], [1, "form-sociallink"], [1, "d-flex", "justify-content-center"], ["href", "javascript:void(0);", 1, "facebook-logo"], ["src", "assets/img/icons/facebook-logo.svg", "alt", "Facebook"], ["href", "javascript:void(0);"], ["src", "assets/img/icons/google.png", "alt", "Google"], ["href", "javascript:void(0);", 1, "apple-logo"], ["src", "assets/img/icons/apple-logo.svg", "alt", "Apple"], [1, "my-4", "d-flex", "justify-content-center", "align-items-center", "copyright-text"]],
+      decls: 25,
+      vars: 1,
+      consts: [[1, "account-content"], [1, "login-wrapper", "login-new"], [1, "container"], [1, "login-content", "user-login"], [1, "login-userset"], [1, "login-userheading"], [1, "form-login"], [1, "form-addons"], ["type", "number", "maxlength", "10", 1, "form-control"], ["src", "assets/img/icons/call.png", "alt", "img", 2, "top", "4px !important"], ["type", "button", 1, "btn", "btn-login", 3, "click"], [1, "signinform", "text-center"], [1, "hover-a", 3, "routerLink"]],
       template: function ForgotPassword3Component_Template(rf, ctx) {
         if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "div", 4);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](5, "img", 5);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](6, "a", 6);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](7, "img", 7);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](8, "form")(9, "div", 8)(10, "div", 9)(11, "h3");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](12, "Forgot password?");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "form")(5, "div", 4)(6, "div", 5)(7, "h3");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](8, "Forgot password?");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](13, "h4");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](14, "If you forgot your password, well, then we\u2019ll email you instructions to reset your password.");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](9, "h4");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](10, "If you forgot your password, Enter your phone number and we\u2019ll send you a one-time password (OTP) to reset it.");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](15, "div", 10)(16, "label");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](17, "Email");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](11, "div", 6)(12, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](13, "Phone number");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](18, "div", 11);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](19, "input", 12)(20, "img", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](14, "div", 7);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](15, "input", 8)(16, "img", 9);
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](21, "div", 10)(22, "button", 14);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function ForgotPassword3Component_Template_button_click_22_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](17, "div", 6)(18, "button", 10);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function ForgotPassword3Component_Template_button_click_18_listener() {
             return ctx.navigation();
           });
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](23, "Submit");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](19, "Submit");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](24, "div", 15)(25, "h4");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Return to");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](27, "a", 16);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, " login ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](29, "div", 17)(30, "h4");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](31, "OR");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](32, "div", 18)(33, "ul", 19)(34, "li")(35, "a", 20);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](36, "img", 21);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](37, "li")(38, "a", 22);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](39, "img", 23);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](40, "li")(41, "a", 24);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](42, "img", 25);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()()()()()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](43, "div", 26)(44, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](45, "Copyright \u00A9 2023 DreamsPOS. All rights reserved");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()()()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](20, "div", 11)(21, "h4");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Return to");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](23, "a", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, " login ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()()()()()()()();
         }
         if (rf & 2) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](6);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("routerLink", ctx.routes.adminDashboard);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](21);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](23);
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("routerLink", ctx.routes.signIn3);
         }
       },
@@ -2258,44 +2230,29 @@ class TwoStepVerification3Component {
     this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({
       type: TwoStepVerification3Component,
       selectors: [["app-two-step-verification-3"]],
-      decls: 30,
-      vars: 1,
-      consts: [[1, "account-content"], [1, "login-wrapper", "login-new"], [1, "login-content", "user-login"], [1, "login-logo"], ["src", "assets/img/logo.png", "alt", "img"], [1, "login-logo", "logo-white", 3, "routerLink"], ["src", "assets/img/logo-white.png", "alt", ""], [1, "login-userset"], [1, "login-userheading"], [1, "verfy-mail-content"], [1, "digit-group"], [1, "wallet-add"], [1, "otp-box"], [1, "forms-block", "text-center"], ["type", "text", "id", "digit-1", "maxlength", "1", "value", ""], ["type", "text", "id", "digit-2", "maxlength", "1", "value", ""], ["type", "text", "id", "digit-3", "maxlength", "1", "value", ""], ["type", "text", "id", "digit-4", "maxlength", "1", "value", ""], [1, "Otp-expire", "text-center"], [1, "form-login", "mt-4"], ["type", "button", 1, "btn", "btn-login", 3, "click"], [1, "my-4", "d-flex", "justify-content-center", "align-items-center", "copyright-text"]],
+      decls: 20,
+      vars: 0,
+      consts: [[1, "account-content"], [1, "login-wrapper", "login-new"], [1, "login-content", "user-login"], [1, "login-userset"], [1, "login-userheading"], [1, "verfy-mail-content"], [1, "digit-group"], [1, "wallet-add"], [1, "otp-box"], [1, "forms-block", "text-center"], ["type", "text", "id", "digit-1", "maxlength", "1", "value", ""], ["type", "text", "id", "digit-2", "maxlength", "1", "value", ""], ["type", "text", "id", "digit-3", "maxlength", "1", "value", ""], ["type", "text", "id", "digit-4", "maxlength", "1", "value", ""], [1, "form-login", "mt-4"], ["type", "button", 1, "btn", "btn-login", 3, "click"]],
       template: function TwoStepVerification3Component_Template(rf, ctx) {
         if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](4, "img", 4);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "a", 5);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](6, "img", 6);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "div", 7)(8, "div", 8)(9, "h3");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](10, "Login With Your Email Address");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "div", 4)(5, "h3");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](6, "Login With OTP");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](11, "h4", 9);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](12, "We sent a verification code to your email. Enter the code from the email in the field below");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "h4", 5);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](8, "We sent a verification code to your phone number. Enter the code");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](13, "form", 10)(14, "div", 11)(15, "div", 12)(16, "div", 13);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](17, "input", 14)(18, "input", 15)(19, "input", 16)(20, "input", 17);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](9, "form", 6)(10, "div", 7)(11, "div", 8)(12, "div", 9);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](13, "input", 10)(14, "input", 11)(15, "input", 12)(16, "input", 13);
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](21, "div", 18)(22, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](23, "Otp will expire in 09 :10");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](24, "div", 19)(25, "button", 20);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function TwoStepVerification3Component_Template_button_click_25_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](17, "div", 14)(18, "button", 15);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function TwoStepVerification3Component_Template_button_click_18_listener() {
             return ctx.navigation();
           });
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Verify My Account");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()()()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](27, "div", 21)(28, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](29, "Copyright \u00A9 2023 DreamsPOS. All rights reserved");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()()();
-        }
-        if (rf & 2) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](5);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("routerLink", ctx.routes.adminDashboard);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](19, "Verify My Account");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()()()()()();
         }
       },
-      dependencies: [_angular_router__WEBPACK_IMPORTED_MODULE_2__.RouterLink, _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgForm],
+      dependencies: [_angular_forms__WEBPACK_IMPORTED_MODULE_3__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgForm],
       styles: ["/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */"]
     });
   }
