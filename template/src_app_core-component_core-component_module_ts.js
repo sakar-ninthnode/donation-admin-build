@@ -1418,15 +1418,12 @@ class ProfileService {
   updatePassword(profileData) {
     const token = localStorage.getItem('authToken'); // Retrieve token
     const headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__.HttpHeaders().set('Authorization', `Bearer ${token}`);
-    const params = {
+    const body = {
       new_password: profileData.password,
       email: profileData.email
     };
-    return this.http.patch(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/reset-password`, {},
-    // Empty body since params are passed in URL
-    {
-      headers,
-      params
+    return this.http.patch(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/auth/admin/reset-password`, body, {
+      headers
     });
   }
   static {

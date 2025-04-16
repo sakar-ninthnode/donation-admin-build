@@ -484,14 +484,14 @@ class ProfileComponent {
   updatePassword() {
     if (this.passwordForm.valid) {
       const formValue = this.passwordForm.getRawValue();
-      // this.profileService.updatePassword(formValue).subscribe(() => {
-      sweetalert2__WEBPACK_IMPORTED_MODULE_0___default().fire({
-        icon: 'success',
-        title: 'Password updated Successfully!',
-        confirmButtonColor: '#3085d6',
-        confirmButtonText: 'OK'
+      this.profileService.updatePassword(formValue).subscribe(() => {
+        sweetalert2__WEBPACK_IMPORTED_MODULE_0___default().fire({
+          icon: 'success',
+          title: 'Password updated Successfully!',
+          confirmButtonColor: '#3085d6',
+          confirmButtonText: 'OK'
+        });
       });
-      // });
     } else {
       alert('Please fill in all required fields.');
     }
@@ -990,17 +990,36 @@ class RefferalComponent {
     });
   }
   copyText(text, type) {
-    navigator.clipboard.writeText(text).then(() => {
-      if (type === 'android') {
-        this.copiedAndroid = true;
-        setTimeout(() => this.copiedAndroid = false, 1000);
-      } else if (type === 'ios') {
-        this.copiedIOS = true;
-        setTimeout(() => this.copiedIOS = false, 1000);
-      }
-    }).catch(err => {
-      console.error('Failed to copy:', err);
-    });
+    if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(() => {
+        if (type === 'android') {
+          this.copiedAndroid = true;
+          setTimeout(() => this.copiedAndroid = false, 1000);
+        } else if (type === 'ios') {
+          this.copiedIOS = true;
+          setTimeout(() => this.copiedIOS = false, 1000);
+        }
+      }).catch(err => {
+        console.error('Clipboard write failed:', err);
+      });
+    } else {
+      console.error('Clipboard API is not available');
+      // Optionally, fall back to older execCommand method:
+      this.fallbackCopyText(text);
+    }
+  }
+  fallbackCopyText(text) {
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    document.body.appendChild(textarea);
+    textarea.select();
+    try {
+      document.execCommand('copy');
+      console.log('Fallback: Text copied');
+    } catch (err) {
+      console.error('Fallback: Copy failed', err);
+    }
+    document.body.removeChild(textarea);
   }
   static {
     this.ɵfac = function RefferalComponent_Factory(t) {
