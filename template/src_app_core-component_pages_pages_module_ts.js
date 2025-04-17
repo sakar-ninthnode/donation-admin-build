@@ -990,36 +990,45 @@ class RefferalComponent {
     });
   }
   copyText(text, type) {
-    if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
+    if (navigator?.clipboard?.writeText && window.isSecureContext) {
       navigator.clipboard.writeText(text).then(() => {
-        if (type === 'android') {
-          this.copiedAndroid = true;
-          setTimeout(() => this.copiedAndroid = false, 1000);
-        } else if (type === 'ios') {
-          this.copiedIOS = true;
-          setTimeout(() => this.copiedIOS = false, 1000);
-        }
+        this.showCopySuccess(type);
       }).catch(err => {
         console.error('Clipboard write failed:', err);
+        this.fallbackCopyText(text, type);
       });
     } else {
-      console.error('Clipboard API is not available');
-      // Optionally, fall back to older execCommand method:
-      this.fallbackCopyText(text);
+      console.warn('Clipboard API not available, using fallback');
+      this.fallbackCopyText(text, type);
     }
   }
-  fallbackCopyText(text) {
+  fallbackCopyText(text, type) {
     const textarea = document.createElement('textarea');
     textarea.value = text;
+    textarea.style.position = 'fixed'; // Avoid scrolling to bottom
     document.body.appendChild(textarea);
+    textarea.focus();
     textarea.select();
     try {
-      document.execCommand('copy');
-      console.log('Fallback: Text copied');
+      const success = document.execCommand('copy');
+      if (success) {
+        this.showCopySuccess(type);
+      } else {
+        console.error('Fallback: Copy command was unsuccessful');
+      }
     } catch (err) {
-      console.error('Fallback: Copy failed', err);
+      console.error('Fallback: Unable to copy', err);
     }
     document.body.removeChild(textarea);
+  }
+  showCopySuccess(type) {
+    if (type === 'android') {
+      this.copiedAndroid = true;
+      setTimeout(() => this.copiedAndroid = false, 1000);
+    } else {
+      this.copiedIOS = true;
+      setTimeout(() => this.copiedIOS = false, 1000);
+    }
   }
   static {
     this.ɵfac = function RefferalComponent_Factory(t) {
