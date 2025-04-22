@@ -270,7 +270,7 @@ function UsersComponent_For_74_Template(rf, ctx) {
   if (rf & 2) {
     const data_r5 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("src", data_r5.profile_img_url || "assets/img/avatar/avatar-2.jpg", _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵsanitizeUrl"]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("src", data_r5.profile_img_url || "assets/img/user.png", _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵsanitizeUrl"]);
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](4);
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtextInterpolate2"]("", data_r5.first_name, " ", data_r5.last_name || "N/A", "");
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](2);
@@ -1395,15 +1395,15 @@ class UsersComponent {
       is_active: [true],
       user_role_id: [6],
       profile_img: [''],
-      country_code: ["+91"],
-      address_line1: ["", [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required]],
-      address_line2: [""],
-      country: ["India"],
-      land_mark: ["", [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required]],
-      pin_code: ["", [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required]],
-      city: ["", [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required]],
-      state: ["", [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required]],
-      document_file: [""]
+      country_code: ['+91'],
+      address_line1: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required]],
+      address_line2: [''],
+      country: ['India'],
+      land_mark: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required]],
+      pin_code: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required]],
+      city: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required]],
+      state: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required]],
+      document_file: ['']
     });
     this.userEditForm = this.fb.group({
       is_active: [true],
@@ -1513,18 +1513,21 @@ class UsersComponent {
     this.selectedRole = data.user_role.role_name;
     this.selectedRoleId = this.getRoleId(data.user_role.role_name);
     if (rolesRequiringFullDetails.includes(userRole)) {
+      console.log(data);
       this.userEditForm.addControl('first_name', new _angular_forms__WEBPACK_IMPORTED_MODULE_8__.FormControl(data.first_name || '', _angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required));
       this.userEditForm.addControl('last_name', new _angular_forms__WEBPACK_IMPORTED_MODULE_8__.FormControl(data.last_name || '', _angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required));
       this.userEditForm.addControl('email', new _angular_forms__WEBPACK_IMPORTED_MODULE_8__.FormControl(data.email || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required]));
-      this.userEditForm.addControl('country_code', new _angular_forms__WEBPACK_IMPORTED_MODULE_8__.FormControl(data.country_code || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required]));
+      this.userEditForm.addControl('country_code', new _angular_forms__WEBPACK_IMPORTED_MODULE_8__.FormControl(data.country_code || ''));
       this.userEditForm.addControl('phone_number', new _angular_forms__WEBPACK_IMPORTED_MODULE_8__.FormControl(data.phone_number || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required]));
-      this.userEditForm.addControl('address_line1', new _angular_forms__WEBPACK_IMPORTED_MODULE_8__.FormControl(data.addresses[0].address_line1 || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required]));
-      this.userEditForm.addControl('address_line2', new _angular_forms__WEBPACK_IMPORTED_MODULE_8__.FormControl(data.addresses[0].address_line2 || ''));
-      // console.log(data.land_mark)
-      this.userEditForm.addControl('land_mark', new _angular_forms__WEBPACK_IMPORTED_MODULE_8__.FormControl(data.addresses[0].land_mark || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required]));
-      this.userEditForm.addControl('pin_code', new _angular_forms__WEBPACK_IMPORTED_MODULE_8__.FormControl(data.addresses[0].pin_code || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required]));
-      this.userEditForm.addControl('city', new _angular_forms__WEBPACK_IMPORTED_MODULE_8__.FormControl(data.addresses[0].city || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required]));
-      this.userEditForm.addControl('state', new _angular_forms__WEBPACK_IMPORTED_MODULE_8__.FormControl(data.addresses[0].state || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required]));
+      if (data.addresses.length > 0) {
+        this.userEditForm.addControl('address_line1', new _angular_forms__WEBPACK_IMPORTED_MODULE_8__.FormControl(data.addresses[0].address_line1 || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required]));
+        this.userEditForm.addControl('address_line2', new _angular_forms__WEBPACK_IMPORTED_MODULE_8__.FormControl(data.addresses[0].address_line2 || ''));
+        // console.log(data.land_mark)
+        this.userEditForm.addControl('land_mark', new _angular_forms__WEBPACK_IMPORTED_MODULE_8__.FormControl(data.addresses[0].land_mark || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required]));
+        this.userEditForm.addControl('pin_code', new _angular_forms__WEBPACK_IMPORTED_MODULE_8__.FormControl(data.addresses[0].pin_code || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required]));
+        this.userEditForm.addControl('city', new _angular_forms__WEBPACK_IMPORTED_MODULE_8__.FormControl(data.addresses[0].city || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required]));
+        this.userEditForm.addControl('state', new _angular_forms__WEBPACK_IMPORTED_MODULE_8__.FormControl(data.addresses[0].state || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required]));
+      }
       this.userEditForm.addControl('user_role_id', new _angular_forms__WEBPACK_IMPORTED_MODULE_8__.FormControl(this.selectedRoleId, _angular_forms__WEBPACK_IMPORTED_MODULE_8__.Validators.required));
     }
     this.editUserId = data.user_id;
@@ -1538,33 +1541,38 @@ class UsersComponent {
     this.userEditForm.patchValue({
       country_code: '+91'
     });
-    if (this.userEditForm.valid) {
-      let updatedData = this.userEditForm.value;
-      if (this.profileImageBase64.includes('http://')) {
-        updatedData = {
-          ...this.userEditForm.value
-        };
-      } else {
-        updatedData = {
-          ...this.userEditForm.value,
-          profile_img: this.profileImageBase64
-        };
-      }
-      this.data.updateUser(this.editUserId, updatedData).subscribe(response => {
-        this.getTableData();
-        // Reset form after submission
-        this.userForm.reset();
-        this.profileImageBase64 = '';
-        // Close the modal using Bootstrap's API
-        const modalElement = document.getElementById('edit-units');
-        if (modalElement) {
-          const modal = bootstrap.Modal.getInstance(modalElement);
-          modal.hide();
-        }
-      }, error => {
-        console.error('Error creating user', error);
-      });
-    }
+    console.log(this.userEditForm.value);
+    // if (this.userEditForm.valid) {
+    //   let updatedData = this.userEditForm.value
+    //   if(this.profileImageBase64.includes('http://')){
+    //     updatedData = {
+    //     ...this.userEditForm.value,
+    //   };
+    // }
+    // else{
+    //     updatedData = {
+    //     ...this.userEditForm.value,
+    //     profile_img: this.profileImageBase64,
+    //   };
+    //   }
+    //   this.data.updateUser(this.editUserId, updatedData).subscribe(
+    //     (response) => {
+    //       this.getTableData();
+    //       // Reset form after submission
+    //       this.userForm.reset();
+    //       this.profileImageBase64 = '';
+    //       // Close the modal using Bootstrap's API
+    //       const modalElement = document.getElementById('edit-units');
+    //       if (modalElement) {
+    //         const modal = bootstrap.Modal.getInstance(modalElement);
+    //         modal.hide();
+    //       }
+    //     },
+    //     (error) => {
+    //       console.error('Error creating user', error);
+    //     }
+    //   );
+    // }
   }
   getTableData() {
     this.data.getUsers(this.filterSelectedRoleId, this.filterSelectedStatus, this.page, this.savedSearchText).subscribe(apiRes => {

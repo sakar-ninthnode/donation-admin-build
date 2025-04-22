@@ -85356,6 +85356,13 @@ body .box .page-wrapper.pos-pg-wrapper {
   margin-bottom: 0;
 }
 
+.chat .thead-sticky th {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 2;
+}
+
 .dash-widget {
   display: flex;
   align-items: center;
