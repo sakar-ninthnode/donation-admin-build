@@ -1305,7 +1305,7 @@ function UsersComponent_div_168_div_1_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", addr_r10.is_default);
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtextInterpolate2"](" +", addr_r10.country_code, " ", addr_r10.phone_number, "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtextInterpolate2"](" ", addr_r10.country_code, " ", addr_r10.phone_number, "");
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](5);
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtextInterpolate1"](" ", addr_r10.address_line1, "");
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](2);

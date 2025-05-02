@@ -1434,15 +1434,18 @@ class DataService {
   //       })
   //     );
   // }
-  getCategoryList(page, searchText) {
+  getCategoryList(page, searchText, status) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     let pageNum = page || 1;
     if (!token) {
       return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => new Error('No authentication token found'));
     }
     let apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/categories?page=${pageNum}&page_size=10`;
-    if (searchText) {
-      apiUrl += `&search_query=${encodeURIComponent(searchText)}`;
+    if (searchText && searchText.trim() !== '') {
+      apiUrl += `&search_query=${encodeURIComponent(searchText.trim())}`;
+    }
+    if (status !== '' && status !== 'all' && status !== undefined) {
+      apiUrl += `&filter_by_status=${status}`;
     }
     const httpOptions = {
       headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
@@ -1802,6 +1805,28 @@ class DataService {
     }
     return this.http.get(apiUrl, httpOptions);
   }
+  getDashboardData() {
+    const token = localStorage.getItem('authToken'); // Get token from localStorage
+    const httpOptions = {
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      })
+    };
+    let apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/adminstatistics`;
+    return this.http.get(apiUrl, httpOptions);
+  }
+  getGraphData() {
+    const token = localStorage.getItem('authToken'); // Get token from localStorage
+    const httpOptions = {
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      })
+    };
+    let apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/donations/monthly/stats`;
+    return this.http.get(apiUrl, httpOptions);
+  }
   getSubcategoryConditions(subcategory_id) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     const httpOptions = {
@@ -2105,7 +2130,7 @@ class DataService {
   //     })
   //   );
   // }
-  getSubCategories(page, searchText) {
+  getSubCategories(page, searchText, status, parentCategory) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     let pageNum = page || 1;
     if (!token) {
@@ -2114,6 +2139,12 @@ class DataService {
     let apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/subcategories?page=${pageNum}&page_size=10`;
     if (searchText) {
       apiUrl += `&search_query=${encodeURIComponent(searchText)}`;
+    }
+    if (status !== '' && status !== 'all' && status !== undefined) {
+      apiUrl += `&filter_by_status=${status}`;
+    }
+    if (parentCategory && parentCategory !== 'all') {
+      apiUrl += `&filter_by_parent_category=${encodeURIComponent(parentCategory)}`;
     }
     const httpOptions = {
       headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({

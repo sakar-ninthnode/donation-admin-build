@@ -85433,10 +85433,13 @@ body .box .page-wrapper.pos-pg-wrapper {
   background: #00CFE8;
 }
 .dash-count.das2 {
-  background: #1B2850;
+  background: #dc3838;
 }
 .dash-count.das3 {
   background: #28C76F;
+}
+.dash-count.das4 {
+  background: #002d52;
 }
 .dash-count h4 {
   color: #ffffff;
@@ -97759,7 +97762,7 @@ app-application {
 }
 
 mat-select.space-select .mat-mdc-select-value {
-  padding-left: 22px;
+  padding: 0 20px;
 }
 
 app-custom-pagination .table-footer {
@@ -98101,8 +98104,8 @@ mat-form-field .mdc-line-ripple {
   display: none;
 }
 
-mat-form-field .mat-mdc-text-field-wrapper {
-  border: 1px solid #ccc;
+.mat-mdc-form-field-bottom-align {
+  display: none;
 }
 
 .mat-mdc-text-field-wrapper .mat-mdc-form-field-infix {
