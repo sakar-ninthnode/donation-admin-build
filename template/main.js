@@ -1517,14 +1517,25 @@ class DataService {
       return res;
     }));
   }
-  getAnnouncementList(page) {
+  getAnnouncementList(page, status, startDate, endDate, type) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     let pageNum = page || 1;
     if (!token) {
       return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => new Error('No authentication token found'));
     }
-    let apiUrl = '';
-    apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/announcements?page=${pageNum}&page_size=10`;
+    let apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/announcements?page=${pageNum}&page_size=10`;
+    if (status !== '' && status !== 'all' && status !== undefined) {
+      apiUrl += `&filter_by_status=${status}`;
+    }
+    if (startDate) {
+      apiUrl += `&filter_by_start_date=${startDate}`;
+    }
+    if (endDate) {
+      apiUrl += `&filter_by_end_date=${endDate}`;
+    }
+    if (type && type !== 'all') {
+      apiUrl += `&filter_by_type=${type}`;
+    }
     const httpOptions = {
       headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,

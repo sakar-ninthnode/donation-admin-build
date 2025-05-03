@@ -30,8 +30,8 @@ __webpack_require__.r(__webpack_exports__);
 
 const _c0 = ["chart"];
 const _c1 = (a0, a1) => ({
-  "badge badge-success": a0,
-  "badge badge-danger": a1
+  "badge badge-danger": a0,
+  "badge badge-success": a1
 });
 function AdminDashboardComponent_li_101_Template(rf, ctx) {
   if (rf & 1) {

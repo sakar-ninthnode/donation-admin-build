@@ -178,8 +178,8 @@ __webpack_require__.r(__webpack_exports__);
 
 const _c0 = ["chatContainer"];
 const _c1 = (a0, a1) => ({
-  "badge badge-success": a0,
-  "badge badge-danger": a1
+  "badge badge-danger": a0,
+  "badge badge-success": a1
 });
 const _c2 = a0 => ({
   chats: true,
