@@ -2239,10 +2239,19 @@ class DataService {
   //     })
   //   );
   // }
-  getWareHouse(page, searchText) {
-    const token = localStorage.getItem('authToken'); // Get token from localStorage
+  getWareHouse(page, searchText, state, city) {
+    const token = localStorage.getItem('authToken');
     let pageNum = page || 1;
+    if (!token) {
+      return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => new Error('No authentication token found'));
+    }
     let apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/warehouse?page=${pageNum}&page_size=10`;
+    if (state && state !== 'all') {
+      apiUrl += `&filter_by_state=${state}`;
+    }
+    if (city && city !== 'all') {
+      apiUrl += `&filter_by_city=${city}`;
+    }
     if (searchText) {
       apiUrl += `&search_query=${encodeURIComponent(searchText)}`;
     }
