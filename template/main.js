@@ -2072,12 +2072,15 @@ class DataService {
     };
     return this.http.get(apiUrl, httpOptions);
   }
-  getCities() {
+  getCities(state) {
     const token = localStorage.getItem('authToken'); // Get token from localStorage
     if (!token) {
       return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => new Error('No authentication token found'));
     }
     let apiUrl = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/cities`;
+    if (state && state !== 'all') {
+      apiUrl += `?state=${encodeURIComponent(state)}`;
+    }
     const httpOptions = {
       headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
         'Authorization': `Bearer ${token}`,
@@ -2367,6 +2370,28 @@ class DataService {
       console.error('Error fetching pincode details:', error);
       return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => error);
     }));
+  }
+  getWarehouseStates() {
+    const url = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/api/v1/admin/warehouse/states/list`;
+    const token = localStorage.getItem('authToken');
+    const httpOptions = {
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`
+      })
+    };
+    return this.http.get(url, httpOptions);
+  }
+  getWarehouseCities(state) {
+    const url = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/api/v1/admin/warehouse/cities/by-state?state=${encodeURIComponent(state)}`;
+    const token = localStorage.getItem('authToken');
+    const httpOptions = {
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`
+      })
+    };
+    return this.http.get(url, httpOptions);
   }
   static {
     this.ɵfac = function DataService_Factory(t) {
