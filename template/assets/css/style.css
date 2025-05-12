@@ -21332,7 +21332,7 @@ body.mini-sidebar.expand-menu .sidebar .sidebar-menu > ul > li.submenu-open ul l
 }
 .login-wrapper .login-content .login-logo {
   display: block;
-  max-width: 150px;
+  max-width: 300px;
   margin: auto;
 }
 .login-wrapper .login-content .login-logo img {
@@ -21721,7 +21721,7 @@ body.mini-sidebar.expand-menu .sidebar .sidebar-menu > ul > li.submenu-open ul l
   margin: auto;
 }
 .login-wrapper .login-logo {
-  max-width: 150px;
+  max-width: 700px;
   margin: auto;
 }
 

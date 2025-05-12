@@ -29,15 +29,15 @@ __webpack_require__.r(__webpack_exports__);
 const _c0 = a0 => ({
   "d-none": a0
 });
-function HeaderComponent_a_10_Template(rf, ctx) {
+function HeaderComponent_a_12_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "a", 19)(1, "span", 20)(2, "span", 21);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](3, "img", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "a", 21)(1, "span", 22)(2, "span", 23);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](3, "img", 24);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](4, "span", 23)(5, "span", 24);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](4, "span", 25)(5, "span", 26);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](6);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](7, "span", 25);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](7, "span", 27);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](8);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()()();
   }
@@ -148,9 +148,9 @@ class HeaderComponent {
     this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineComponent"]({
       type: HeaderComponent,
       selectors: [["app-header"]],
-      decls: 31,
-      vars: 9,
-      consts: [[1, "header"], [1, "header-left", "active", 3, "mouseover", "mouseout"], ["id", "mobile_btn", 1, "mobile_btn", 3, "click", "ngClass"], [1, "bar-icon"], [1, "nav", "user-menu"], [1, "nav-item", "nav-searchinputs"], [1, "nav-item", "dropdown", "has-arrow", "main-drop"], ["href", "javascript:void(0);", "class", "dropdown-toggle nav-link", "data-bs-toggle", "dropdown", 4, "ngIf"], [1, "dropdown-menu", "menu-drop-user"], [1, "profilename"], [1, "m-0"], [1, "dropdown-item", 3, "routerLink"], [1, "feather", "icon-user"], [1, "dropdown-item", "logout", "pb-0", 3, "routerLink"], ["src", "assets/img/icons/log-out.svg", "alt", "img", 1, "me-2"], [1, "dropdown", "mobile-user-menu"], ["href", "javascript:void(0);", "data-bs-toggle", "dropdown", "aria-expanded", "false", 1, "nav-link", "dropdown-toggle"], [1, "fa", "fa-ellipsis-v"], [1, "dropdown-menu", "dropdown-menu-right"], ["href", "javascript:void(0);", "data-bs-toggle", "dropdown", 1, "dropdown-toggle", "nav-link"], [1, "user-info"], [1, "user-letter"], ["alt", "User Image", 1, "img-fluid", 3, "src"], [1, "user-detail"], [1, "user-name"], [1, "user-role"]],
+      decls: 33,
+      vars: 10,
+      consts: [[1, "header"], [1, "header-left", "active", 3, "mouseover", "mouseout"], [1, "logo", "logo-normal", 3, "routerLink"], ["src", "assets/img/hc-logo.png", "alt", ""], ["id", "mobile_btn", 1, "mobile_btn", 3, "click", "ngClass"], [1, "bar-icon"], [1, "nav", "user-menu"], [1, "nav-item", "nav-searchinputs"], [1, "nav-item", "dropdown", "has-arrow", "main-drop"], ["href", "javascript:void(0);", "class", "dropdown-toggle nav-link", "data-bs-toggle", "dropdown", 4, "ngIf"], [1, "dropdown-menu", "menu-drop-user"], [1, "profilename"], [1, "m-0"], [1, "dropdown-item", 3, "routerLink"], [1, "feather", "icon-user"], [1, "dropdown-item", "logout", "pb-0", 3, "routerLink"], ["src", "assets/img/icons/log-out.svg", "alt", "img", 1, "me-2"], [1, "dropdown", "mobile-user-menu"], ["href", "javascript:void(0);", "data-bs-toggle", "dropdown", "aria-expanded", "false", 1, "nav-link", "dropdown-toggle"], [1, "fa", "fa-ellipsis-v"], [1, "dropdown-menu", "dropdown-menu-right"], ["href", "javascript:void(0);", "data-bs-toggle", "dropdown", 1, "dropdown-toggle", "nav-link"], [1, "user-info"], [1, "user-letter"], ["alt", "User Image", 1, "img-fluid", 3, "src"], [1, "user-detail"], [1, "user-name"], [1, "user-role"]],
       template: function HeaderComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 0)(1, "div", 1);
@@ -159,45 +159,49 @@ class HeaderComponent {
           })("mouseout", function HeaderComponent_Template_div_mouseout_1_listener() {
             return ctx.miniSideBarMouseHover("out");
           });
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](2, "a", 2);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("click", function HeaderComponent_Template_a_click_2_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](3, "img", 3);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](4, "a", 4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("click", function HeaderComponent_Template_a_click_4_listener() {
             return ctx.togglesMobileSideBar();
           });
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](3, "span", 3);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](4, "span")(5, "span")(6, "span");
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](5, "span", 5);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](6, "span")(7, "span")(8, "span");
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](7, "ul", 4);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](8, "li", 5);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](9, "li", 6);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](10, HeaderComponent_a_10_Template, 9, 3, "a", 7);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](11, "div", 8)(12, "div", 9);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](13, "hr", 10);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](14, "a", 11);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](15, "i", 12);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](16, " My Profile");
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](9, "ul", 6);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](10, "li", 7);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](11, "li", 8);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](12, HeaderComponent_a_12_Template, 9, 3, "a", 9);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](13, "div", 10)(14, "div", 11);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](15, "hr", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](16, "a", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](17, "i", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](18, " My Profile");
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](17, "hr", 10);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](18, "a", 13);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](19, "img", 14);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](20, "Logout");
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](19, "hr", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](20, "a", 15);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](21, "img", 16);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](22, "Logout");
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()()()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](21, "div", 15)(22, "a", 16);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](23, "i", 17);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](23, "div", 17)(24, "a", 18);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](25, "i", 19);
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](24, "div", 18)(25, "a", 11);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](26, "My Profile");
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](26, "div", 20)(27, "a", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](28, "My Profile");
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](27, "a", 11);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](28, "Settings");
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](29, "a", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](30, "Settings");
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](29, "a", 11);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](30, "Logout");
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](31, "a", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](32, "Logout");
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()()();
         }
         if (rf & 2) {
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
-          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵpureFunction1"](7, _c0, ctx.page === "pos"));
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("routerLink", ctx.routes.adminDashboard);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
+          _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵpureFunction1"](8, _c0, ctx.page === "pos"));
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](8);
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", ctx.userName);
           _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](4);

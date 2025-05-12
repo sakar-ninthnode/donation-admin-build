@@ -2531,7 +2531,7 @@ class SidebarService {
         access: ["Platform Admin"]
       }, {
         menuValue: 'Sub Category',
-        icon: 'speaker',
+        icon: 'layers',
         hasSubRoute: false,
         showSubRoute: false,
         route: _core_index__WEBPACK_IMPORTED_MODULE_0__.routes.subCategories,
@@ -2554,7 +2554,7 @@ class SidebarService {
         access: ["Platform Admin", "Warehouse Admin", "Support Staff"]
       }, {
         menuValue: 'Payment Info',
-        icon: 'user',
+        icon: 'credit-card',
         route: _core_index__WEBPACK_IMPORTED_MODULE_0__.routes.paymentInfo,
         hasSubRoute: false,
         showSubRoute: false,
@@ -2575,7 +2575,7 @@ class SidebarService {
         access: ["Platform Admin", "Warehouse Admin", "Support Staff"]
       }, {
         menuValue: 'Help Desk',
-        icon: 'file-text',
+        icon: 'help-circle',
         route: _core_index__WEBPACK_IMPORTED_MODULE_0__.routes.chat,
         hasSubRoute: false,
         showSubRoute: false,
@@ -2627,7 +2627,7 @@ class SidebarService {
     //     },
     //     {
     //       menuValue: 'Sub Category',
-    //       icon: 'speaker',
+    //       icon: 'layers',
     //       hasSubRoute: false,
     //       showSubRoute: false,
     //       route: routes.subCategories,
@@ -2643,7 +2643,7 @@ class SidebarService {
     //     },
     //     {
     //       menuValue: 'Units',
-    //       icon: 'speaker',
+    //       icon: 'layers',
     //       hasSubRoute: false,
     //       showSubRoute: false,
     //       route: routes.units,

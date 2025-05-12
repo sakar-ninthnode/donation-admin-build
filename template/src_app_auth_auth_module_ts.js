@@ -1817,61 +1817,62 @@ class Signin3Component {
     this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({
       type: Signin3Component,
       selectors: [["app-signin-3"]],
-      decls: 34,
+      decls: 35,
       vars: 5,
-      consts: [["loginForm", "ngForm"], [1, "account-content"], [1, "login-wrapper", "login-new"], [1, "container"], [1, "login-content", "user-login"], [1, "login-logo"], [2, "min-width", "500px", 3, "ngSubmit"], [1, "login-userset"], [1, "login-userheading"], [1, "form-login"], [1, "form-label"], [1, "form-addons"], ["type", "email", "name", "email", "required", "", 1, "form-control", 3, "ngModelChange", "ngModel"], ["src", "assets/img/icons/mail.svg", "alt", "img"], [1, "pass-group"], ["name", "password", "required", "", 1, "pass-input", 3, "ngModelChange", "type", "ngModel"], [1, "fas", "toggle-password", 3, "click", "ngClass"], [1, "form-login", "authentication-check"], [1, "row"], [1, "col-6"], [1, "custom-control", "custom-checkbox", "custom-class-check"], [1, "checkboxs", "ps-4", "mb-0", "pb-0", "line-height-1"], ["type", "checkbox"], [1, "checkmarks"], ["type", "submit", 1, "btn", "btn-login", 3, "disabled"]],
+      consts: [["loginForm", "ngForm"], [1, "account-content"], [1, "login-wrapper", "login-new"], [1, "container"], [1, "login-content", "user-login"], [1, "login-logo"], ["src", "assets/img/hc-logo.png", "alt", "", 2, "height", "4rem"], [2, "min-width", "500px", 3, "ngSubmit"], [1, "login-userset"], [1, "login-userheading"], [1, "form-login"], [1, "form-label"], [1, "form-addons"], ["type", "email", "name", "email", "required", "", 1, "form-control", 3, "ngModelChange", "ngModel"], ["src", "assets/img/icons/mail.svg", "alt", "img"], [1, "pass-group"], ["name", "password", "required", "", 1, "pass-input", 3, "ngModelChange", "type", "ngModel"], [1, "fas", "toggle-password", 3, "click", "ngClass"], [1, "form-login", "authentication-check"], [1, "row"], [1, "col-6"], [1, "custom-control", "custom-checkbox", "custom-class-check"], [1, "checkboxs", "ps-4", "mb-0", "pb-0", "line-height-1"], ["type", "checkbox"], [1, "checkmarks"], ["type", "submit", 1, "btn", "btn-login", 3, "disabled"]],
       template: function Signin3Component_Template(rf, ctx) {
         if (rf & 1) {
           const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetCurrentView"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 1)(1, "div", 2)(2, "div", 3)(3, "div", 4);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](4, "div", 5);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](5, "form", 6, 0);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("ngSubmit", function Signin3Component_Template_form_ngSubmit_5_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 1)(1, "div", 2)(2, "div", 3)(3, "div", 4)(4, "div", 5);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](5, "img", 6);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](6, "form", 7, 0);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("ngSubmit", function Signin3Component_Template_form_ngSubmit_6_listener() {
             _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r1);
             return _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵresetView"](ctx.navigation());
           });
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](7, "div", 7)(8, "div", 8)(9, "h3");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](10, "Sign In");
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](8, "div", 8)(9, "div", 9)(10, "h3");
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](11, "Sign In");
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](11, "div", 9)(12, "label", 10);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](13, "Email Address");
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](12, "div", 10)(13, "label", 11);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](14, "Email Address");
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](14, "div", 11)(15, "input", 12);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtwoWayListener"]("ngModelChange", function Signin3Component_Template_input_ngModelChange_15_listener($event) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](15, "div", 12)(16, "input", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtwoWayListener"]("ngModelChange", function Signin3Component_Template_input_ngModelChange_16_listener($event) {
             _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r1);
             _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtwoWayBindingSet"](ctx.email, $event) || (ctx.email = $event);
             return _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵresetView"]($event);
           });
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](16, "img", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](17, "img", 14);
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](17, "div", 9)(18, "label");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](19, "Password");
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](18, "div", 10)(19, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](20, "Password");
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](20, "div", 14)(21, "input", 15);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtwoWayListener"]("ngModelChange", function Signin3Component_Template_input_ngModelChange_21_listener($event) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](21, "div", 15)(22, "input", 16);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtwoWayListener"]("ngModelChange", function Signin3Component_Template_input_ngModelChange_22_listener($event) {
             _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r1);
             _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtwoWayBindingSet"](ctx.passwordInput, $event) || (ctx.passwordInput = $event);
             return _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵresetView"]($event);
           });
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](22, "span", 16);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function Signin3Component_Template_span_click_22_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](23, "span", 17);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function Signin3Component_Template_span_click_23_listener() {
             _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r1);
             return _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵresetView"](ctx.togglePassword());
           });
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](23, "div", 17)(24, "div", 18)(25, "div", 19)(26, "div", 20)(27, "label", 21);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](28, "input", 22)(29, "span", 23);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](30, "Remember me ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](24, "div", 18)(25, "div", 19)(26, "div", 20)(27, "div", 21)(28, "label", 22);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](29, "input", 23)(30, "span", 24);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](31, "Remember me ");
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()()()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](31, "div", 9)(32, "button", 24);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](33, " Sign In ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](32, "div", 10)(33, "button", 25);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](34, " Sign In ");
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()()()()()()();
         }
         if (rf & 2) {
-          const loginForm_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵreference"](6);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](15);
+          const loginForm_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵreference"](7);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](16);
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtwoWayProperty"]("ngModel", ctx.email);
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](6);
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("type", ctx.passwordVisible ? "text" : "password");
