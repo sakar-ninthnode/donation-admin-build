@@ -850,9 +850,7 @@ class WarehouseComponent {
     // Load states using warehouse-specific API
     this.data.getWarehouseStates().subscribe({
       next: response => {
-        if (response.status === 'success') {
-          this.states = response.data;
-        }
+        this.states = response.results;
       },
       error: error => {
         console.error('Error loading states:', error);
@@ -865,9 +863,7 @@ class WarehouseComponent {
     if (this.filterSelectedState && this.filterSelectedState !== 'all') {
       this.data.getWarehouseCities(this.filterSelectedState).subscribe({
         next: response => {
-          if (response.status === 'success') {
-            this.cities = response.data;
-          }
+          this.cities = response.results;
         },
         error: error => {
           console.error('Error loading cities:', error);

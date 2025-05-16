@@ -2372,7 +2372,7 @@ class DataService {
     }));
   }
   getWarehouseStates() {
-    const url = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/api/v1/admin/warehouse/states/list`;
+    const url = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/warehouse/states/list`;
     const token = localStorage.getItem('authToken');
     const httpOptions = {
       headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
@@ -2383,7 +2383,7 @@ class DataService {
     return this.http.get(url, httpOptions);
   }
   getWarehouseCities(state) {
-    const url = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/api/v1/admin/warehouse/cities/by-state?state=${encodeURIComponent(state)}`;
+    const url = `${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/warehouse/cities/by-state?state=${encodeURIComponent(state)}`;
     const token = localStorage.getItem('authToken');
     const httpOptions = {
       headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders({
