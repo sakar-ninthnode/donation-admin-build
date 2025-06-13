@@ -438,7 +438,7 @@ class AdminDashboardComponent {
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](87);
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](88, "h5");
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](89, "Total Sub categories");
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](89, "Total Sub Categories");
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()();
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](90, "div", 4);
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](91, "i", 22);
