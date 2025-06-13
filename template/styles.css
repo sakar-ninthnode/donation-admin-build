@@ -77930,7 +77930,7 @@ th .checkboxs .checkmarks::after, td .checkboxs .checkmarks::after {
   line-height: 0;
 }
 .header .header-left .logo img {
-  width: 140px;
+  width: 100%;
 }
 @media (max-width: 991.98px) {
   .header .header-left .logo {
