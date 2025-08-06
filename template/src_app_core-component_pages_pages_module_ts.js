@@ -689,7 +689,7 @@ __webpack_require__.r(__webpack_exports__);
 function RefferalComponent_a_17_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "a", 38);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "a", 45);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function RefferalComponent_a_17_Template_a_click_0_listener() {
       let tmp_2_0;
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r1);
@@ -702,14 +702,14 @@ function RefferalComponent_a_17_Template(rf, ctx) {
 }
 function RefferalComponent_span_18_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "span", 39);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "span", 46);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](1, "Copied!");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
   }
 }
 function RefferalComponent_input_19_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "input", 40);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "input", 47);
   }
   if (rf & 2) {
     const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
@@ -718,7 +718,7 @@ function RefferalComponent_input_19_Template(rf, ctx) {
 }
 function RefferalComponent_div_20_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 41);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 48);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](1, " Invalid Android URL ");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
   }
@@ -726,7 +726,7 @@ function RefferalComponent_div_20_Template(rf, ctx) {
 function RefferalComponent_a_25_Template(rf, ctx) {
   if (rf & 1) {
     const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "a", 38);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "a", 45);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function RefferalComponent_a_25_Template_a_click_0_listener() {
       let tmp_2_0;
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r3);
@@ -739,26 +739,26 @@ function RefferalComponent_a_25_Template(rf, ctx) {
 }
 function RefferalComponent_span_26_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "span", 39);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "span", 46);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](1, "Copied!");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
   }
 }
 function RefferalComponent_input_27_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "input", 42);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "input", 49);
   }
 }
 function RefferalComponent_div_28_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 41);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 48);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](1, " Invalid iOS URL ");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
   }
 }
 function RefferalComponent_button_29_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "button", 43);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "button", 50);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](1, " Update Referral Links ");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
   }
@@ -769,24 +769,24 @@ function RefferalComponent_button_29_Template(rf, ctx) {
 }
 function RefferalComponent_div_30_input_9_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "input", 48);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "input", 55);
   }
 }
 function RefferalComponent_div_30_div_10_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 41);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 48);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](1, " Invalid Points ");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
   }
 }
 function RefferalComponent_div_30_input_14_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "input", 49);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "input", 56);
   }
 }
 function RefferalComponent_div_30_div_15_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 41);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 48);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](1, " Invalid Points ");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
   }
@@ -803,17 +803,17 @@ function RefferalComponent_div_30_Template(rf, ctx) {
       const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
       return _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵresetView"](ctx_r1.updateReferralPoints());
     });
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](6, "div", 8)(7, "label", 44);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](6, "div", 8)(7, "label", 51);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](8, "Points for referrer:");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](9, RefferalComponent_div_30_input_9_Template, 1, 0, "input", 45)(10, RefferalComponent_div_30_div_10_Template, 2, 0, "div", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](9, RefferalComponent_div_30_input_9_Template, 1, 0, "input", 52)(10, RefferalComponent_div_30_div_10_Template, 2, 0, "div", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](11, "div", 8)(12, "label", 46);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](11, "div", 8)(12, "label", 53);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](13, "Points for referee:");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](14, RefferalComponent_div_30_input_14_Template, 1, 0, "input", 47)(15, RefferalComponent_div_30_div_15_Template, 2, 0, "div", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](14, RefferalComponent_div_30_input_14_Template, 1, 0, "input", 54)(15, RefferalComponent_div_30_div_15_Template, 2, 0, "div", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](16, "button", 43);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](16, "button", 50);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](17, " Update Referral Points ");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()()();
   }
@@ -835,35 +835,55 @@ function RefferalComponent_div_30_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("disabled", ctx_r1.referralPointsForm.invalid);
   }
 }
+function RefferalComponent_div_31_li_8_img_7_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "img", 67);
+  }
+  if (rf & 2) {
+    const badge_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]().$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpropertyInterpolate"]("alt", badge_r7.badge_name);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("src", badge_r7.image_url, _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵsanitizeUrl"]);
+  }
+}
 function RefferalComponent_div_31_li_8_Template(rf, ctx) {
   if (rf & 1) {
     const _r6 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "li", 54)(1, "div", 55);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](2, "i", 56);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "li", 61)(1, "div", 62);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](2, "i", 63);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](3, "div")(4, "div", 64)(5, "span");
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](6);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](4, "button", 57);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function RefferalComponent_div_31_li_8_Template_button_click_4_listener() {
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](7, RefferalComponent_div_31_li_8_img_7_Template, 1, 2, "img", 65);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](8, "small", 41);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](10, "button", 66);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function RefferalComponent_div_31_li_8_Template_button_click_10_listener() {
       const badge_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r6).$implicit;
       const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2);
       return _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵresetView"](ctx_r1.openBadgePopup(badge_r7));
     });
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](5, "Edit");
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](11, "Edit");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
   }
   if (rf & 2) {
     const badge_r7 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate3"](" ", badge_r7.badge_name, " - Points: ", badge_r7.badge_points_required, " - Rank: ", badge_r7.badge_rank, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate"](badge_r7.badge_name);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", badge_r7.image_url);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate2"]("Points: ", badge_r7.badge_points_required, " | Rank: ", badge_r7.badge_rank, "");
   }
 }
 function RefferalComponent_div_31_Template(rf, ctx) {
   if (rf & 1) {
     const _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 2)(1, "div", 50)(2, "h4", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 2)(1, "div", 57)(2, "h4", 6);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](3, "Badge Points");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](4, "button", 51);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](4, "button", 58);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function RefferalComponent_div_31_Template_button_click_4_listener() {
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r5);
       const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
@@ -871,13 +891,13 @@ function RefferalComponent_div_31_Template(rf, ctx) {
     });
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](5, "Create New Badge");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](6, "div", 3)(7, "ul", 52);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](6, "div", 3)(7, "ul", 59);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("cdkDropListDropped", function RefferalComponent_div_31_Template_ul_cdkDropListDropped_7_listener($event) {
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r5);
       const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
       return _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵresetView"](ctx_r1.onBadgeDrop($event));
     });
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](8, RefferalComponent_div_31_li_8_Template, 6, 3, "li", 53);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](8, RefferalComponent_div_31_li_8_Template, 12, 4, "li", 60);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()();
   }
   if (rf & 2) {
@@ -888,15 +908,29 @@ function RefferalComponent_div_31_Template(rf, ctx) {
 }
 function RefferalComponent_div_52_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 41);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 48);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](1, " Badge name is required ");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
   }
 }
 function RefferalComponent_div_57_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 41);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 48);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](1, " Points required must be a valid number ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+  }
+}
+function RefferalComponent_div_62_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 48);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](1, " Badge color is required ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+  }
+}
+function RefferalComponent_div_68_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 48);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](1, " Badge rank is required and must be at least 1 ");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
   }
 }
@@ -914,6 +948,7 @@ class RefferalComponent {
     this.badges = [];
     this.isEditMode = false;
     this.selectedBadge = null;
+    this.selectedImageFile = null;
     this.referralForm = this.fb.group({
       android_link: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.required, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.pattern('https?://.+')]],
       ios_link: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.required, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.pattern('https?://.+')]]
@@ -924,7 +959,10 @@ class RefferalComponent {
     });
     this.badgePointsForm = this.fb.group({
       badge_name: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.required],
-      badge_points_required: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.required, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.min(0)]]
+      badge_points_required: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.required, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.min(0)]],
+      badge_rank: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.required, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.min(1)]],
+      colour: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.required],
+      image: ['']
     });
   }
   ngOnInit() {
@@ -1076,10 +1114,14 @@ class RefferalComponent {
   openBadgePopup(badge) {
     this.isEditMode = !!badge;
     this.selectedBadge = badge;
+    this.selectedImageFile = null;
     if (badge) {
       this.badgePointsForm.patchValue({
         badge_name: badge.badge_name,
-        badge_points_required: badge.badge_points_required
+        badge_points_required: badge.badge_points_required,
+        badge_rank: badge.badge_rank,
+        colour: badge.colour,
+        image: badge.image
       });
     } else {
       this.badgePointsForm.reset();
@@ -1097,15 +1139,38 @@ class RefferalComponent {
       modal.hide();
     }
   }
+  onImageSelect(event) {
+    const file = event.target.files[0];
+    if (file) {
+      this.selectedImageFile = file;
+      // Convert file to base64
+      const reader = new FileReader();
+      reader.onload = () => {
+        const base64String = reader.result;
+        this.badgePointsForm.patchValue({
+          image: base64String
+        });
+      };
+      reader.readAsDataURL(file);
+    }
+  }
   onSubmit() {
     if (this.badgePointsForm.valid) {
-      const formData = this.badgePointsForm.value;
+      const formValue = this.badgePointsForm.value;
+      const badgeData = {
+        badge_name: formValue.badge_name,
+        badge_points_required: Number(formValue.badge_points_required),
+        badge_rank: Number(formValue.badge_rank),
+        colour: formValue.colour,
+        image: formValue.image || ''
+      };
       if (this.isEditMode && this.selectedBadge) {
         // Update existing badge
-        this.referralService.updateBadge(this.selectedBadge.badge_id, formData).subscribe({
+        this.referralService.updateBadge(this.selectedBadge.badge_id, badgeData).subscribe({
           next: response => {
             this.loadBadges();
             this.closeModal();
+            this.selectedImageFile = null;
             sweetalert2__WEBPACK_IMPORTED_MODULE_0___default().fire({
               icon: 'success',
               title: 'Success!',
@@ -1127,10 +1192,11 @@ class RefferalComponent {
         });
       } else {
         // Create new badge
-        this.referralService.createBadge(formData).subscribe({
+        this.referralService.createBadge(badgeData).subscribe({
           next: response => {
             this.loadBadges();
             this.closeModal();
+            this.selectedImageFile = null;
             sweetalert2__WEBPACK_IMPORTED_MODULE_0___default().fire({
               icon: 'success',
               title: 'Success!',
@@ -1198,9 +1264,9 @@ class RefferalComponent {
     this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({
       type: RefferalComponent,
       selectors: [["app-refferal"]],
-      decls: 63,
-      vars: 18,
-      consts: [[1, "page-header"], [1, "page-title"], [1, "card"], [1, "card-body"], [1, "container", "mt-4"], [1, "card-header", "bg-primary", "text-white"], [1, "mb-0"], [3, "ngSubmit", "formGroup"], [1, "mb-3"], [1, "d-flex", "justify-content-between"], ["for", "android", 1, "form-label", "bg-gray"], ["href", "javascript:void(0)", 3, "click", 4, "ngIf"], ["style", "margin-left: 8px; color: green;", 4, "ngIf"], ["id", "android", "type", "url", "class", "form-control", "formControlName", "android_link", "placeholder", "Enter Android referral link", 3, "disabled", 4, "ngIf"], ["class", "text-danger small", 4, "ngIf"], ["for", "ios", 1, "form-label", "bg-gray"], ["id", "ios", "type", "url", "class", "form-control", "formControlName", "ios_link", "placeholder", "Enter iOS referral link", 4, "ngIf"], ["type", "submit", "class", "btn btn-success w-100", 3, "disabled", 4, "ngIf"], ["class", "card", 4, "ngIf"], ["id", "badgePointsModal", "tabindex", "-1", "role", "dialog", "aria-labelledby", "badgePointsModalLabel", "aria-hidden", "true", 1, "modal", "fade"], [1, "modal-dialog", "modal-dialog-centered", "custom-modal-two"], [1, "modal-content"], [1, "page-wrapper-new", "p-0"], [1, "content"], [1, "modal-header", "border-0", "custom-modal-header"], ["type", "button", "aria-label", "Close", 1, "close", 3, "click"], ["aria-hidden", "true"], [1, "modal-body", "custom-modal-body"], [1, "row"], [1, "col-lg-12"], [1, "form-group", "mb-3"], ["for", "badge_name", 1, "form-label"], ["type", "text", "id", "badge_name", "formControlName", "badge_name", "placeholder", "Enter badge name", 1, "form-control"], ["for", "badge_points_required", 1, "form-label"], ["type", "number", "id", "badge_points_required", "formControlName", "badge_points_required", "placeholder", "Enter points required", 1, "form-control"], [1, "modal-footer-btn"], ["type", "button", 1, "btn", "btn-cancel", "me-2", 3, "click"], ["type", "submit", 1, "btn", "btn-submit", 3, "disabled"], ["href", "javascript:void(0)", 3, "click"], [2, "margin-left", "8px", "color", "green"], ["id", "android", "type", "url", "formControlName", "android_link", "placeholder", "Enter Android referral link", 1, "form-control", 3, "disabled"], [1, "text-danger", "small"], ["id", "ios", "type", "url", "formControlName", "ios_link", "placeholder", "Enter iOS referral link", 1, "form-control"], ["type", "submit", 1, "btn", "btn-success", "w-100", 3, "disabled"], ["for", "android", 1, "form-label"], ["id", "android", "type", "number", "class", "form-control", "formControlName", "points_for_referrer", 4, "ngIf"], ["for", "ios", 1, "form-label"], ["id", "ios", "type", "number", "class", "form-control", "formControlName", "points_for_referee", 4, "ngIf"], ["id", "android", "type", "number", "formControlName", "points_for_referrer", 1, "form-control"], ["id", "ios", "type", "number", "formControlName", "points_for_referee", 1, "form-control"], [1, "card-header", "bg-primary", "text-white", "d-flex", "justify-content-between", "align-items-center"], [1, "btn", "btn-info", 3, "click"], ["cdkDropList", "", 1, "list-group", 3, "cdkDropListDropped"], ["class", "list-group-item d-flex justify-content-between align-items-center", "cdkDrag", "", 4, "ngFor", "ngForOf"], ["cdkDrag", "", 1, "list-group-item", "d-flex", "justify-content-between", "align-items-center"], [1, "d-flex", "align-items-center"], ["cdkDragHandle", "", 1, "fas", "fa-grip-vertical", "me-3"], [1, "btn", "btn-warning", 3, "click"]],
+      decls: 80,
+      vars: 20,
+      consts: [[1, "page-header"], [1, "page-title"], [1, "card"], [1, "card-body"], [1, "container", "mt-4"], [1, "card-header", "bg-primary", "text-white"], [1, "mb-0"], [3, "ngSubmit", "formGroup"], [1, "mb-3"], [1, "d-flex", "justify-content-between"], ["for", "android", 1, "form-label", "bg-gray"], ["href", "javascript:void(0)", 3, "click", 4, "ngIf"], ["style", "margin-left: 8px; color: green;", 4, "ngIf"], ["id", "android", "type", "url", "class", "form-control", "formControlName", "android_link", "placeholder", "Enter Android referral link", 3, "disabled", 4, "ngIf"], ["class", "text-danger small", 4, "ngIf"], ["for", "ios", 1, "form-label", "bg-gray"], ["id", "ios", "type", "url", "class", "form-control", "formControlName", "ios_link", "placeholder", "Enter iOS referral link", 4, "ngIf"], ["type", "submit", "class", "btn btn-success w-100", 3, "disabled", 4, "ngIf"], ["class", "card", 4, "ngIf"], ["id", "badgePointsModal", "tabindex", "-1", "role", "dialog", "aria-labelledby", "badgePointsModalLabel", "aria-hidden", "true", 1, "modal", "fade"], [1, "modal-dialog", "modal-dialog-centered", "custom-modal-two"], [1, "modal-content"], [1, "page-wrapper-new", "p-0"], [1, "content"], [1, "modal-header", "border-0", "custom-modal-header"], ["type", "button", "aria-label", "Close", 1, "close", 3, "click"], ["aria-hidden", "true"], [1, "modal-body", "custom-modal-body"], [1, "row"], [1, "col-lg-6"], [1, "form-group", "mb-3"], ["for", "badge_name", 1, "form-label"], ["type", "text", "id", "badge_name", "formControlName", "badge_name", "placeholder", "Enter badge name", 1, "form-control"], ["for", "badge_points_required", 1, "form-label"], ["type", "number", "id", "badge_points_required", "formControlName", "badge_points_required", "placeholder", "Enter points required", 1, "form-control"], ["for", "colour", 1, "form-label"], ["type", "color", "id", "colour", "formControlName", "colour", "title", "Choose badge color", 1, "form-control", "form-control-color"], ["for", "badge_rank", 1, "form-label"], ["type", "number", "id", "badge_rank", "formControlName", "badge_rank", "placeholder", "Enter badge rank", "min", "1", 1, "form-control"], ["for", "image", 1, "form-label"], ["type", "file", "id", "image", "accept", "image/*", 1, "form-control", 3, "change"], [1, "text-muted"], [1, "modal-footer-btn"], ["type", "button", 1, "btn", "btn-cancel", "me-2", 3, "click"], ["type", "submit", 1, "btn", "btn-submit", 3, "disabled"], ["href", "javascript:void(0)", 3, "click"], [2, "margin-left", "8px", "color", "green"], ["id", "android", "type", "url", "formControlName", "android_link", "placeholder", "Enter Android referral link", 1, "form-control", 3, "disabled"], [1, "text-danger", "small"], ["id", "ios", "type", "url", "formControlName", "ios_link", "placeholder", "Enter iOS referral link", 1, "form-control"], ["type", "submit", 1, "btn", "btn-success", "w-100", 3, "disabled"], ["for", "android", 1, "form-label"], ["id", "android", "type", "number", "class", "form-control", "formControlName", "points_for_referrer", 4, "ngIf"], ["for", "ios", 1, "form-label"], ["id", "ios", "type", "number", "class", "form-control", "formControlName", "points_for_referee", 4, "ngIf"], ["id", "android", "type", "number", "formControlName", "points_for_referrer", 1, "form-control"], ["id", "ios", "type", "number", "formControlName", "points_for_referee", 1, "form-control"], [1, "card-header", "bg-primary", "text-white", "d-flex", "justify-content-between", "align-items-center"], [1, "btn", "btn-info", 3, "click"], ["cdkDropList", "", 1, "list-group", 3, "cdkDropListDropped"], ["class", "list-group-item d-flex justify-content-between align-items-center", "cdkDrag", "", 4, "ngFor", "ngForOf"], ["cdkDrag", "", 1, "list-group-item", "d-flex", "justify-content-between", "align-items-center"], [1, "d-flex", "align-items-center"], ["cdkDragHandle", "", 1, "fas", "fa-grip-vertical", "me-3"], [1, "d-flex", "align-items-center", "mb-1"], ["class", "badge-image me-2", "style", "width: 30px; height: 30px; object-fit: cover;", 3, "src", "alt", 4, "ngIf"], [1, "btn", "btn-warning", 3, "click"], [1, "badge-image", "me-2", 2, "width", "30px", "height", "30px", "object-fit", "cover", 3, "src", "alt"]],
       template: function RefferalComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "h4");
@@ -1256,15 +1322,38 @@ class RefferalComponent {
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](56, "input", 34);
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](57, RefferalComponent_div_57_Template, 2, 0, "div", 14);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](58, "div", 35)(59, "button", 36);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function RefferalComponent_Template_button_click_59_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](58, "div", 30)(59, "label", 35);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](60, "Badge Color");
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](61, "input", 36);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](62, RefferalComponent_div_62_Template, 2, 0, "div", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](63, "div", 29)(64, "div", 30)(65, "label", 37);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](66, "Badge Rank");
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](67, "input", 38);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](68, RefferalComponent_div_68_Template, 2, 0, "div", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](69, "div", 30)(70, "label", 39);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](71, "Badge Image");
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](72, "input", 40);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("change", function RefferalComponent_Template_input_change_72_listener($event) {
+            return ctx.onImageSelect($event);
+          });
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](73, "small", 41);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](74, "Upload an image for the badge (optional)");
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](75, "div", 42)(76, "button", 43);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function RefferalComponent_Template_button_click_76_listener() {
             return ctx.closeModal();
           });
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](60, " Cancel ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](77, " Cancel ");
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](61, "button", 37);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](62);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](78, "button", 44);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](79);
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()()()()()()()();
         }
         if (rf & 2) {
@@ -1272,6 +1361,8 @@ class RefferalComponent {
           let tmp_8_0;
           let tmp_14_0;
           let tmp_15_0;
+          let tmp_16_0;
+          let tmp_17_0;
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](12);
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("formGroup", ctx.referralForm);
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](5);
@@ -1293,9 +1384,9 @@ class RefferalComponent {
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx.userRole === "Platform Admin");
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx.userRole === "Platform Admin" && ctx.referralForm.valid);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx.userRole === "Platform Admin");
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx.userRole === "Platform Admin" && ctx.referralForm.valid);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx.userRole === "Platform Admin");
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](9);
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate"](ctx.isEditMode ? "Edit Badge" : "Create Badge");
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](5);
@@ -1304,13 +1395,17 @@ class RefferalComponent {
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ((tmp_14_0 = ctx.badgePointsForm.get("badge_name")) == null ? null : tmp_14_0.invalid) && ((tmp_14_0 = ctx.badgePointsForm.get("badge_name")) == null ? null : tmp_14_0.touched));
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](5);
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ((tmp_15_0 = ctx.badgePointsForm.get("badge_points_required")) == null ? null : tmp_15_0.invalid) && ((tmp_15_0 = ctx.badgePointsForm.get("badge_points_required")) == null ? null : tmp_15_0.touched));
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](5);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ((tmp_16_0 = ctx.badgePointsForm.get("colour")) == null ? null : tmp_16_0.invalid) && ((tmp_16_0 = ctx.badgePointsForm.get("colour")) == null ? null : tmp_16_0.touched));
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](6);
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ((tmp_17_0 = ctx.badgePointsForm.get("badge_rank")) == null ? null : tmp_17_0.invalid) && ((tmp_17_0 = ctx.badgePointsForm.get("badge_rank")) == null ? null : tmp_17_0.touched));
+          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](10);
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("disabled", ctx.badgePointsForm.invalid);
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate1"](" ", ctx.isEditMode ? "Update" : "Create", " ");
         }
       },
-      dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_8__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_8__.NgIf, _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_5__.CdkDropList, _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_5__.CdkDrag, _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_5__.CdkDragHandle, _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NumberValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.FormGroupDirective, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.FormControlName],
+      dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_8__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_8__.NgIf, _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_5__.CdkDropList, _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_5__.CdkDrag, _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_5__.CdkDragHandle, _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NumberValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.MinValidator, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.FormGroupDirective, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.FormControlName],
       styles: [".cdk-drag-preview[_ngcontent-%COMP%] {\n  box-sizing: border-box;\n  border-radius: 4px;\n  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);\n}\n\n.cdk-drag-placeholder[_ngcontent-%COMP%] {\n  opacity: 0;\n}\n\n.cdk-drag-animating[_ngcontent-%COMP%] {\n  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);\n}\n\n.list-group-item[_ngcontent-%COMP%] {\n  cursor: move;\n}\n.list-group-item[_ngcontent-%COMP%]:hover {\n  background-color: #f8f9fa;\n}\n.list-group-item[_ngcontent-%COMP%]   .fa-grip-vertical[_ngcontent-%COMP%] {\n  color: #6c757d;\n  cursor: grab;\n}\n.list-group-item[_ngcontent-%COMP%]   .fa-grip-vertical[_ngcontent-%COMP%]:active {\n  cursor: grabbing;\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvY29yZS1jb21wb25lbnQvcGFnZXMvcmVmZmVyYWxzL3JlZmZlcmFsLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usc0JBQUE7RUFDQSxrQkFBQTtFQUNBLHFIQUFBO0FBQ0Y7O0FBSUE7RUFDRSxVQUFBO0FBREY7O0FBSUE7RUFDRSxzREFBQTtBQURGOztBQUlBO0VBQ0UsWUFBQTtBQURGO0FBR0U7RUFDRSx5QkFBQTtBQURKO0FBSUU7RUFDRSxjQUFBO0VBQ0EsWUFBQTtBQUZKO0FBSUk7RUFDRSxnQkFBQTtBQUZOIiwic291cmNlc0NvbnRlbnQiOlsiLmNkay1kcmFnLXByZXZpZXcge1xyXG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XHJcbiAgYm9yZGVyLXJhZGl1czogNHB4O1xyXG4gIGJveC1zaGFkb3c6IDAgNXB4IDVweCAtM3B4IHJnYmEoMCwgMCwgMCwgMC4yKSxcclxuICAgICAgICAgICAgICAwIDhweCAxMHB4IDFweCByZ2JhKDAsIDAsIDAsIDAuMTQpLFxyXG4gICAgICAgICAgICAgIDAgM3B4IDE0cHggMnB4IHJnYmEoMCwgMCwgMCwgMC4xMik7XHJcbn1cclxuXHJcbi5jZGstZHJhZy1wbGFjZWhvbGRlciB7XHJcbiAgb3BhY2l0eTogMDtcclxufVxyXG5cclxuLmNkay1kcmFnLWFuaW1hdGluZyB7XHJcbiAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDI1MG1zIGN1YmljLWJlemllcigwLCAwLCAwLjIsIDEpO1xyXG59XHJcblxyXG4ubGlzdC1ncm91cC1pdGVtIHtcclxuICBjdXJzb3I6IG1vdmU7XHJcbiAgXHJcbiAgJjpob3ZlciB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjhmOWZhO1xyXG4gIH1cclxuICBcclxuICAuZmEtZ3JpcC12ZXJ0aWNhbCB7XHJcbiAgICBjb2xvcjogIzZjNzU3ZDtcclxuICAgIGN1cnNvcjogZ3JhYjtcclxuICAgIFxyXG4gICAgJjphY3RpdmUge1xyXG4gICAgICBjdXJzb3I6IGdyYWJiaW5nO1xyXG4gICAgfVxyXG4gIH1cclxufVxyXG4iXSwic291cmNlUm9vdCI6IiJ9 */"]
     });
   }
@@ -1390,14 +1485,14 @@ class ReferralService {
   }
   createBadge(badgeData) {
     const token = localStorage.getItem('authToken'); // Retrieve token
-    const headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__.HttpHeaders().set('Authorization', `Bearer ${token}`);
+    const headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__.HttpHeaders().set('Authorization', `Bearer ${token}`).set('Content-Type', 'application/json');
     return this.http.post(`${src_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/badge`, badgeData, {
       headers
     });
   }
   updateBadge(badgeId, badgeData) {
     const token = localStorage.getItem('authToken'); // Retrieve token
-    const headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__.HttpHeaders().set('Authorization', `Bearer ${token}`);
+    const headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__.HttpHeaders().set('Authorization', `Bearer ${token}`).set('Content-Type', 'application/json');
     return this.http.patch(`${src_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.BACKEND_URL}/admin/badge/${badgeId}`, badgeData, {
       headers
     });
